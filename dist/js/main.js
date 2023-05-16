@@ -479,6 +479,16 @@ window.addEventListener('load', function () {
 			clickable: true,
 		},
 
+		on: {
+			init: function () {
+				setTimeout(() => {
+					tariffsLists.forEach(tariffsList => {
+						tariffsList.style.setProperty('--height', tariffsList.scrollHeight + 'px');
+					})
+				},0)
+			},
+		},
+
 		breakpoints: {
 			768: {
 				slidesPerView: 3,
@@ -594,6 +604,13 @@ tel.forEach(tel => {
 		if(!iti.isValidNumber()) {
 			tel.classList.add('error');
 		} else {
+			tel.classList.remove('error');
+		}
+	})
+
+	tel.addEventListener('input', function () {
+		tel.value = '+' + tel.value.replace(/[^+\d]/g, '').substring(1);
+		if(iti.isValidNumber()) {
 			tel.classList.remove('error');
 		}
 	})

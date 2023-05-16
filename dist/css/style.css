@@ -166,7 +166,7 @@
     margin-top: 16px
 }
 
-.check-price__form label.radio {
+.check-price__form label.checkbox {
     margin-top: 5px;
     display: flex;
     justify-content: flex-start
@@ -939,7 +939,7 @@
     padding-bottom: 60px
 }
 
-.check-price-2__form--element .radio {
+.check-price-2__form--element .checkbox {
     margin-top: 5px
 }
 
@@ -2245,6 +2245,12 @@ summary {
     border-top-color: transparent
 }
 
+.select select,.visually-hidden {
+    height: 1px;
+    margin: -1px;
+    border: 0
+}
+
 .swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader,.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     -webkit-animation: swiper-preloader-spin 1s infinite linear;
     animation: swiper-preloader-spin 1s infinite linear
@@ -2854,7 +2860,8 @@ button.swiper-pagination-bullet {
 .ss-main .ss-values {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: var(--ss-spacing-m)
+    gap: var(--ss-spacing-m);
+    flex: 1 1 100%
 }
 
 .ss-main .ss-values .ss-placeholder {
@@ -2975,8 +2982,7 @@ button.swiper-pagination-bullet {
 .ss-main .ss-arrow {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex: 0 1 auto
+    justify-content: flex-end
 }
 
 .ss-content,body {
@@ -3394,7 +3400,7 @@ button.swiper-pagination-bullet {
     cursor: default
 }
 
-.header__burger,.iti--container:hover,.radio,button {
+.checkbox,.header__burger,.iti--container:hover,button {
     cursor: pointer
 }
 
@@ -4861,10 +4867,6 @@ body._mob-menu-active,body._popup-active {
     transition: stop-color .2s ease
 }
 
-.pagination .swiper-pagination-bullet,.radio-element {
-    transition: border-color .2s ease,background .2s ease
-}
-
 section {
     position: relative;
     z-index: 2
@@ -4907,7 +4909,8 @@ section {
     margin: 0 7.5px!important;
     border: 1px solid var(--black);
     opacity: 1;
-    background: rgba(0,0,0,0)
+    background: rgba(0,0,0,0);
+    transition: border-color .2s ease,background .2s ease
 }
 
 .pagination .swiper-pagination-bullet::before {
@@ -4980,15 +4983,6 @@ section {
     transition: color .3s ease,background .3s ease,border-color .3s ease
 }
 
-.content h2,.main-title,.title {
-    font-family: var(--title-font);
-    font-weight: 600
-}
-
-.btn._transparent,mark {
-    color: var(--accent)
-}
-
 .btn svg {
     margin-left: 10px;
     fill: var(--fill);
@@ -4996,7 +4990,8 @@ section {
 }
 
 .btn._transparent {
-    background: rgba(0,0,0,0)
+    background: rgba(0,0,0,0);
+    color: var(--accent)
 }
 
 .btn._transparent::before {
@@ -5024,16 +5019,6 @@ section {
     transition: opacity .3s ease
 }
 
-.select select,.visually-hidden {
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    width: 1px;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    overflow: hidden
-}
-
 .btn:active,.input,.ss-main,mark {
     background: rgba(0,0,0,0)
 }
@@ -5044,13 +5029,26 @@ section {
 
 .visually-hidden {
     position: absolute;
+    width: 1px;
     padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
-    clip: rect(0 0 0 0)
+    clip: rect(0 0 0 0);
+    overflow: hidden
 }
 
-.radio,.select {
+.checkbox,.select {
     position: relative
+}
+
+.checkbox-input,.select select {
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    overflow: hidden
 }
 
 @font-face {
@@ -5074,13 +5072,17 @@ section {
 }
 
 .main-title {
+    font-family: var(--title-font);
     text-transform: uppercase;
+    font-weight: 600;
     line-height: 122.580645%;
     font-size: 1.625rem
 }
 
 .content h2,.title {
+    font-family: var(--title-font);
     text-transform: uppercase;
+    font-weight: 600;
     line-height: 121.052632%;
     font-size: 1.375rem
 }
@@ -5095,6 +5097,10 @@ section {
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase
+}
+
+mark {
+    color: var(--accent)
 }
 
 .txt-center {
@@ -5143,8 +5149,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 .select select {
     display: block!important;
     position: absolute;
-    left: 50%;
-    top: 50%;
     padding: 0;
     clip-path: inset(100%);
     clip: rect(0 0 0 0)
@@ -5233,6 +5237,7 @@ input:focus::placeholder,textarea:focus::placeholder {
 .ss-main .ss-arrow {
     width: 8px;
     height: 8px;
+    flex: 0 0 8px;
     margin: auto 0 auto 10px
 }
 
@@ -5257,10 +5262,6 @@ input:focus::placeholder,textarea:focus::placeholder {
     transition: color .2s ease
 }
 
-.ss-main .ss-values {
-    flex: none
-}
-
 .ss-main .ss-values .ss-single {
     font-weight: 300
 }
@@ -5275,29 +5276,23 @@ input:focus::placeholder,textarea:focus::placeholder {
     width: 100%
 }
 
-.radio {
+.checkbox {
     display: inline-flex;
     align-items: center
 }
 
-.radio:hover .radio-element {
+.checkbox:hover .checkbox-element {
     border-color: var(--accent-hover)
 }
 
-.radio-input {
+.checkbox-input {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     border: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden
+    clip: rect(0 0 0 0)
 }
 
 .header,.header._scroll-mode {
@@ -5305,30 +5300,31 @@ input:focus::placeholder,textarea:focus::placeholder {
     padding-bottom: 15px
 }
 
-.radio-input:checked+.radio-element {
+.checkbox-input:checked+.checkbox-element {
     background: var(--accent);
     border-color: var(--accent)
 }
 
-.radio-input:disabled+.radio-element {
+.checkbox-input:disabled+.checkbox-element {
     background: rgba(0,0,0,0);
     border-color: gray
 }
 
-.radio-input:disabled+.radio-element+.radio-text {
+.checkbox-input:disabled+.checkbox-element+.checkbox-text {
     color: gray
 }
 
-.radio-element {
+.checkbox-element {
     margin-right: 5px;
     display: block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid #000
+    border: 2px solid #000;
+    transition: border-color .2s ease,background .2s ease
 }
 
-.radio-text {
+.checkbox-text {
     transition: color .2s ease
 }
 
