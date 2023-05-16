@@ -608,6 +608,10 @@ tel.forEach(tel => {
 		}
 	})
 
+	tel.addEventListener('focus', function () {
+		tel.value = '+' + tel.value.replace(/[^+\d]/g, '').substring(1);
+	})
+
 	tel.addEventListener('input', function () {
 		tel.value = '+' + tel.value.replace(/[^+\d]/g, '').substring(1);
 		if(iti.isValidNumber()) {
