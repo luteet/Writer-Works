@@ -1,0 +1,100 @@
+.check-price-2 {
+
+	overflow: hidden;
+
+	padding-top: 60px; padding-bottom: 60px;
+
+	@include _768 {
+		padding-top: 100px; padding-bottom: 100px;
+	}
+
+	// .check-price-2__decor
+
+	&__decor {
+		@include _768 {
+			position: absolute;
+			left: 0; bottom: 0;
+			width: 250px; height: 250px;
+			background-size: 15px;
+
+			transform: translate(-25%,25%);
+			border-radius: 50%;
+			pointer-events: none;
+		}
+
+		@media (min-width: 1300px) {
+			width: 400px; height: 400px;
+			background-size: 25px;
+		}
+		
+	}
+
+	// .check-price-2__title
+
+	&__title {
+		text-align: center;
+	}
+
+	// .check-price-2__text
+
+	&__text {
+		text-align: center;
+		margin-top: 20px;
+
+		b {
+			font-weight: 500;
+			@include _768 {
+				font-weight: 600;
+			}
+		}
+	}
+
+	// .check-price-2__form
+
+	&__form {
+
+		padding-top: 52px;
+
+		display: grid;
+		@include _992 {
+			grid-template-columns: 1fr 1fr;
+			max-width: 745px;
+			gap: 27px;
+		}
+		gap: 20px;
+
+		max-width: 360px; margin: 0 auto;
+
+		// .check-price-2__form--select
+
+		&--select {
+		}
+
+		// .check-price-2__form--element
+
+		&--element {
+			.radio {
+				margin-top: 5px;
+			}
+		}
+
+		// .check-price-2__form--footer
+
+		&--footer {
+			
+			@include _992 {
+				grid-column: 2 span;
+			}
+
+			margin-top: 3px;
+
+			display: flex;
+			justify-content: center;
+		}
+
+		// .check-price-2__form--submit
+
+		&--submit {
+		}
+	}
+}

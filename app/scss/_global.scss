@@ -1,0 +1,318 @@
+@use 'sass:math';
+
+:root {
+	--title-font: 'Montserrat', sans-serif;
+	--main-font: 'Montserrat', sans-serif;
+	
+	--accent: #FF803D;
+	--accent-hover: #FFB38B;
+	--accent-hover-2: #FF8849;
+	--accent-active: #4eb42f;
+	--accent-gradient: linear-gradient(93.82deg, #FF803D 1.46%, #FF6716 100%);
+	--start-gradient-color: #FF6716; 
+	--end-gradient-color: #FF803D;
+
+	--primary-gradient-1: linear-gradient(60.79deg, #EBEAFB 17.93%, #F7F7FE 73.52%);
+
+	--primary: #7977E8;
+
+	--danger: #B40A0A;
+
+	--light-gray: #F5F5F5;
+	--border-color: #DAD8FF;
+
+	--white: #FFF;
+	--black: #000;
+
+	--container-padding: 15px;
+	--minus-container-padding: -15px;
+}
+
+html, body {
+	font-size: 16px;
+	min-height: 100%;
+	min-width: 320px;
+}
+
+body {
+	font-family: var(--main-font);
+	
+	font-weight: 400;
+	line-height: 150%;
+
+	display: flex;
+	flex-direction: column;
+
+	//padding-right: var(--popup-padding);
+
+	&._mob-menu-active {
+		overflow: hidden;
+	}
+
+	&._popup-active {
+		overflow: hidden;
+	}
+	
+}
+
+.gradient-mode stop {
+	transition: stop-color .2s ease;
+}
+
+section {
+	position: relative;
+	z-index: 2;
+}
+
+.decor-pattern {
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 27 32'%3E%3Cpath fill='%23FF6817' d='M10.9,16.2c0,1.3,1.2,2.3,2.5,2.3c1.4,0,2.5-1.2,2.5-2.3c0-1.3-1.2-2.3-2.5-2.3 C11.9,13.9,10.9,14.9,10.9,16.2z'/%3E%3Cpath fill='%23FF6817' d='M16.1,16.2c0,1.3-1.2,2.3-2.5,2.3c-1.4,0-2.5-1.2-2.5-2.3c0-1.3,1.2-2.3,2.5-2.3 C14.8,13.9,16.1,14.9,16.1,16.2z'/%3E%3C/svg%3E%0A")
+	center / 25px repeat;
+}
+
+.decor-pattern-2 {
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 32'%3E%3Cpath fill='%237977E8' d='M10.9,16c0,1.3,1.2,2.3,2.5,2.3c1.4,0,2.5-1.2,2.5-2.3c0-1.3-1.2-2.3-2.5-2.3C11.9,13.7,10.9,14.7,10.9,16z' /%3E%3Cpath fill='%237977E8' d='M16.1,16c0,1.3-1.2,2.3-2.5,2.3c-1.4,0-2.5-1.2-2.5-2.3c0-1.3,1.2-2.3,2.5-2.3C14.8,13.7,16.1,14.7,16.1,16z '/%3E%3C/svg%3E%0A")
+	center / 25px repeat;
+}
+
+.wrapper {
+	flex: 1 1 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	overflow: hidden;
+
+	flex: 1 0 auto;
+	position: relative;
+}
+
+.container {
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+	
+	@media (min-width: #{$container}px) {
+		padding-left: max(var(--container-padding), calc(50% - #{math.div($container, 2)}px));
+		padding-right: max(var(--container-padding), calc(50% - #{math.div($container, 2)}px));
+	}
+}
+
+.pagination {
+	position: static;
+	margin-top: 32px;
+
+	.swiper-pagination-bullet {
+		position: relative;
+
+		width: 12px; height: 12px;
+		margin: 0 7.5px !important;
+
+		border: 1px solid var(--black);
+
+		opacity: 1;
+		background: transparent;
+
+		transition: border-color .2s ease, background .2s ease;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 50%; top: 50%;
+			width: 250%; height: 250%;
+			transform: translate(-50%,-50%);
+		}
+
+		&.swiper-pagination-bullet-active {
+			background: var(--accent);
+			border-color: var(--accent);
+		}
+	}
+}
+
+.section-accent {
+	background: linear-gradient(60.79deg, #EBEAFB 17.93%, #F7F7FE 73.52%);
+	border: 1px solid #DAD8FF;
+	border-radius: 30px;
+
+	& + .section-gray {
+		margin-top: -30px;
+		z-index: auto;
+	}
+}
+
+.section-accent-gray {
+	background: var(--light-gray);
+	border-radius: 30px;
+
+	& + .section-gray {
+		margin-top: -30px;
+		z-index: auto;
+	}
+}
+
+.section-gray {
+	background: var(--light-gray);
+
+}
+
+.section-accent-on-mob {
+	background: linear-gradient(60.79deg, #EBEAFB 17.93%, #F7F7FE 73.52%);
+	border: 1px solid #DAD8FF;
+	border-radius: 30px;
+	& + .section-gray {
+		margin-top: -30px;
+		z-index: auto;
+	}
+
+	@include _992 {
+		background: transparent;
+		border: 0;
+
+		& + .section-gray {
+			margin-top: 0;
+			z-index: 2;
+		}
+	}
+}
+
+/* .section-padding {
+	padding-top: 75px;
+	padding-bottom: 75px;
+
+	@include _768 {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@include _992 {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+
+} */
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	text-align: center;
+
+	padding: 16.5px 22px;
+	min-height: 50px;
+	
+	@include _768 {
+		padding: 20px 40px;
+		min-height: 60px;
+	}
+
+	border: 2px solid var(--accent);
+
+	background: var(--accent);
+	font-weight: 700;
+	line-height: 125%;
+	color: #F9FCFD;
+	color: var(--white);
+
+	border-radius: 14px;
+	box-shadow: 0px 4px 20px rgba(255, 103, 22, 0.43);
+
+	position: relative;
+
+	svg {
+		margin-left: 10px;
+		fill: var(--fill);
+		transition: fill .3s ease;
+	}
+
+	&._transparent {
+		background: transparent;
+		color: var(--accent);
+		&::before {
+			opacity: 0;
+		}
+
+		@media(any-hover: hover) {
+			&:hover {
+				color: var(--white);
+				border-color: var(--accent-hover-2);
+				&::before {
+					opacity: 1;
+				}
+			}
+
+			&:active {
+				color: var(--white);
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+
+		&:active {
+			color: var(--white);
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+		border-radius: 12px;
+		background: var(--accent-gradient);
+		z-index: -1;
+		transition: opacity .3s ease;
+		
+		//border: 2px solid var(--accent);
+	}
+
+	transition: color .3s ease, background .3s ease, border-color .3s ease;
+	
+	@media(any-hover: hover) {
+		&:hover {
+			//background: var(--accent-hover);
+			svg {
+				fill: var(--white);
+			}
+			background: #FF8849;
+			
+		}
+
+		&:active {
+			background: transparent;
+			svg {
+				fill: var(--white);
+			}
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+	
+	
+	&:active {
+		background: transparent;
+		svg {
+			fill: var(--white);
+		}
+		&::before {
+			opacity: 1;
+		}
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px; height: 1px;
+	margin: -1px; padding: 0;
+	border: 0;
+	
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

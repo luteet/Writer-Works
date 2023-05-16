@@ -1,0 +1,186 @@
+.about-company {
+
+	padding-top: 60px; padding-bottom: 60px;
+	@include _768 {
+		padding-top: 100px; padding-bottom: 100px;
+	}
+
+	// .about-company__title
+
+	&__title {
+		
+		@include _768 {
+			grid-column: 2 span;
+		}
+		@include _992 {
+			grid-column: auto;
+		}
+	}
+
+	&__title + &__image {
+		
+		@include _768 {
+			grid-row: 2/3;
+		}
+		@include _992 {
+			grid-row: 1/4;
+		}
+	}
+
+	&__wrapper {
+		
+	}
+
+	// .about-company__block
+
+	&__block {
+		display: grid;
+		
+
+		@include _768 {
+			grid-template-columns: 60% auto;
+		}
+
+		&:not(:first-child) {
+			margin-top: 30px;
+		}
+	}
+
+	/* &__block:nth-child(even) & {
+		&__image {
+			grid-column: 2;
+		}
+
+		&__content {
+			flex: 0 1 60%;
+		}
+	} */
+
+	&__block:nth-child(even) {
+		
+		@include _768 {
+			grid-template-columns: 55% auto;
+		}
+	}
+
+	&__block:nth-child(odd) & {
+
+		
+		
+		&__image {
+
+			max-width: 75%; width: 100%;
+			justify-self: center;
+			
+			@include _768 {
+				grid-column: 2;
+				max-width: none;
+				width: auto; max-width: none;
+				justify-self: stretch;
+				margin-bottom: 0;
+			}
+
+			margin-bottom: 20px;
+
+			padding-right: 0;
+			&--decor {
+				transform: translate(-10%,-50%) rotate(-20deg);
+				width: 80%; height: 90%;
+			}
+		}
+
+		&__content {
+			@include _768 {
+				grid-column: 1;
+				padding-right: 26px;
+			}
+			
+			
+		}
+	}
+
+	// .about-company__image
+
+	&__image {
+
+		margin-top: 20px;
+		
+		@include _768 {
+			margin-top: 0;
+			padding-right: 30px;
+			
+		}
+
+		// .about-company__image--body
+
+		&--body {
+		}
+
+		// .about-company__image--decor
+
+		&--decor {
+			position: absolute;
+			left: 50%; top: 50%;
+			transform: translate(-70%,-45%) rotate(15deg);
+			width: 70%; height: 70%;
+			border-radius: 50%;
+			opacity: .8;
+			pointer-events: none;
+
+			background-size: 15px;
+
+			@include _992 {
+				background-size: 25px;
+			}
+		}
+	}
+
+	// .about-company__content
+
+	&__content {
+
+		padding-top: 0px;
+		@include _768 {
+			padding-top: 50px;
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+
+			padding-top: 32px;
+			margin: -5px 0;
+			@include _992 {
+				margin: -10px -20px;
+			}
+
+			li {
+				flex: 0 1 100%;
+
+				display: flex;
+				align-items: center;
+
+				padding: 5px ;
+
+				font-weight: 500;
+				@include _768 {
+					font-weight: 600;
+				}
+
+				@include _992 {
+					flex: 0 1 50%;
+					padding: 10px 20px;
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					width: 20px; height: 20px; flex: 0 0 20px;
+					margin-right: 15px;
+					border-radius: 50%;
+					border: 2px solid var(--accent);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+.price {
+
+	padding-bottom: 60px;
+
+	@include _768 {
+		padding-bottom: 100px;
+	}
+
+	// .price__title
+
+	&__title {
+		text-align: center;
+	}
+
+	// .price__table
+
+	&__table {
+		width: 100%;
+
+		margin-top: 30px;
+		@include _768 {
+			margin-top: 50px;
+		}
+
+		border-spacing: 1px;
+		border: 1px solid #D6D6FA;
+		border-radius: 10px;
+
+		col {
+			&:nth-child(1) {
+				width: 45%;
+				@include _550 {
+					width: 40%;
+				}
+				@include _768 {
+					width: 50%;
+				}
+			}
+
+			&:nth-child(2) {
+				
+			}
+
+			&:nth-child(3) {
+				
+			}
+		}
+
+		tbody tr {
+			td {
+				padding: 10px 2px;
+				font-size: 0.625rem;
+				line-height: 133%;
+				@include _550 {
+					font-size: 0.75rem;
+					padding: 15px;
+				}
+				@include _768 {
+					padding: 30px;
+					font-size: 0.875rem;
+				}
+
+				@include _992 {
+					font-size: 1rem;
+				}
+
+				text-align: center;
+				text-transform: uppercase;
+				mark {
+					color: var(--primary);
+				}
+				&:nth-child(2), &:nth-child(3) {
+					font-weight: 700;
+					border-top: 0;
+					border-right: 0;
+				}
+			}
+			&:nth-child(1) td {
+				
+				&:nth-child(2) {
+					border-right: 0;
+					background: rgba(214, 214, 250, 0.3);
+					border-radius: 0px 10px 0px 0px;
+				}
+
+				&:nth-child(3) {
+					background: rgba(214, 214, 250, 0.3);
+					border-radius: 10px 10px 0px 0px;
+				}
+			}
+			&:nth-child(n + 3) td {
+				&:not(:first-child) {
+					border-top: 1px solid #D6D6FA;
+				}
+				&:not(:last-child) {
+					border-right: 1px solid #D6D6FA;
+				}
+			}
+			&:nth-child(-n + 3) {
+				td {
+					&:nth-child(1) {
+						font-weight: 600;
+						background: rgba(214, 214, 250, 0.3);
+					}
+				}
+			}
+			td:first-child {
+				
+				font-weight: 500;
+				border-radius: 10px 0px 0px 10px;
+				background: rgba(214, 214, 250, 0.7);
+				border-right: 1px solid #D6D6FA;
+			}
+		}
+	}
+}
+

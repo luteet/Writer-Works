@@ -1,0 +1,1070 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<section class="hero container">
+			<div class="hero__content">
+				<h1 class="hero__title main-title">
+					замовити <mark>бакалаврську роботу</mark> в україні
+				</h1>
+				<div class="hero__text">
+					<p>
+						Дізнайтесь вартість роботи та отримайте план безкоштовно
+					</p>
+				</div>
+				<div class="hero__nav">
+					<a href="#" class="hero__btn btn">
+						Заповнити форму
+					</a>
+					<a href="#" class="hero__btn btn _transparent">
+						Розрахувати ціну
+						<svg width="32" height="25" viewBox="0 0 32 25" style="--fill: #0088CC;">
+							<use xlink:href="img/sprites.svg#telegram"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<ul class="hero__list">
+				<li>
+					<b class="min-title">
+						Найзручніша оплата, від 25%
+					</b>
+				</li>
+				<li>
+					<b class="min-title">
+						План та вступ – без передоплати
+					</b>
+				</li>
+				<li>
+					<b class="min-title">
+						У подарунок презентація й доповідь на захист
+					</b>
+				</li>
+			</ul>
+			<div class="hero__image">
+				<div class="hero__image--decor-pattern decor-pattern"></div>
+				<div class="hero__image--body image-body">
+					<picture>
+						<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
+						<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
+						<img src="img/index/hero/index-hero-image.png" alt="" width="651" height="941" loading="lazy">
+					</picture>
+				</div>
+				<img src="img/index/hero/index-hero-image-deror.svg" width="0" height="0" loading="lazy" alt="" class="hero__image--decor">
+			</div>
+		</section>
+		<section class="advantages container">
+			<h2 class="advantages__title title">
+				Наші переваги
+			</h2>
+			<ul class="advantages__list">
+				@@loop("html/_advantage.html", [
+					{
+						"image": '1',
+						"title": 'Четкие гарантии',
+						"text": 'Возврат средств за работу плохого качества',
+					},
+					{
+						"image": '2',
+						"title": 'Удобная оплата',
+						"text": 'Вносите деньги частями по 50% или 25%',
+					},
+					{
+						"image": '3',
+						"title": 'Авторы – специалисты',
+						"text": 'Ваш заказ напишет настоящий эксперт в тематике',
+					},
+					{
+						"image": '4',
+						"title": 'Полное сопровождение',
+						"text": 'Бесплатно внесем правки до самой защиты',
+					}
+				])
+			</ul>
+		</section>
+		<section class="statistic container section-accent">
+			<div class="statistic__decor-pattern decor-pattern-2"></div>
+			<ul class="statistic__list">
+				<li>
+					<h2 class="statistic__title title">
+						КОРОТКО про НАС В ЦИФРАХ
+					</h2>
+				</li>
+				@@loop("html/_statistic.html", [
+					{
+						"value": '4+',
+						"text": 'роки допомагаємо студентам у навчанні',
+					},
+					{
+						"value": '30+',
+						"text": 'послуг надаємо',
+					},
+					{
+						"value": '150+',
+						"text": 'предметів, за якими пишемо роботи',
+					},
+					{
+						"value": '6+',
+						"text": 'років — середній стаж роботи наших авторів',
+					},
+					{
+						"value": '2000+',
+						"text": 'робіт виконуємо щороку',
+					},
+				])
+			</ul>
+		</section>
+		<section class="we-work container section-gray">
+			<h2 class="we-work__title title">
+				ми працюємо на результат
+			</h2>
+			<div class="we-work__row">
+				<div class="we-work__col">
+					<div class="we-work__statistic">
+						<strong>60%</strong>
+						<b>клиентов рекомендуют нас своим друзьям</b>
+					</div>
+					<div class="we-work__slider swiper">
+						<div class="we-work__slider--wrapper swiper-wrapper">
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="we-work__pagination swiper-pagination pagination"></div>
+					</div>
+				</div>
+				<div class="we-work__col">
+					<div class="we-work__statistic">
+						<strong>70%</strong>
+						<b>клиентов обращаются к нам повторно</b>
+					</div>
+					<div class="we-work__slider swiper">
+						<div class="we-work__slider--wrapper swiper-wrapper">
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+							<div class="we-work__slider--slide we-work__slide swiper-slide">
+								<div class="we-work__slide--image image-body">
+									<picture>
+										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="we-work__pagination swiper-pagination pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="check-price container section-accent-on-mob">
+			<div class="check-price__image">
+				<div class="check-price__image--body image-body">
+					<div class="check-price__image--decor decor-pattern"></div>
+					<picture>
+						<source srcset="img/index/check-price/check-price-image.avif" type="image/avif">
+						<source srcset="img/index/check-price/check-price-image.webp" type="image/webp">
+						<img src="img/index/check-price/check-price-image.png" alt="" width="400" height="627" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<form method="post" class="check-price__form form">
+				<h2 class="check-price__title title">
+					дізнайся вартість своєї роботи
+				</h2>
+				<div class="check-price__text">
+					<b>Вкажи тему своєї роботи й ми запропонуємо тобі вигідну ціну</b>
+				</div>
+				<div class="check-price__form--wrapper">
+					<div class="select">
+						<select name="type-work" required>
+							<option value="" disabled selected>Виберіть вид роботи</option>
+							<option value="bachelors">Бакалаврська</option>
+							<option value="masters">Магістерська</option>
+							<option value="abstract">Реферат</option>
+							<option value="coursework">Курсова</option>
+						</select>
+					</div>
+					<label>
+						<input type="text" id="topic-work" name="topic-work" placeholder="Тема роботи" class="input" required>
+					</label>
+					<label class="radio">
+						<input type="radio" name="not-topic" value="true" data-for="#topic-work" class="radio-input">
+						<span class="radio-element"></span>
+						<span class="radio-text">Не знаю тему роботи</span>
+					</label>
+					<label>
+						<input type="text" name="your-name" required placeholder="Ваше ім'я" class="input">
+					</label>
+					<label>
+						<input type="tel" name="phone" required class="input tel" data-arrow-path="img/sprites.svg#select-arrow">
+					</label>
+				</div>
+				<button class="check-price__form--submit btn" type="submit">
+					Дізнатись вартість
+				</button>
+			</form>
+		</section>
+		<section class="process container section-gray">
+			<h2 class="process__title title">
+				Порядок написання
+			</h2>
+			<ul class="process__list">
+				@@loop("html/_process.html", [
+					{
+						"text": 'Разработка плана по Вашей теме, утверждение научным руководителем',
+					},
+					{
+						"text": 'Изучение литературы, обработка информации, выполнение практической части',
+					},
+					{
+						"text": 'Сдача дипломной работы бакалавра этапами, до момента полной оплаты',
+					},
+					{
+						"text": 'После вычитки текста, ставятся ссылки на литературу',
+					},
+					{
+						"text": 'Корректируются вступление и выводы; Добавляются приложения (додатки), если нужно',
+					},
+					{
+						"text": 'Исправление по замечаниям преподавателя',
+					},
+				])
+			</ul>
+		</section>
+		<section class="tariffs container">
+			<h2 class="tariffs__title title">
+				Вартість роботи
+			</h2>
+			<div class="tariffs__slider swiper">
+				<div class="tariffs__slider--wrapper swiper-wrapper">
+					<div class="tariffs__slider--slide tariffs__slide swiper-slide">
+						<h3 class="tariffs__slide--name">
+							економ
+						</h3>
+						<h3 class="tariffs__slide--price">
+							Від 5900 грн
+						</h3>
+						<div class="tariffs__slide--text">
+							<b>
+								Ідеально для тих кому достатньо отримати задовільний бал
+							</b>
+						</div>
+						<ul class="tariffs__slide--list">
+							@@loop("html/_tariffs-list-item.html", [
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Розробка плану',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Теоретична, практична частини + література та додатки',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Унікальність до 70% (перевірка в AntiPlagiarism + звіт)',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Автор середнього рівня',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Оплата по 50%',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Безкоштовні правки впродовж 3 тижнів після здачі роботи',
+								},
+								{
+									"icon": 'list-close',
+									"class": 'disabled',
+									"text": 'Презентація й доповідь на захист',
+								},
+								{
+									"icon": 'list-close',
+									"class": 'disabled',
+									"text": 'Написання статті і допомога у публікації',
+								},
+								{
+									"icon": 'list-close',
+									"class": 'disabled',
+									"text": 'Розстрочка оплати (до 4х платежів)',
+								},
+							])
+						</ul>
+						<button class="tariffs__slide--list-more" data-open-text="Показати більше" data-close-text="Показати менше" aria-label="Показати більше" type="button">
+							<span>Показати більше</span>
+							<svg width="16" height="16" viewBox="0 0 16 16">
+								<use xlink:href="img/sprites.svg#select-arrow"></use>
+							</svg>
+						</button>
+						<div class="tariffs__slide--footer">
+							<a href="#" class="tariffs__slide--btn btn">
+								Замовити
+							</a>
+						</div>
+					</div>
+					<div class="tariffs__slider--slide tariffs__slide swiper-slide checked">
+						<h3 class="tariffs__slide--name">
+							Стандарт
+						</h3>
+						<h3 class="tariffs__slide--price">
+							від 8500 грн
+						</h3>
+						<div class="tariffs__slide--text">
+							<b>
+								Ідеально для тих, хто розраховує отримати високий бал
+							</b>
+						</div>
+						<ul class="tariffs__slide--list">
+							@@loop("html/_tariffs-list-item.html", [
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Розробка плану',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Теоретична, практична частини + література та додатки',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Унікальність від <mark>80%</mark> (перевірка в <mark>AntiPlagiarism</mark> + звіт)',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Автор <mark>високого</mark> рівня (викладач/спеціаліст в галузі)',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Презентація й доповідь на захист',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Розстрочка оплати (до 4х платежів)',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Безкоштовні правки впродовж <mark>3 місяців</mark> після здачі роботи',
+								},
+								{
+									"icon": 'list-close',
+									"class": 'disabled',
+									"text": 'Написання статті і допомога у публікації',
+								},
+							])
+						</ul>
+						<button class="tariffs__slide--list-more" data-open-text="Показати більше" data-close-text="Показати менше" aria-label="Показати більше" type="button">
+							<span>Показати більше</span>
+							<svg width="16" height="16" viewBox="0 0 16 16">
+								<use xlink:href="img/sprites.svg#select-arrow"></use>
+							</svg>
+						</button>
+						<div class="tariffs__slide--footer">
+							<a href="#" class="tariffs__slide--btn btn">
+								Замовити
+							</a>
+						</div>
+					</div>
+					<div class="tariffs__slider--slide tariffs__slide swiper-slide">
+						<h3 class="tariffs__slide--name">
+							преміум
+						</h3>
+						<h3 class="tariffs__slide--price">
+							від 19000 грн
+						</h3>
+						<div class="tariffs__slide--text">
+							<b>
+								Ідеально для тих, хто йде на червоний диплом
+							</b>
+						</div>
+						<ul class="tariffs__slide--list">
+							@@loop("html/_tariffs-list-item.html", [
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Розробка плану',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Теоретична, практична частини + література та додатки',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Унікальність від <mark>80%</mark> (перевірка в ТОП програмі <mark>Unickeck</mark> + звіт)',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Автор <mark>найвищого</mark> рівня (викладач/кандидат наук)',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Презентація й доповідь на захист',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": '<mark>Написання статті і допомога у публікації</mark>',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Розстрочка оплати (до 4х платежів)',
+								},
+								{
+									"icon": 'list-check',
+									"class": '',
+									"text": 'Безкоштовні правки до захисту <mark>(безстроково)</mark>',
+								},
+							])
+						</ul>
+						<button class="tariffs__slide--list-more" data-open-text="Показати більше" data-close-text="Показати менше" aria-label="Показати більше" type="button">
+							<span>Показати більше</span>
+							<svg width="16" height="16" viewBox="0 0 16 16">
+								<use xlink:href="img/sprites.svg#select-arrow"></use>
+							</svg>
+						</button>
+						<div class="tariffs__slide--footer">
+							<a href="#" class="tariffs__slide--btn btn">
+								Замовити
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="tariffs__slider--pagination swiper-pagination pagination"></div>
+			</div>
+		</section>
+		<section class="include-price container">
+			<h2 class="include-price__title title">
+				що входить у вартість
+			</h2>
+			<ul class="include-price__list">
+				@@loop("html/_include-price.html", [
+					{
+						"image": '1',
+						"title": 'Оформленный по стандартам ',
+						"text": 'уникальный текст, с ссылками на источники, вступлением, выводами и нумерацией',
+					},
+					{
+						"image": '2',
+						"title": 'розробка плану',
+						"text": 'текст про розробку плану',
+					},
+					{
+						"image": '3',
+						"title": 'Разработку практической части',
+						"text": 'в зависимости от специальности: расчеты, чертежи, цифры по предприятию, эмпирика, программный продукт, графические материалы и т.д',
+					},
+					{
+						"image": '4',
+						"title": 'Проверка текста на плагиат ',
+						"text": 'и предоставление отчета',
+					},
+					{
+						"image": '5',
+						"title": 'ПРИЛОЖЕНИЕ К ДИПЛОМУ',
+						"text": 'при необходимости (на укр. – додатки)',
+					},
+					{
+						"image": '6',
+						"title": 'Сопровождение до получения оценки ',
+						"text": 'доработки, правки по замечаниям преподавателя',
+					},
+
+				])
+			</ul>
+			<div class="include-price__footer">
+				<h3 class="include-price__bonus">Бонус до пакету стандарт та преміум:</h3>
+				<b class="min-title">Презентация и доклад к защите </b>
+			</div>
+		</section>
+		<section class="subjects container section-accent-gray">
+			<div class="subjects__decor-pattern decor-pattern-2" aria-hidden="true"></div>
+			<h2 class="subjects__title title">
+				ПИШЕМО РОБОТИ З УСІХ ПРЕДМЕТІВ, НАПРИКЛАД:
+			</h2>
+			<div class="subjects__slider swiper">
+				<div class="subjects__slider--wrapper swiper-wrapper">
+					@@loop("html/_subject.html", [
+						{
+							"name": 'готельний бізнес',
+						},
+						{
+							"name": 'сільське господарство',
+						},
+						{
+							"name": 'кримінальне право',
+						},
+						{
+							"name": 'бухгалтерський облік',
+						},
+						{
+							"name": 'теорія машин і механізмів',
+						},
+						{
+							"name": 'педагогіка',
+						},
+						{
+							"name": 'інформаційні системи',
+						},
+						{
+							"name": 'іноземна філологія',
+						},
+						{
+							"name": 'українська мова',
+						},
+						{
+							"name": 'економіка підприємства',
+						},
+						{
+							"name": 'цивільне будівництво',
+						},
+						{
+							"name": 'інженерія програмного забезпечення',
+						},
+						{
+							"name": 'фармацевтика',
+						},
+					])
+				</div>
+				<div class="subjects__slider--pagination swiper-pagination pagination"></div>
+			</div>
+		</section>
+		<section class="examples-works container">
+			<h2 class="examples-works__title title">
+				реальні приклади виконаних робіт
+			</h2>
+			<div class="examples-works__slider swiper">
+				<div class="examples-works__slider--wrapper swiper-wrapper">
+					@@loop("html/_example-work.html", [
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+					])
+				</div>
+				<div class="examples-works__slider--footer">
+					<div class="examples-works__slider--pagination swiper-pagination pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section class="faq container">
+			<h2 class="faq__title title">
+				Ответы на вопросы
+			</h2>
+			<ul class="faq__list">
+				@@loop("html/_faq-item.html", [
+					{
+						"question": 'Кто будет писать мою дипломную?',
+						"answear": 'Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.',
+					},
+					{
+						"question": 'Могу ли я заказать дипломную работу в срочном порядке?',
+						"answear": 'Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.',
+					},
+					{
+						"question": 'Мне нужна уникальная работа, Вы справитесь?',
+						"answear": 'Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.',
+					},
+				])
+			</ul>
+			<ul class="faq__list">
+				@@loop("html/_faq-item.html", [
+					{
+						"question": 'Вносите ли Вы правки в работе?',
+						"answear": 'Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.',
+					},
+					{
+						"question": 'Как оплачивается заказ?',
+						"answear": 'Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.',
+					},
+					{
+						"question": 'Какие гарантии я получаю?',
+						"answear": 'Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.',
+					},
+				])
+			</ul>
+		</section>
+		<section class="offer container">
+			<div class="offer__body section-accent">
+				<div class="offer__content">
+					<h2 class="offer__title title">
+						Все ще вагаєшся? Лови чудову пропозицію!
+					</h2>
+					<div class="offer__text">
+						<b>
+							Заповнюй заявку й ми напишемо тобі план дипломної та вступ aбсолютно безкоштовно
+						</b>
+					</div>
+					<form method="post" class="offer__form form">
+						<label>
+							<input type="text" name="your-name" placeholder="Ваше ім'я" required class="input">
+						</label>
+						<label>
+							<input type="tel" name="phone" required data-arrow-path="img/sprites.svg#select-arrow" class="input tel">
+						</label>
+						<div class="offer__form--footer">
+							<button class="offer__form--submit btn" type="submit">
+								Отримати план та вступ
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="offer__image">
+					<div class="offer__image--body image-body">
+						<picture>
+							<source srcset="img/index/offer/offer-image.avif" type="image/avif">
+							<source srcset="img/index/offer/offer-image.webp" type="image/webp">
+							<img src="img/index/offer/offer-image.png" alt="" width="523" height="430" loading="lazy">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-company container">
+			<div class="about-company__block">
+				<h2 class="about-company__title title">
+					Заказать бакалаврскую работу в компании <mark>Writer Works</mark>
+				</h2>
+				<div class="about-company__image">
+					<div class="about-company__image--body image-body">
+						<div class="about-company__image--decor decor-pattern" aria-hidden="true"></div>
+						<picture>
+							<source srcset="img/index/about-company/about-company-image-1.avif" type="image/avif">
+							<source srcset="img/index/about-company/about-company-image-1.webp" type="image/webp">
+							<img src="img/index/about-company/about-company-image-1.png" alt="" width="420" height="550" loading="lazy">
+						</picture>
+					</div>
+				</div>
+				<div class="about-company__content content">
+					<p>
+						Мы всегда предлагаем умеренные цены на написание дипломных, которые по карману любому студенту. <br>
+						Почему? – в нашем штате авторов есть разные исполнители, как специалисты с огромным опытом, так и менее компетентные люди. Соответственно, стоимость бакалаврских также отличается, в зависимости от качества написания.  
+					</p>
+					<p>
+						Дипломная работа бакалавра дает право на получение базового высшего образования, после которого студент принимает решение, поступать на магистратуру или нет. 
+					</p>
+					<p>
+						Довольно часто бывает, что научный руководитель выдвигает слишком строгие требования, или студент работает и не имеет времени на написание. <br> 
+						В таком случае мы всегда готовы помочь и написать бакалаврскую. 
+					</p>
+					<p>
+						В штате компании Райтер Воркс числятся профессиональные преподаватели и специалисты-практики, которые владеют всеми тонкостями Вашей темы.
+					</p>
+				</div>
+			</div>
+			<div class="about-company__block">
+				<div class="about-company__image">
+					<div class="about-company__image--body image-body">
+						<div class="about-company__image--decor decor-pattern" aria-hidden="true"></div>
+						<picture>
+							<source srcset="img/index/about-company/about-company-image-2.avif" type="image/avif">
+							<source srcset="img/index/about-company/about-company-image-2.webp" type="image/webp">
+							<img src="img/index/about-company/about-company-image-2.png" alt="" width="540" height="526" loading="lazy">
+						</picture>
+					</div>
+				</div>
+				<div class="about-company__content content">
+					<p>
+						Практически Все они имеют опыт написания дипломных бакалаврских свыше 10 лет и используют данные из новейших, релевантных источников. 
+					</p>
+					<p>
+						Купить бакалаврскую работу в компании <mark>Writer Works</mark> — значит получить труд, который соответствует государственным стандартам и особенно Вашим личным пожеланиям и требованиям научного руководителя. 
+					</p>
+					<p>
+						Вы можете заказать дипломную работу бакалавра по таким направлениям:
+					</p>
+					<ul>
+						<li>
+							Гуманитарные науки
+						</li>
+						<li>
+							Экономика и финансы
+						</li>
+						<li>
+							Технические науки
+						</li>
+						<li>
+							Право
+						</li>
+						<li>
+							Иностранные языки
+						</li>
+						<li>
+							Программирование
+						</li>
+						<li>
+							Точные науки
+						</li>
+						<li>
+							Другое
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="price container">
+			<h2 class="price__title title">
+				Сколько стоит купить бакалаврскую работу 
+			</h2>
+			<table class="price__table">
+				<colgroup>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>
+							страницы
+						</td>
+						<td>
+							40-60 стр.
+						</td>
+						<td>
+							70+ стр.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Время выполнения
+						</td>
+						<td colspan="2">
+							21+ дней
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Срочность Работы
+						</td>
+						<td colspan="2">
+							до 7 дней <br>
+							<mark>+60 % к цене</mark>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Гуманитарные науки
+						</td>
+						<td>
+							~3200 грн
+						</td>
+						<td>
+							~3200 грн
+						</td>
+					</tr>
+					<tr>
+						<td>
+
+						</td>
+						<td>
+							~3200 грн
+						</td>
+						<td>
+							~3200 грн
+						</td>
+					</tr>
+					<tr>
+						<td>
+							техника
+						</td>
+						<td>
+							~3200 грн
+						</td>
+						<td>
+							~3200 грн
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Программирование
+						</td>
+						<td>
+							~3200 грн
+						</td>
+						<td>
+							~3200 грн
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Медицина
+						</td>
+						<td>
+							~3200 грн
+						</td>
+						<td>
+							~3200 грн
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Иностранный язык
+						</td>
+						<td>
+							~3200 грн
+						</td>
+						<td>
+							~3200 грн
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Гуманитарные науки
+						</td>
+						<td>
+							~3200 грн
+						</td>
+						<td>
+							~3200 грн
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="price-process container">
+			<h2 class="price-process__title title">
+				порядок оплаты
+			</h2>
+			<div class="price-process__text">
+				<p>
+					Чтобы купить бакалаврскую, необходимо пройти такие этапы:
+				</p>
+			</div>
+			<ul class="price-process__list process-list">
+				@@loop("html/_price-process-item.html", [
+					{
+						"title": 'Оставляете заявку',
+						"text": 'Менеджер формирует заказ, получая от вас необходимую информацию',
+					},
+					{
+						"title": 'Оплата и качество',
+						"text": 'Вы вносите предоплату в оговоренном размере',
+					},
+					{
+						"title": 'Написание работы',
+						"text": 'Выполняем часть работы, соответствующую размеру оплаты (25/33/50/100 %)',
+					},
+					{
+						"title": 'Сдача работы',
+						"text": 'Работа сдается вам после внесения последней части оплаты',
+					},
+				])
+			</ul>
+		</section>
+		<section class="guarantees container">
+			<h2 class="guarantees__title title">
+				Гарантия
+			</h2>
+			<div class="guarantees__slider swiper">
+				<div class="guarantees__slider--wrapper swiper-wrapper">
+					@@loop("html/_guarantees-item.html", [
+						{
+							"image": '1',
+							"title": 'Неизменное качество',
+							"text_1": "Каждая бакалаврская работа на заказ пишется строго по требованиям, специалистом в тематике — мы скрупулезно относимся к отбору авторов, за каждого несем ответственность. Это позволяет большинству наших заказчиков получать высший балл на защите. ",
+							"text_2": "Если сдали проект плохого качества – обязуемся вернуть деньги!",
+						},
+						{
+							"image": '2',
+							"title": 'Всегда в срок',
+							"text_1": "Чтобы Вы имели достаточно времени на внесение правок и подготовку, мы часто сдаем работу даже раньше назначенной даты. ",
+							"text_2": "Время клиентов нам дорого, поэтому, в случае просрочки, гарантируем денежное возмещение за каждый пропущенный день.",
+						},
+						{
+							"image": '3',
+							"title": 'Сопровождение',
+							"text_1": "Мы доводим до конца каждый заказ, поскольку для нас качество и сервис – важнее всего. По этой причине, все правки и замечания выполняются нашими специалистами бесплатно до самой защиты. ",
+							"text_2": "При этом, у нас нет понятия “гарантийный срок”, будем вносить исправления даже через год после написания.",
+						},
+					])
+				</div>
+				<div class="guarantees__slider--pagination swiper-pagination pagination"></div>
+			</div>
+		</section>
+		<section class="check-price-2 container section-accent">
+			<div class="check-price-2__decor decor-pattern-2" aria-hidden="true"></div>
+			<h2 class="check-price-2__title title">
+				дізнайся вартість своєї роботи 
+			</h2>
+			<div class="check-price-2__text">
+				<b>
+					Вкажи тему своєї роботи й ми запропонуємо тобі вигідну ціну
+				</b>
+			</div>
+			<form method="post" class="check-price-2__form form">
+				<div class="check-price-2__form--select select">
+					<select name="type-work" required>
+						<option value="" disabled selected>Виберіть вид роботи</option>
+						<option value="bachelors">Бакалаврська</option>
+						<option value="masters">Магістерська</option>
+						<option value="abstract">Реферат</option>
+						<option value="coursework">Курсова</option>
+					</select>
+				</div>
+				<div class="check-price-2__form--element form-element">
+					<label>
+						<input type="text" id="topic-work-2" name="topic-work" placeholder="Тема роботи" class="input" required>
+					</label>
+					<label class="radio">
+						<input type="radio" name="not-topic" value="true" data-for="#topic-work-2" class="radio-input">
+						<span class="radio-element"></span>
+						<span class="radio-text">Не знаю тему роботи</span>
+					</label>
+				</div>
+				<label>
+					<input type="text" name="your-name" required placeholder="Ваше ім'я" class="input">
+				</label>
+				<label>
+					<input type="tel" name="phone" required class="input tel" data-arrow-path="img/sprites.svg#select-arrow">
+				</label>
+				<div class="check-price-2__form--footer">
+					<button class="check-price-2__form--submit btn" type="submit">
+						Дізнатись вартість
+					</button>
+				</div>
+			</form>
+		</section>
+		<section class="choose-city container">
+			<h2 class="choose-city__title title">
+				оберіть своє місто
+			</h2>
+			<div class="choose-city__slider swiper">
+				<div class="choose-city__slider--wrapper swiper-wrapper">
+					<div class="choose-city__slider--slide choose-city__slide swiper-slide">
+						<ul class="choose-city__list">
+							<li>
+								<u>Київ</u>
+							</li>
+							<li>
+								<u>Івано-Франківськ</u>
+							</li>
+							<li>
+								<u>Одеса</u>
+							</li>
+							<li>
+								<u>Ужгород</u>
+							</li>
+							<li>
+								<u>Чернівці</u>
+							</li>
+						</ul>
+					</div>
+					@@loop("html/_choose-city-item.html", [
+						{
+							"city_1": 'Вінниця',
+							"city_2": 'Кропивницький',
+							"city_3": 'Полтава',
+							"city_4": 'Харків',
+						},
+						{
+							"city_1": 'Дніпро',
+							"city_2": 'Луганськ',
+							"city_3": 'Рівне',
+							"city_4": 'Херсон',
+						},
+						{
+							"city_1": 'Донецьк',
+							"city_2": 'Луцьк',
+							"city_3": 'Сімферополь',
+							"city_4": 'Хмельницький',
+						},
+						{
+							"city_1": 'Житомир',
+							"city_2": 'Львів',
+							"city_3": 'Суми',
+							"city_4": 'Черкаси',
+						},
+						{
+							"city_1": 'Запоріжжя',
+							"city_2": 'Миколаїв',
+							"city_3": 'Тернопіль',
+							"city_4": 'Чернігів',
+						},
+					])
+				</div>
+				<div class="choose-city__slider--pagination swiper-pagination pagination"></div>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

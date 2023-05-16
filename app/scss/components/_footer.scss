@@ -1,0 +1,291 @@
+.footer {
+
+	flex: 0 0 auto;
+
+	display: grid;
+	
+	@include _768 {
+		padding-top: 100px; padding-bottom: 100px;
+		grid-template-columns: 222px auto auto;
+	}
+
+	@include _992 {
+		grid-template-columns: 222px auto minmax(250px, 360px);
+	}
+	//gap: 0 84px;
+
+	background: #212121;
+
+	padding-top: 60px; padding-bottom: 60px;
+
+	// .footer__logo
+
+	&__logo {
+
+		@include _992 {
+			grid-column: 1;
+		}
+
+		// .footer__logo--img
+
+		&--img {
+		}
+	}
+
+	// .footer__contacts
+
+	&__contacts {
+
+		margin-top: 30px;
+
+		@include _768 {
+			grid-column: 3; grid-row: 2;
+			padding-left: 25px; margin-top: 50px;
+			justify-self: self-end;
+		}
+
+		@include _992 {
+			grid-column: 1; grid-row: auto;
+			padding-left: 0;
+			justify-self: stretch;
+		}
+
+		// .footer__contacts--list
+
+		&--list {
+			a {
+				font-size: 0.9375rem;
+				line-height: 120%;
+
+				color: #FFFFFF;
+
+				opacity: 0.8;
+				&[href*="mailto"] {
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+	// .footer__block
+
+	&__block {
+
+		// .footer__block--title
+
+		&--title {
+			color: var(--white);
+
+			font-weight: 500;
+			@include _768 {
+				font-weight: 600;
+			}
+			line-height: 125%;
+		}
+
+		// .footer__block--list
+
+		&--list {
+			margin-top: 20px;
+
+			li {
+				&:not(:first-child) {
+					margin-top: 8px;
+				}
+
+				a {
+					display: block;
+					font-size: 0.9375rem;
+					line-height: 120%;
+
+					color: #FFFFFF;
+
+					transition: color .1s ease, opacity .1s ease;
+					&:hover {
+						color: var(--accent-hover);
+						opacity: 1;
+					}
+					
+					&:active {
+						color: var(--accent);
+					}
+				}
+			}
+		}
+	}
+
+	// .footer__social
+
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: -7.5px; padding-top: 10px;
+
+		li {
+			margin: 7.5px;
+			
+			
+
+
+		}
+
+		a {
+			fill: var(--white);
+			svg {
+				transition: fill .2s ease;
+			}
+			&:hover {
+				fill: var(--accent-hover);
+			}
+			
+			&:active {
+				fill: var(--accent);
+			}
+		}
+	}
+
+	// .footer__nav
+
+	&__nav {
+
+		margin-top: 30px;
+
+		display: grid;
+		@media (min-width: 420px) {
+			grid-template-columns: auto auto;
+			
+		}
+
+		gap: 30px;
+
+		@include _768 {
+			grid-column: 2/4;
+			padding-left: 72px;
+			margin-top: 0;
+			gap: 52px;
+		}
+
+		@include _992 {
+			grid-column: 2; grid-row: 1/4;
+			padding-left: 84px; padding-right: 30px;
+		}
+
+		
+
+		// .footer__nav--block
+
+		&--block {
+			
+			@include _768 {
+				justify-self: self-end;
+			}
+
+			@include _992 {
+				justify-self: stretch;
+			}
+		}
+	}
+
+	// .footer__feedback
+
+	&__feedback {
+
+		margin-top: 30px;
+
+		@include _768 {
+			grid-column: 2 span; grid-row: 2;
+			max-width: 360px;
+			margin-top: 50px;
+		}
+
+		@include _992 {
+			grid-column: 3; grid-row: 1/4;
+			max-width: none;
+			margin-top: 0;
+		}
+
+		color: var(--white);
+
+		// .footer__feedback--title
+
+		&--title {
+
+			font-size: 1rem;
+			font-weight: 600;
+			
+			@include _768 {
+				font-size: 1.375rem;
+			}
+
+			line-height: 127.272727%;
+			text-transform: uppercase;
+		}
+
+		// .footer__feedback--text
+
+		&--text {
+			padding-top: 15px;
+			@include _768 {
+				padding-top: 20px;
+			}
+			b {
+				opacity: .8;
+				font-size: 0.875rem;
+				font-weight: 500;
+				line-height: 125%;
+				@include _768 {
+					font-weight: 600;
+					font-size: 1rem;
+				}
+			}
+		}
+
+		// .footer__feedback--form
+
+		&--form {
+
+			[type="submit"] {
+				margin-top: 30px;
+
+				border: 2px solid #FFFFFF;
+				filter: drop-shadow(0px 4px 20px rgba(255, 103, 22, 0.43));
+				border-radius: 14px;
+
+				display: inline-block;
+				padding: 20px 40px;
+
+				line-height: 125%;
+				text-align: center;
+				color: #FFFFFF;
+				font-weight: 700;
+
+				background: transparent;
+
+				transition: border-color .3s ease, background .3s ease;
+				&:hover {
+					background: var(--accent-hover-2);
+					border-color: var(--accent-hover-2);
+				}
+				
+				&:active {
+					background: var(--accent);
+					border-color: var(--accent);
+				}
+			}
+
+			label {
+				display: block;
+				margin-top: 16px;
+			}
+
+			.iti__arrow svg {
+				fill: var(--white);
+			}
+
+			.iti__country-list {
+				background: #222;
+			}
+		}
+	}
+}

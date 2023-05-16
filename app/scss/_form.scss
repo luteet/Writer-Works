@@ -1,0 +1,171 @@
+input, textarea {
+	&::placeholder {
+		transition: opacity .2s ease;
+		opacity: 1;
+	}
+	
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+.select {
+	position: relative;
+}
+
+.select select {
+	display: block !important;
+	position: absolute;
+	left: 50%; top: 50%;
+	width: 1px; height: 1px;
+	margin: -1px; padding: 0;
+	border: 0;
+	
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.input {
+	padding: 15.4px 16px;
+	width: 100%;
+
+	border: 0.5px solid #000000;
+	border-radius: 8px;
+
+	font-weight: 500;
+	font-size: 0.9375rem;
+
+	background: transparent;
+
+	&._light {
+		border-color: var(--white);
+		color: var(--white);
+		&::placeholder {
+			color: var(--white);
+		}
+	}
+
+	transition: border-color .2s ease, color .2s ease;
+	&.error {
+		border: 0.5px solid var(--danger);
+		color: var(--danger);
+		&::placeholder {
+			color: var(--danger);
+		}
+	}
+
+	&::placeholder {
+		color: var(--black);
+		font-weight: 300;
+	}
+}
+
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=tel], .iti--allow-dropdown input[type=text], .iti--separate-dial-code input, .iti--separate-dial-code input[type=tel], .iti--separate-dial-code input[type=text] {
+	padding-left: 65px;
+}
+
+.ss-content .ss-search input:focus, .ss-main:focus {
+	box-shadow: none;
+}
+
+.ss-main .ss-arrow {
+	width: 8px; height: 8px;
+	margin: auto 0 auto 10px;
+}
+
+.ss-main {
+	padding: 12px 15px;
+
+	border: 0.5px solid rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	background: transparent;
+}
+
+.ss-content {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 10px rgba(215, 214, 236, 0.39);
+	border: 0;
+}
+
+.ss-content .ss-list .ss-option.ss-highlighted, .ss-content .ss-list .ss-option:hover, .ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+	background: transparent;
+	color: var(--accent);
+}
+
+.ss-option {
+	transition: color .2s ease;
+}
+
+.ss-main .ss-values {
+	flex: none;
+}
+
+.ss-main .ss-values .ss-single {
+	font-weight: 300;
+}
+
+.iti__arrow {
+	border: 0;
+	width: 16px; height: 16px;
+
+}
+
+.iti {
+	width: 100%;
+}
+
+.radio {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+
+	cursor: pointer;
+
+	&:hover &-element {
+		border-color: var(--accent-hover);
+	}
+
+	&-input {
+		position: absolute;
+		left: 50%; top: 50%;
+		width: 1px; height: 1px;
+		margin: -1px; padding: 0;
+		border: 0;
+		
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+
+	&-input:checked + &-element {
+		background: var(--accent);
+		border-color: var(--accent);
+	}
+
+	&-input:disabled + &-element {
+		background: transparent;
+		border-color: gray;
+	}
+
+	&-input:disabled + &-element + &-text {
+		color: gray;
+	}
+
+	&-element {
+		margin-right: 5px;
+
+		display: block;
+		width: 12px; height: 12px;
+		border-radius: 50%;
+
+		border: 2px solid #000000;
+		transition: border-color .2s ease, background .2s ease;
+	}
+
+	&-text {
+		transition: color .2s ease;
+	}
+}

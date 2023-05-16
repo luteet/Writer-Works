@@ -1,0 +1,106 @@
+
+@font-face {
+	@include font-include('Montserrat', 300, swap, normal, 'Montserrat-Light');
+}
+
+@font-face {
+	@include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
+}
+
+@font-face {
+	@include font-include('Montserrat', 500, swap, normal, 'Montserrat-Medium');
+}
+
+@font-face {
+	@include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}
+
+@font-face {
+	@include font-include('Montserrat', 700, swap, normal, 'Montserrat-Bold');
+}
+
+.main-title {
+	font-family: var(--title-font);
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 122.580645%;
+
+	font-size: 1.625rem; // 26px
+
+	@include _768 {
+		font-size: 2.5rem; // 40px
+	}
+
+	@include _992 {
+		font-size: 3.875rem; // 62px
+	}
+}
+
+.title {
+	
+	font-family: var(--title-font);
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 121.052632%;
+
+	font-size: 1.375rem; // 22px
+
+	@include _768 {
+		font-size: 1.75rem; // 28px
+	}
+
+	@include _992 {
+		font-size: 2.375rem; // 38px
+	}
+
+}
+
+.content {
+	h2 {
+		font-family: var(--title-font);
+		text-transform: uppercase;
+		font-weight: 600;
+		line-height: 121.052632%;
+
+		font-size: 1.375rem; // 22px
+
+		@include _768 {
+			font-size: 1.75rem; // 28px
+		}
+
+		@include _992 {
+			font-size: 2.375rem; // 38px
+		}
+	}
+
+	p {
+		padding-top: 18px;
+
+		font-size: 0.9375rem;
+		line-height: 120%;
+
+		//opacity: 1;
+	}
+}
+
+.min-title {
+	font-weight: 700;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+mark {
+	background: transparent;
+	color: var(--accent);
+}
+
+/* .section-title {
+
+	font-family: var(--title-font);
+	font-weight: 700;
+
+} */
+
+.txt-center {
+	text-align: center;
+}

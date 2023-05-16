@@ -1,0 +1,74 @@
+.choose-city {
+
+	padding-top: 60px; padding-bottom: 60px;
+
+	@include _768 {
+		padding-top: 100px; padding-bottom: 100px;
+	}
+
+	// .choose-city__title
+
+	&__title {
+	}
+
+	// .choose-city__slider
+
+	&__slider {
+
+		margin-top: 30px;
+
+		@include _768 {
+			margin-top: 0;
+		}
+
+		@include _992 {
+			margin-top: 20px;
+		}
+
+		&.swiper-grid-column>.swiper-wrapper {
+			flex-direction: row;
+		}
+
+		// .choose-city__slider--wrapper
+
+		&--wrapper {
+			@include _768 {
+				flex-wrap: wrap;
+			}
+		}
+
+		// .choose-city__slider--slide
+
+		&--slide {
+			
+			margin-right: 10px;
+			@include _768 {
+				margin-top: 30px;
+				width: auto;
+				flex: 0 1 20%;
+			}
+
+			@include _992 {
+				flex: 0 1 calc(16.66667% - 10px);
+			}
+		}
+
+		// .choose-city__slider--pagination
+
+		&--pagination {
+			@include _768 {
+				display: none;
+			}
+		}
+	}
+
+	// .choose-city__slide
+
+	&__slide {
+	}
+
+	// .choose-city__list
+
+	&__list {
+	}
+}
