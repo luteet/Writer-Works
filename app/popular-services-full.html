@@ -1,0 +1,87 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<div class="breadcrumbs container">
+			<ul>
+				<li>
+					<a href="#">
+						Главная 
+					</a>
+				</li>
+				<li>
+					<span class="breadcrumbs-separator"></span>
+				</li>
+				<li>
+					<a href="#">
+						Найпопулярніші послуги студентам
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section class="top-services container section-start">
+			<h1 class="top-services__title title">
+				найпопулярніші послуги студентам
+			</h1>
+			<ul class="top-services__list services-list">
+				@@loop("html/_service-card.html", [
+					{
+						"image": '1',
+						"title": 'Заказать бакалаврскую работу в Украине',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '2',
+						"title": 'Заказать магистерскую диссертацию в Украине',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '3',
+						"title": 'Курсовая работа на заказ недорого',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '4',
+						"title": 'Заказать отчет по практике в Украине ',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '5',
+						"title": 'Заказать отчет по практике в Украине ',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '6',
+						"title": 'Заказать отчет по практике в Украине ',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '7',
+						"title": 'Курсовая работа на заказ недорого',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '8',
+						"title": 'Заказать отчет по практике в Украине ',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '9',
+						"title": 'Заказать бакалаврскую работу в Украине',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '10',
+						"title": 'Заказать магистерскую диссертацию в Украине',
+						"price": 'від 4000 грн',
+					},
+					{
+						"image": '11',
+						"title": 'Курсовая работа на заказ недорого',
+						"price": 'від 4000 грн',
+					},
+				])
+			</ul>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

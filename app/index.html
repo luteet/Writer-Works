@@ -1,219 +1,10 @@
 @@include("html/_header.html")
 
 	<main class="main">
-		<section class="hero container">
-			<div class="hero__content">
-				<h1 class="hero__title main-title">
-					замовити <mark>бакалаврську роботу</mark> в україні
-				</h1>
-				<div class="hero__text">
-					<p>
-						Дізнайтесь вартість роботи та отримайте план безкоштовно
-					</p>
-				</div>
-				<div class="hero__nav">
-					<a href="#" class="hero__btn btn">
-						Заповнити форму
-					</a>
-					<a href="#" class="hero__btn btn _transparent">
-						Розрахувати ціну
-						<svg width="32" height="25" viewBox="0 0 32 25" style="--fill: #0088CC;">
-							<use xlink:href="img/sprites.svg#telegram"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<ul class="hero__list">
-				<li>
-					<b class="min-title">
-						Найзручніша оплата, від 25%
-					</b>
-				</li>
-				<li>
-					<b class="min-title">
-						План та вступ – без передоплати
-					</b>
-				</li>
-				<li>
-					<b class="min-title">
-						У подарунок презентація й доповідь на захист
-					</b>
-				</li>
-			</ul>
-			<div class="hero__image">
-				<div class="hero__image--decor-pattern decor-pattern"></div>
-				<div class="hero__image--body image-body">
-					<picture>
-						<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
-						<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
-						<img src="img/index/hero/index-hero-image.png" alt="" width="651" height="941" loading="lazy">
-					</picture>
-				</div>
-				<img src="img/index/hero/index-hero-image-deror.svg" width="0" height="0" loading="lazy" alt="" class="hero__image--decor">
-			</div>
-		</section>
-		<section class="advantages container">
-			<h2 class="advantages__title title">
-				Наші переваги
-			</h2>
-			<ul class="advantages__list">
-				@@loop("html/_advantage.html", [
-					{
-						"image": '1',
-						"title": 'Четкие гарантии',
-						"text": 'Возврат средств за работу плохого качества',
-					},
-					{
-						"image": '2',
-						"title": 'Удобная оплата',
-						"text": 'Вносите деньги частями по 50% или 25%',
-					},
-					{
-						"image": '3',
-						"title": 'Авторы – специалисты',
-						"text": 'Ваш заказ напишет настоящий эксперт в тематике',
-					},
-					{
-						"image": '4',
-						"title": 'Полное сопровождение',
-						"text": 'Бесплатно внесем правки до самой защиты',
-					}
-				])
-			</ul>
-		</section>
-		<section class="statistic container section-accent">
-			<div class="statistic__decor-pattern decor-pattern-2"></div>
-			<ul class="statistic__list">
-				<li>
-					<h2 class="statistic__title title">
-						КОРОТКО про НАС В ЦИФРАХ
-					</h2>
-				</li>
-				@@loop("html/_statistic.html", [
-					{
-						"value": '4+',
-						"text": 'роки допомагаємо студентам у навчанні',
-					},
-					{
-						"value": '30+',
-						"text": 'послуг надаємо',
-					},
-					{
-						"value": '150+',
-						"text": 'предметів, за якими пишемо роботи',
-					},
-					{
-						"value": '6+',
-						"text": 'років — середній стаж роботи наших авторів',
-					},
-					{
-						"value": '2000+',
-						"text": 'робіт виконуємо щороку',
-					},
-				])
-			</ul>
-		</section>
-		<section class="we-work container section-gray">
-			<h2 class="we-work__title title">
-				ми працюємо на результат
-			</h2>
-			<div class="we-work__row">
-				<div class="we-work__col">
-					<div class="we-work__statistic">
-						<strong>60%</strong>
-						<b>клиентов рекомендуют нас своим друзьям</b>
-					</div>
-					<div class="we-work__slider swiper">
-						<div class="we-work__slider--wrapper swiper-wrapper">
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-						</div>
-						<div class="we-work__pagination swiper-pagination pagination"></div>
-					</div>
-				</div>
-				<div class="we-work__col">
-					<div class="we-work__statistic">
-						<strong>70%</strong>
-						<b>клиентов обращаются к нам повторно</b>
-					</div>
-					<div class="we-work__slider swiper">
-						<div class="we-work__slider--wrapper swiper-wrapper">
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-							<div class="we-work__slider--slide we-work__slide swiper-slide">
-								<div class="we-work__slide--image image-body">
-									<picture>
-										<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
-										<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
-										<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
-									</picture>
-								</div>
-							</div>
-						</div>
-						<div class="we-work__pagination swiper-pagination pagination"></div>
-					</div>
-				</div>
-			</div>
-		</section>
+		@@include("html/_hero.html")
+		@@include("html/_advantages.html")
+		@@include("html/_statistic.html")
+		@@include("html/_we-work.html")
 		<section class="check-price container section-accent-on-mob">
 			<div class="check-price__image">
 				<div class="check-price__image--body image-body">
@@ -262,33 +53,7 @@
 				</button>
 			</form>
 		</section>
-		<section class="process container section-gray">
-			<h2 class="process__title title">
-				Порядок написання
-			</h2>
-			<ul class="process__list">
-				@@loop("html/_process.html", [
-					{
-						"text": 'Разработка плана по Вашей теме, утверждение научным руководителем',
-					},
-					{
-						"text": 'Изучение литературы, обработка информации, выполнение практической части',
-					},
-					{
-						"text": 'Сдача дипломной работы бакалавра этапами, до момента полной оплаты',
-					},
-					{
-						"text": 'После вычитки текста, ставятся ссылки на литературу',
-					},
-					{
-						"text": 'Корректируются вступление и выводы; Добавляются приложения (додатки), если нужно',
-					},
-					{
-						"text": 'Исправление по замечаниям преподавателя',
-					},
-				])
-			</ul>
-		</section>
+		@@include("html/_process.html")
 		<section class="tariffs container">
 			<h2 class="tariffs__title title">
 				Вартість роботи
@@ -559,7 +324,7 @@
 			</h2>
 			<div class="subjects__slider swiper">
 				<div class="subjects__slider--wrapper swiper-wrapper">
-					@@loop("html/_subject.html", [
+					@@loop("html/_subject-item.html", [
 						{
 							"name": 'готельний бізнес',
 						},

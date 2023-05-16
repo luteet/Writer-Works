@@ -168,6 +168,22 @@
 		</footer>
 	</div>
 
+	<script>
+		// =-=-=-=-=-=-=-=-=-=- <image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
+
+		const imageBody = document.querySelectorAll('.image-body, figure');
+		imageBody.forEach(imageBody => {
+			const img = imageBody.querySelector('img'), style = getComputedStyle(imageBody);
+			if(img) {
+				if(img.getAttribute('width') && img.getAttribute('height') && style.position == "relative")
+				imageBody.style.paddingTop = Number(img.getAttribute('height')) / Number(img.getAttribute('width')) * 100 + '%';
+			}
+			
+		})
+
+		// =-=-=-=-=-=-=-=-=-=- </image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
+	</script>
+
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 

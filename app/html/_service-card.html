@@ -1,0 +1,29 @@
+<li class="top-services__card service-card">
+	<div class="service-card__image">
+		<picture>
+			<source srcset="img/service-card/service-card-image-@@image.avif" type="image/avif">
+			<source srcset="img/service-card/service-card-image-@@image.webp" type="image/webp">
+			<img src="img/service-card/service-card-image-@@image.png" alt="" width="400" height="505" loading="lazy">
+		</picture>
+	</div>
+	<div class="service-card__content">
+		<h3 class="service-card__title">
+			@@title
+		</h3>
+		<mark class="service-card__price">
+			@@price			
+		</mark>
+		<a href="#" class="service-card__btn btn">
+			Замовити в 1 клік
+			<svg width="24" height="24" viewBox="0 0 24 24">
+				<use xlink:href="img/sprites.svg#click"></use>
+			</svg>
+		</a>
+		<a href="#" class="service-card__etc" aria-label="Детальніше">
+			<span data-label="Детальніше">Детальніше</span>
+			<svg width="24" height="24" viewBox="0 0 24 24" class="gradient-mode">
+				<use xlink:href="img/sprites.svg#arrow-next"></use>
+			</svg>
+		</a>
+	</div>
+</li>

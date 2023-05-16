@@ -1,7 +1,27 @@
-<li>
-	<div class="process__number process-number"></div>
-	<div class="process__line process-line">
-		<canvas></canvas>
-	</div>
-	<div class="process__text">@@text</div>
-</li>
+<section class="process container section-gray">
+	<h2 class="process__title title">
+		Порядок написання
+	</h2>
+	<ul class="process__list">
+		@@loop("_process-item.html", [
+			{
+				"text": 'Разработка плана по Вашей теме, утверждение научным руководителем',
+			},
+			{
+				"text": 'Изучение литературы, обработка информации, выполнение практической части',
+			},
+			{
+				"text": 'Сдача дипломной работы бакалавра этапами, до момента полной оплаты',
+			},
+			{
+				"text": 'После вычитки текста, ставятся ссылки на литературу',
+			},
+			{
+				"text": 'Корректируются вступление и выводы; Добавляются приложения (додатки), если нужно',
+			},
+			{
+				"text": 'Исправление по замечаниям преподавателя',
+			},
+		])
+	</ul>
+</section>

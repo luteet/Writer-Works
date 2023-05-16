@@ -1,4 +1,32 @@
-<li>
-	<strong>@@value</strong>
-	<b>@@text</b>
-</li>
+<section class="statistic container section-accent">
+	<div class="statistic__decor-pattern decor-pattern-2"></div>
+	<ul class="statistic__list">
+		<li>
+			<h2 class="statistic__title title">
+				КОРОТКО про НАС В ЦИФРАХ
+			</h2>
+		</li>
+		@@loop("_statistic-item.html", [
+			{
+				"value": '4+',
+				"text": 'роки допомагаємо студентам у навчанні',
+			},
+			{
+				"value": '30+',
+				"text": 'послуг надаємо',
+			},
+			{
+				"value": '150+',
+				"text": 'предметів, за якими пишемо роботи',
+			},
+			{
+				"value": '6+',
+				"text": 'років — середній стаж роботи наших авторів',
+			},
+			{
+				"value": '2000+',
+				"text": 'робіт виконуємо щороку',
+			},
+		])
+	</ul>
+</section>

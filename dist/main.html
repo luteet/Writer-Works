@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style-critical.min.css">
+	<link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'; this.onload=null;">
+	<script>
+		document.querySelector('html').style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+	</script>
+</head>
+
+<body>
+
+	<svg class="gradient-svg" width="0" height="0" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="accent-gradient" x1="11.7163" y1="8.96622" x2="4.0018" y2="8.08877" gradientUnits="userSpaceOnUse"">
+				<stop offset=" 0" stop-color="#000000" />
+			<stop offset="1" stop-color="#000000" />
+			</linearGradient>
+		</defs>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header container">
+			<a href="index.html" class="header__logo">
+				<img src="img/logo.svg" alt="Логотип" width="160" height="50" loading="lazy" class="header__logo--img">
+			</a>
+			<nav class="header__nav">
+				<div class="header__nav--body">
+					<ul class="header__nav--list">
+						<li>
+							<a href="#" aria-label="Послуги">
+								<span data-label="Послуги">Послуги</span>
+								<svg width="16" height="16" viewBox="0 0 16 16" class="gradient-mode">
+									<use xlink:href="img/sprites.svg#select-arrow"></use>
+								</svg>
+							</a>
+							<ul>
+								<li>
+									<a href="#" aria-label="Студентам">
+										<span data-label="Студентам">Студентам</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" class="gradient-mode">
+											<use xlink:href="img/sprites.svg#select-arrow"></use>
+										</svg>
+									</a>
+									<ul>
+										<li>
+											<a href="#" aria-label="Дисертація">
+												<span data-label="Дисертація">Дисертація</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Монографія">
+												<span data-label="Монографія">Монографія</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Стаття ВАК">
+												<span data-label="Стаття">Стаття ВАК</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Тезиси">
+												<span data-label="Тезиси">Тезиси</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" aria-label="Вченим">
+										<span data-label="Вченим">Вченим</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" class="gradient-mode">
+											<use xlink:href="img/sprites.svg#select-arrow"></use>
+										</svg>
+									</a>
+									<ul>
+										<li>
+											<a href="#" aria-label="Дисертація">
+												<span data-label="Дисертація">Дисертація</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Монографія">
+												<span data-label="Монографія">Монографія</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Стаття ВАК">
+												<span data-label="Стаття">Стаття ВАК</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Тезиси">
+												<span data-label="Тезиси">Тезиси</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" aria-label="Інше">
+										<span data-label="Інше">Інше</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" class="gradient-mode">
+											<use xlink:href="img/sprites.svg#select-arrow"></use>
+										</svg>
+									</a>
+									<ul>
+										<li>
+											<a href="#" aria-label="Дисертація">
+												<span data-label="Дисертація">Дисертація</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Монографія">
+												<span data-label="Монографія">Монографія</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Стаття ВАК">
+												<span data-label="Стаття">Стаття ВАК</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Тезиси">
+												<span data-label="Тезиси">Тезиси</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" aria-label="Про нас">
+								<span data-label="Про нас">Про нас</span>
+								<svg width="16" height="16" viewBox="0 0 16 16" class="gradient-mode">
+									<use xlink:href="img/sprites.svg#select-arrow"></use>
+								</svg>
+							</a>
+							<ul>
+								<li>
+									<a href="#" aria-label="Студентам">
+										<span data-label="Студентам">Хто ми</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Вченим">
+										<span data-label="Вченим">Оплата і гарантії</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" aria-label="Відгуки">
+								<span data-label="Відгуки">Відгуки</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Контакти">
+								<span data-label="Контакти">Контакти</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Вакансії">
+								<span data-label="Вакансії">Вакансії</span>
+							</a>
+						</li>
+					</ul>
+					<div class="header__add">
+						<div class="header__lang-place">
+							<div class="header__lang" data-append-to=".header__desktop-lang-place">
+								<ul>
+									<li>
+										<a href="#" class="current">
+											RU
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											UA
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__contacts-place">
+							<div class="header__contacts" data-append-to=".header__desktop-contacts-place">
+								<ul>
+									<li>
+										<span>Пн-Вс: 10:00-19:00</span>
+									</li>
+									<li>
+										<a href="tel:+380968834789" aria-label="+380 (96) 883 47 89">
+											<svg width="20" height="20" viewBox="0 0 20 20" class="gradient-mode">
+												<use xlink:href="img/sprites.svg#phone"></use>
+											</svg>
+											<span data-label="+380 (96) 883 47 89">+380 (96) 883 47 89</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__social">
+							<ul>
+								<li>
+									<a href="#" title="Instagram">
+										<svg width="35" height="25" viewBox="0 0 30 30">
+											<use xlink:href="img/sprites.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Viber">
+										<svg width="35" height="25" viewBox="0 0 30 30">
+											<use xlink:href="img/sprites.svg#viber"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Telegram">
+										<svg width="35" height="25" viewBox="0 0 35 25">
+											<use xlink:href="img/sprites.svg#telegram"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="header__desktop-add">
+				<div class="header__desktop-lang-place"></div>
+				<div class="header__desktop-contacts-place"></div>
+			</div>
+			<button class="header__burger" type="button" aria-label="Навигация">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</header>
+
+		<main class="main">
+			<section class="hero container">
+				<div class="hero__content">
+					<h1 class="hero__title main-title">
+						замовити <mark>бакалаврську роботу</mark> в україні
+					</h1>
+					<div class="hero__text">
+						<p>
+							Дізнайтесь вартість роботи та отримайте план безкоштовно
+						</p>
+					</div>
+					<div class="hero__nav">
+						<a href="#" class="hero__btn btn">
+							Заповнити форму
+						</a>
+						<a href="#" class="hero__btn btn _transparent">
+							Розрахувати ціну
+							<svg width="32" height="25" viewBox="0 0 32 25" style="--fill: #0088CC;">
+								<use xlink:href="img/sprites.svg#telegram"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<ul class="hero__list">
+					<li>
+						<b class="min-title">
+							Найзручніша оплата, від 25%
+						</b>
+					</li>
+					<li>
+						<b class="min-title">
+							План та вступ – без передоплати
+						</b>
+					</li>
+					<li>
+						<b class="min-title">
+							У подарунок презентація й доповідь на захист
+						</b>
+					</li>
+				</ul>
+				<div class="hero__image">
+					<div class="hero__image--decor-pattern decor-pattern"></div>
+					<div class="hero__image--body image-body">
+						<picture>
+							<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
+							<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
+							<img src="img/index/hero/index-hero-image.png" alt="" width="651" height="941" loading="lazy">
+						</picture>
+					</div>
+					<img src="img/index/hero/index-hero-image-deror.svg" width="0" height="0" loading="lazy" alt="" class="hero__image--decor">
+				</div>
+			</section>
+			<section class="advantages container">
+				<h2 class="advantages__title title">
+					Наші переваги
+				</h2>
+				<ul class="advantages__list">
+					<li>
+						<img src="img/index/advantages/advantages-image-1.svg" width="95" height="95" loading="lazy" alt="">
+						<h3 class="min-title">
+							Четкие гарантии
+						</h3>
+						<p>
+							Возврат средств за работу плохого качества
+						</p>
+					</li>
+					<li>
+						<img src="img/index/advantages/advantages-image-2.svg" width="95" height="95" loading="lazy" alt="">
+						<h3 class="min-title">
+							Удобная оплата
+						</h3>
+						<p>
+							Вносите деньги частями по 50% или 25%
+						</p>
+					</li>
+					<li>
+						<img src="img/index/advantages/advantages-image-3.svg" width="95" height="95" loading="lazy" alt="">
+						<h3 class="min-title">
+							Авторы – специалисты
+						</h3>
+						<p>
+							Ваш заказ напишет настоящий эксперт в тематике
+						</p>
+					</li>
+					<li>
+						<img src="img/index/advantages/advantages-image-4.svg" width="95" height="95" loading="lazy" alt="">
+						<h3 class="min-title">
+							Полное сопровождение
+						</h3>
+						<p>
+							Бесплатно внесем правки до самой защиты
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section class="statistic container section-accent">
+				<div class="statistic__decor-pattern decor-pattern-2"></div>
+				<ul class="statistic__list">
+					<li>
+						<h2 class="statistic__title title">
+							КОРОТКО про НАС В ЦИФРАХ
+						</h2>
+					</li>
+					<li>
+						<strong>4+</strong>
+						<b>роки допомагаємо студентам у навчанні</b>
+					</li>
+					<li>
+						<strong>30+</strong>
+						<b>послуг надаємо</b>
+					</li>
+					<li>
+						<strong>150+</strong>
+						<b>предметів, за якими пишемо роботи</b>
+					</li>
+					<li>
+						<strong>6+</strong>
+						<b>років — середній стаж роботи наших авторів</b>
+					</li>
+					<li>
+						<strong>2000+</strong>
+						<b>робіт виконуємо щороку</b>
+					</li>
+				</ul>
+			</section>
+			<section class="we-work container section-gray">
+				<h2 class="we-work__title title">
+					ми працюємо на результат
+				</h2>
+				<div class="we-work__row">
+					<div class="we-work__col">
+						<div class="we-work__statistic">
+							<strong>60%</strong>
+							<b>клиентов рекомендуют нас своим друзьям</b>
+						</div>
+						<div class="we-work__slider swiper">
+							<div class="we-work__slider--wrapper swiper-wrapper">
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="we-work__pagination swiper-pagination pagination"></div>
+						</div>
+					</div>
+					<div class="we-work__col">
+						<div class="we-work__statistic">
+							<strong>70%</strong>
+							<b>клиентов обращаются к нам повторно</b>
+						</div>
+						<div class="we-work__slider swiper">
+							<div class="we-work__slider--wrapper swiper-wrapper">
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-2.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-2.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-2.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+								<div class="we-work__slider--slide we-work__slide swiper-slide">
+									<div class="we-work__slide--image image-body">
+										<picture>
+											<source srcset="img/index/statistic/statistic-slider-image-1.avif" type="image/avif">
+											<source srcset="img/index/statistic/statistic-slider-image-1.webp" type="image/webp">
+											<img src="img/index/statistic/statistic-slider-image-1.png" alt="" width="458" height="316" loading="lazy">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="we-work__pagination swiper-pagination pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="process container section-gray">
+				<h2 class="process__title title">
+					Порядок написання
+				</h2>
+				<ul class="process__list">
+					<li>
+						<div class="process__number process-number"></div>
+						<div class="process__line process-line">
+							<canvas></canvas>
+						</div>
+						<div class="process__text">Разработка плана по Вашей теме, утверждение научным руководителем</div>
+					</li>
+					<li>
+						<div class="process__number process-number"></div>
+						<div class="process__line process-line">
+							<canvas></canvas>
+						</div>
+						<div class="process__text">Изучение литературы, обработка информации, выполнение практической части</div>
+					</li>
+					<li>
+						<div class="process__number process-number"></div>
+						<div class="process__line process-line">
+							<canvas></canvas>
+						</div>
+						<div class="process__text">Сдача дипломной работы бакалавра этапами, до момента полной оплаты</div>
+					</li>
+					<li>
+						<div class="process__number process-number"></div>
+						<div class="process__line process-line">
+							<canvas></canvas>
+						</div>
+						<div class="process__text">После вычитки текста, ставятся ссылки на литературу</div>
+					</li>
+					<li>
+						<div class="process__number process-number"></div>
+						<div class="process__line process-line">
+							<canvas></canvas>
+						</div>
+						<div class="process__text">Корректируются вступление и выводы; Добавляются приложения (додатки), если нужно</div>
+					</li>
+					<li>
+						<div class="process__number process-number"></div>
+						<div class="process__line process-line">
+							<canvas></canvas>
+						</div>
+						<div class="process__text">Исправление по замечаниям преподавателя</div>
+					</li>
+				</ul>
+			</section>
+			<section class="top-services container section-padding">
+				<h2 class="top-services__title title">
+					топ послуги
+				</h2>
+				<ul class="top-services__list services-list">
+					<li class="top-services__card service-card">
+						<div class="service-card__image">
+							<picture>
+								<source srcset="img/service-card/service-card-image-1.avif" type="image/avif">
+								<source srcset="img/service-card/service-card-image-1.webp" type="image/webp">
+								<img src="img/service-card/service-card-image-1.png" alt="" width="400" height="505" loading="lazy">
+							</picture>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">
+								Заказать бакалаврскую работу в Украине
+							</h3>
+							<mark class="service-card__price">
+								від 4000 грн
+							</mark>
+							<a href="#" class="service-card__btn btn">
+								Замовити в 1 клік
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#click"></use>
+								</svg>
+							</a>
+							<a href="#" class="service-card__etc" aria-label="Детальніше">
+								<span data-label="Детальніше">Детальніше</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" class="gradient-mode">
+									<use xlink:href="img/sprites.svg#arrow-next"></use>
+								</svg>
+							</a>
+						</div>
+					</li>
+					<li class="top-services__card service-card">
+						<div class="service-card__image">
+							<picture>
+								<source srcset="img/service-card/service-card-image-2.avif" type="image/avif">
+								<source srcset="img/service-card/service-card-image-2.webp" type="image/webp">
+								<img src="img/service-card/service-card-image-2.png" alt="" width="400" height="505" loading="lazy">
+							</picture>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">
+								Заказать магистерскую диссертацию в Украине
+							</h3>
+							<mark class="service-card__price">
+								від 4000 грн
+							</mark>
+							<a href="#" class="service-card__btn btn">
+								Замовити в 1 клік
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#click"></use>
+								</svg>
+							</a>
+							<a href="#" class="service-card__etc" aria-label="Детальніше">
+								<span data-label="Детальніше">Детальніше</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" class="gradient-mode">
+									<use xlink:href="img/sprites.svg#arrow-next"></use>
+								</svg>
+							</a>
+						</div>
+					</li>
+					<li class="top-services__card service-card">
+						<div class="service-card__image">
+							<picture>
+								<source srcset="img/service-card/service-card-image-3.avif" type="image/avif">
+								<source srcset="img/service-card/service-card-image-3.webp" type="image/webp">
+								<img src="img/service-card/service-card-image-3.png" alt="" width="400" height="505" loading="lazy">
+							</picture>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">
+								Курсовая работа на заказ недорого
+							</h3>
+							<mark class="service-card__price">
+								від 4000 грн
+							</mark>
+							<a href="#" class="service-card__btn btn">
+								Замовити в 1 клік
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#click"></use>
+								</svg>
+							</a>
+							<a href="#" class="service-card__etc" aria-label="Детальніше">
+								<span data-label="Детальніше">Детальніше</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" class="gradient-mode">
+									<use xlink:href="img/sprites.svg#arrow-next"></use>
+								</svg>
+							</a>
+						</div>
+					</li>
+					<li class="top-services__card service-card">
+						<div class="service-card__image">
+							<picture>
+								<source srcset="img/service-card/service-card-image-4.avif" type="image/avif">
+								<source srcset="img/service-card/service-card-image-4.webp" type="image/webp">
+								<img src="img/service-card/service-card-image-4.png" alt="" width="400" height="505" loading="lazy">
+							</picture>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">
+								Заказать отчет по практике в Украине
+							</h3>
+							<mark class="service-card__price">
+								від 4000 грн
+							</mark>
+							<a href="#" class="service-card__btn btn">
+								Замовити в 1 клік
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<use xlink:href="img/sprites.svg#click"></use>
+								</svg>
+							</a>
+							<a href="#" class="service-card__etc" aria-label="Детальніше">
+								<span data-label="Детальніше">Детальніше</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" class="gradient-mode">
+									<use xlink:href="img/sprites.svg#arrow-next"></use>
+								</svg>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="top-services__footer">
+					<a href="#" class="top-services__btn btn _transparent">
+						Показати всі послуги
+					</a>
+				</div>
+			</section>
+			<section class="flexible-pricing container">
+				<h2 class="flexible-pricing__title title">
+					гибкая система ценообразования
+				</h2>
+				<div class="flexible-pricing__text">
+					<b>
+						Для усіх робіт, окрім дипломних та магістерських
+					</b>
+				</div>
+				<div class="flexible-pricing__tab-nav">
+					<a href="#mid-level" class="flexible-pricing__tab-nav--btn" aria-label="Работа среднего уровня удовлетварительный балл">
+						<b>Работа среднего уровня</b>
+						<span>удовлетварительный балл</span>
+					</a>
+					<a href="#height-level" class="flexible-pricing__tab-nav--btn _active" aria-label="Работа высокого уровня на пять баллов">
+						<b>Работа высокого уровня</b>
+						<span>на пять баллов </span>
+					</a>
+				</div>
+				<div class="flexible-pricing__tab-wrapper">
+					<div class="flexible-pricing__tab-block" id="mid-level">
+						<ul class="flexible-pricing__list">
+							<li>
+								<img src="img/index/flexible-pricing/image-4.svg" width="95" height="95" loading="lazy" alt="">
+								<b>В подарок презентация и доклад к защите работы</b>
+							</li>
+							<li>
+								<img src="img/index/flexible-pricing/image-1.svg" width="95" height="95" loading="lazy" alt="">
+								<b>Работа пишетстя топ специалистом в вашей темататике</b>
+							</li>
+							<li>
+								<img src="img/index/flexible-pricing/image-2.svg" width="95" height="95" loading="lazy" alt="">
+								<b>Оригинальность 80+ Глубокое расскрытие темы и от 80%</b>
+							</li>
+							<li>
+								<img src="img/index/flexible-pricing/image-3.svg" width="95" height="95" loading="lazy" alt="">
+								<b>Правки бесплатные. Сроки не ограничены</b>
+							</li>
+						</ul>
+					</div>
+					<div class="flexible-pricing__tab-block _active" id="height-level">
+						<ul class="flexible-pricing__list">
+							<li>
+								<img src="img/index/flexible-pricing/image-1.svg" width="95" height="95" loading="lazy" alt="">
+								<b>Работа пишетстя топ специалистом в вашей темататике</b>
+							</li>
+							<li>
+								<img src="img/index/flexible-pricing/image-2.svg" width="95" height="95" loading="lazy" alt="">
+								<b>Оригинальность 80+ Глубокое расскрытие темы и от 80%</b>
+							</li>
+							<li>
+								<img src="img/index/flexible-pricing/image-3.svg" width="95" height="95" loading="lazy" alt="">
+								<b>Правки бесплатные. Сроки не ограничены</b>
+							</li>
+							<li>
+								<img src="img/index/flexible-pricing/image-4.svg" width="95" height="95" loading="lazy" alt="">
+								<b>В подарок презентация и доклад к защите работы</b>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="include-price container">
+				<h2 class="include-price__title title">
+					що входить у вартість
+				</h2>
+				<ul class="include-price__list">
+					<li>
+						<img src="img/index/include-price/include-price-image-1.svg" width="65" height="65" loading="lazy" alt="" class="include-price__image">
+						<h3 class="min-title">Оформленный по стандартам </h3>
+						<p>уникальный текст, с ссылками на источники, вступлением, выводами и нумерацией</p>
+					</li>
+					<li>
+						<img src="img/index/include-price/include-price-image-2.svg" width="65" height="65" loading="lazy" alt="" class="include-price__image">
+						<h3 class="min-title">розробка плану</h3>
+						<p>текст про розробку плану</p>
+					</li>
+					<li>
+						<img src="img/index/include-price/include-price-image-3.svg" width="65" height="65" loading="lazy" alt="" class="include-price__image">
+						<h3 class="min-title">Разработку практической части</h3>
+						<p>в зависимости от специальности: расчеты, чертежи, цифры по предприятию, эмпирика, программный продукт, графические материалы и т.д</p>
+					</li>
+					<li>
+						<img src="img/index/include-price/include-price-image-4.svg" width="65" height="65" loading="lazy" alt="" class="include-price__image">
+						<h3 class="min-title">Проверка текста на плагиат </h3>
+						<p>и предоставление отчета</p>
+					</li>
+					<li>
+						<img src="img/index/include-price/include-price-image-5.svg" width="65" height="65" loading="lazy" alt="" class="include-price__image">
+						<h3 class="min-title">ПРИЛОЖЕНИЕ К ДИПЛОМУ</h3>
+						<p>при необходимости (на укр. – додатки)</p>
+					</li>
+					<li>
+						<img src="img/index/include-price/include-price-image-6.svg" width="65" height="65" loading="lazy" alt="" class="include-price__image">
+						<h3 class="min-title">Сопровождение до получения оценки </h3>
+						<p>доработки, правки по замечаниям преподавателя</p>
+					</li>
+				</ul>
+				<div class="include-price__footer">
+					<h3 class="include-price__bonus">Бонус до пакету стандарт та преміум:</h3>
+					<b class="min-title">Презентация и доклад к защите </b>
+				</div>
+			</section>
+			<section class="subjects container section-accent-gray">
+				<div class="subjects__decor-pattern decor-pattern-2" aria-hidden="true"></div>
+				<h2 class="subjects__title title">
+					ПИШЕМО РОБОТИ З УСІХ ПРЕДМЕТІВ, НАПРИКЛАД:
+				</h2>
+				<div class="subjects__slider swiper">
+					<div class="subjects__slider--wrapper swiper-wrapper">
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								готельний бізнес
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								сільське господарство
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								кримінальне право
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								бухгалтерський облік
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								теорія машин і механізмів
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								педагогіка
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								інформаційні системи
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								іноземна філологія
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								українська мова
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								економіка підприємства
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								цивільне будівництво
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								інженерія програмного забезпечення
+							</u>
+						</div>
+						<div class="subjects__slider--element subjects__element swiper-slide">
+							<u class="subjects__element--name min-title">
+								фармацевтика
+							</u>
+						</div>
+					</div>
+					<div class="subjects__slider--pagination swiper-pagination pagination"></div>
+				</div>
+			</section>
+			<section class="examples-works container">
+				<h2 class="examples-works__title title">
+					реальні приклади виконаних робіт
+				</h2>
+				<div class="examples-works__slider swiper">
+					<div class="examples-works__slider--wrapper swiper-wrapper">
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+						<div class="examples-works__slide swiper-slide">
+							<div class="examples-works__slide--content">
+								<div class="examples-works__slide--number" data-number="01">
+									09
+								</div>
+								<ul class="examples-works__slide--info">
+									<li>
+										<b>Вид работы:</b>
+										<span>Реферат</span>
+									</li>
+									<li>
+										<b>Специальность:</b>
+										<span>Фармация</span>
+									</li>
+									<li>
+										<b>Тема:</b>
+										<span>Органические вещества листьев подорожника</span>
+									</li>
+									<li>
+										<b>Срок написания:</b>
+										<span>2 дня</span>
+									</li>
+									<li>
+										<b>Страницы:</b>
+										<span>20</span>
+									</li>
+									<li>
+										<b>Уникальность работы:</b>
+										<span>90%</span>
+									</li>
+								</ul>
+								<div class="examples-works__slide--footer">
+									<a href="#" class="examples-works__slide--btn btn _transparent">
+										Переглянути фрагмент роботи
+									</a>
+								</div>
+							</div>
+							<div class="examples-works__slide--image">
+								<div class="examples-works__slide--image-decor decor-pattern" aria-hidden="true"></div>
+								<div class="examples-works__slide--image-body image-body">
+									<picture>
+										<source srcset="img/index/works/works-image.avif" type="image/avif">
+										<source srcset="img/index/works/works-image.webp" type="image/webp">
+										<img src="img/index/works/works-image.png" alt="" width="500" height="613" loading="lazy">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="examples-works__slider--footer">
+						<div class="examples-works__slider--pagination swiper-pagination pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="faq container">
+				<h2 class="faq__title title">
+					Ответы на вопросы
+				</h2>
+				<ul class="faq__list">
+					<li class="faq__item">
+						<h3 class="faq__item--question">
+							Кто будет писать мою дипломную?
+						</h3>
+						<div class="faq__item--answear">
+							<p>
+								Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+							</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--question">
+							Могу ли я заказать дипломную работу в срочном порядке?
+						</h3>
+						<div class="faq__item--answear">
+							<p>
+								Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+							</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--question">
+							Мне нужна уникальная работа, Вы справитесь?
+						</h3>
+						<div class="faq__item--answear">
+							<p>
+								Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="faq__list">
+					<li class="faq__item">
+						<h3 class="faq__item--question">
+							Вносите ли Вы правки в работе?
+						</h3>
+						<div class="faq__item--answear">
+							<p>
+								Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+							</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--question">
+							Как оплачивается заказ?
+						</h3>
+						<div class="faq__item--answear">
+							<p>
+								Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+							</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--question">
+							Какие гарантии я получаю?
+						</h3>
+						<div class="faq__item--answear">
+							<p>
+								Каждую дипломную у нас выполняет специалист отдельной области наук, зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="offer container">
+				<div class="offer__body section-accent">
+					<div class="offer__content">
+						<h2 class="offer__title title">
+							Все ще вагаєшся? Лови чудову пропозицію!
+						</h2>
+						<div class="offer__text">
+							<b>
+								Заповнюй заявку й ми напишемо тобі план дипломної та вступ aбсолютно безкоштовно
+							</b>
+						</div>
+						<form method="post" class="offer__form form">
+							<label>
+								<input type="text" name="your-name" placeholder="Ваше ім'я" required class="input">
+							</label>
+							<label>
+								<input type="tel" name="phone" required data-arrow-path="img/sprites.svg#select-arrow" class="input tel">
+							</label>
+							<div class="offer__form--footer">
+								<button class="offer__form--submit btn" type="submit">
+									Отримати план та вступ
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="offer__image">
+						<div class="offer__image--body image-body">
+							<picture>
+								<source srcset="img/index/offer/offer-image.avif" type="image/avif">
+								<source srcset="img/index/offer/offer-image.webp" type="image/webp">
+								<img src="img/index/offer/offer-image.png" alt="" width="523" height="430" loading="lazy">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-company container">
+				<div class="about-company__block">
+					<h2 class="about-company__title title">
+						Заказать бакалаврскую работу в компании <mark>Writer Works</mark>
+					</h2>
+					<div class="about-company__image">
+						<div class="about-company__image--body image-body">
+							<div class="about-company__image--decor decor-pattern" aria-hidden="true"></div>
+							<picture>
+								<source srcset="img/index/about-company/about-company-image-1.avif" type="image/avif">
+								<source srcset="img/index/about-company/about-company-image-1.webp" type="image/webp">
+								<img src="img/index/about-company/about-company-image-1.png" alt="" width="420" height="550" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<div class="about-company__content content">
+						<p>
+							Мы всегда предлагаем умеренные цены на написание дипломных, которые по карману любому студенту. <br>
+							Почему? – в нашем штате авторов есть разные исполнители, как специалисты с огромным опытом, так и менее компетентные люди. Соответственно, стоимость бакалаврских также отличается, в зависимости от качества написания.
+						</p>
+						<p>
+							Дипломная работа бакалавра дает право на получение базового высшего образования, после которого студент принимает решение, поступать на магистратуру или нет.
+						</p>
+						<p>
+							Довольно часто бывает, что научный руководитель выдвигает слишком строгие требования, или студент работает и не имеет времени на написание. <br>
+							В таком случае мы всегда готовы помочь и написать бакалаврскую.
+						</p>
+						<p>
+							В штате компании Райтер Воркс числятся профессиональные преподаватели и специалисты-практики, которые владеют всеми тонкостями Вашей темы.
+						</p>
+					</div>
+				</div>
+				<div class="about-company__block">
+					<div class="about-company__image">
+						<div class="about-company__image--body image-body">
+							<div class="about-company__image--decor decor-pattern" aria-hidden="true"></div>
+							<picture>
+								<source srcset="img/index/about-company/about-company-image-2.avif" type="image/avif">
+								<source srcset="img/index/about-company/about-company-image-2.webp" type="image/webp">
+								<img src="img/index/about-company/about-company-image-2.png" alt="" width="540" height="526" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<div class="about-company__content content">
+						<p>
+							Практически Все они имеют опыт написания дипломных бакалаврских свыше 10 лет и используют данные из новейших, релевантных источников.
+						</p>
+						<p>
+							Купить бакалаврскую работу в компании <mark>Writer Works</mark> — значит получить труд, который соответствует государственным стандартам и особенно Вашим личным пожеланиям и требованиям научного руководителя.
+						</p>
+						<p>
+							Вы можете заказать дипломную работу бакалавра по таким направлениям:
+						</p>
+						<ul>
+							<li>
+								Гуманитарные науки
+							</li>
+							<li>
+								Экономика и финансы
+							</li>
+							<li>
+								Технические науки
+							</li>
+							<li>
+								Право
+							</li>
+							<li>
+								Иностранные языки
+							</li>
+							<li>
+								Программирование
+							</li>
+							<li>
+								Точные науки
+							</li>
+							<li>
+								Другое
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="price container">
+				<h2 class="price__title title">
+					Сколько стоит купить бакалаврскую работу
+				</h2>
+				<table class="price__table">
+					<colgroup>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>
+								страницы
+							</td>
+							<td>
+								40-60 стр.
+							</td>
+							<td>
+								70+ стр.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Время выполнения
+							</td>
+							<td colspan="2">
+								21+ дней
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Срочность Работы
+							</td>
+							<td colspan="2">
+								до 7 дней <br>
+								<mark>+60 % к цене</mark>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Гуманитарные науки
+							</td>
+							<td>
+								~3200 грн
+							</td>
+							<td>
+								~3200 грн
+							</td>
+						</tr>
+						<tr>
+							<td>
+
+							</td>
+							<td>
+								~3200 грн
+							</td>
+							<td>
+								~3200 грн
+							</td>
+						</tr>
+						<tr>
+							<td>
+								техника
+							</td>
+							<td>
+								~3200 грн
+							</td>
+							<td>
+								~3200 грн
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Программирование
+							</td>
+							<td>
+								~3200 грн
+							</td>
+							<td>
+								~3200 грн
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Медицина
+							</td>
+							<td>
+								~3200 грн
+							</td>
+							<td>
+								~3200 грн
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Иностранный язык
+							</td>
+							<td>
+								~3200 грн
+							</td>
+							<td>
+								~3200 грн
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Гуманитарные науки
+							</td>
+							<td>
+								~3200 грн
+							</td>
+							<td>
+								~3200 грн
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section class="price-process container">
+				<h2 class="price-process__title title">
+					порядок оплаты
+				</h2>
+				<div class="price-process__text">
+					<p>
+						Чтобы купить бакалаврскую, необходимо пройти такие этапы:
+					</p>
+				</div>
+				<ul class="price-process__list process-list">
+					<li class="price-process__item">
+						<div class="price-process__item--number process-number"></div>
+						<div class="price-process__item--line process-line">
+							<canvas></canvas>
+						</div>
+						<h3 class="price-process__item--title min-title">Оставляете заявку</h3>
+						<div class="price-process__item--text">
+							<p>
+								Менеджер формирует заказ, получая от вас необходимую информацию
+							</p>
+						</div>
+					</li>
+					<li class="price-process__item">
+						<div class="price-process__item--number process-number"></div>
+						<div class="price-process__item--line process-line">
+							<canvas></canvas>
+						</div>
+						<h3 class="price-process__item--title min-title">Оплата и качество</h3>
+						<div class="price-process__item--text">
+							<p>
+								Вы вносите предоплату в оговоренном размере
+							</p>
+						</div>
+					</li>
+					<li class="price-process__item">
+						<div class="price-process__item--number process-number"></div>
+						<div class="price-process__item--line process-line">
+							<canvas></canvas>
+						</div>
+						<h3 class="price-process__item--title min-title">Написание работы</h3>
+						<div class="price-process__item--text">
+							<p>
+								Выполняем часть работы, соответствующую размеру оплаты (25/33/50/100 %)
+							</p>
+						</div>
+					</li>
+					<li class="price-process__item">
+						<div class="price-process__item--number process-number"></div>
+						<div class="price-process__item--line process-line">
+							<canvas></canvas>
+						</div>
+						<h3 class="price-process__item--title min-title">Сдача работы</h3>
+						<div class="price-process__item--text">
+							<p>
+								Работа сдается вам после внесения последней части оплаты
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="guarantees container">
+				<h2 class="guarantees__title title">
+					Гарантия
+				</h2>
+				<div class="guarantees__slider swiper">
+					<div class="guarantees__slider--wrapper swiper-wrapper">
+						<div class="guarantees__slider--slide guarantees__slide swiper-slide">
+							<img src="img/index/guarantees/guarantees-image-1.svg" width="72" height="72" loading="lazy" alt="" class="guarantees__slide--image">
+							<h3 class="guarantees__slide--title min-title">Неизменное качество</h3>
+							<div class="guarantees__slide--text">
+								<p>
+									Каждая бакалаврская работа на заказ пишется строго по требованиям, специалистом в тематике — мы скрупулезно относимся к отбору авторов, за каждого несем ответственность. Это позволяет большинству наших заказчиков получать высший балл на защите.
+								</p>
+								<p>
+									Если сдали проект плохого качества – обязуемся вернуть деньги!
+								</p>
+							</div>
+						</div>
+						<div class="guarantees__slider--slide guarantees__slide swiper-slide">
+							<img src="img/index/guarantees/guarantees-image-2.svg" width="72" height="72" loading="lazy" alt="" class="guarantees__slide--image">
+							<h3 class="guarantees__slide--title min-title">Всегда в срок</h3>
+							<div class="guarantees__slide--text">
+								<p>
+									Чтобы Вы имели достаточно времени на внесение правок и подготовку, мы часто сдаем работу даже раньше назначенной даты.
+								</p>
+								<p>
+									Время клиентов нам дорого, поэтому, в случае просрочки, гарантируем денежное возмещение за каждый пропущенный день.
+								</p>
+							</div>
+						</div>
+						<div class="guarantees__slider--slide guarantees__slide swiper-slide">
+							<img src="img/index/guarantees/guarantees-image-3.svg" width="72" height="72" loading="lazy" alt="" class="guarantees__slide--image">
+							<h3 class="guarantees__slide--title min-title">Сопровождение</h3>
+							<div class="guarantees__slide--text">
+								<p>
+									Мы доводим до конца каждый заказ, поскольку для нас качество и сервис – важнее всего. По этой причине, все правки и замечания выполняются нашими специалистами бесплатно до самой защиты.
+								</p>
+								<p>
+									При этом, у нас нет понятия “гарантийный срок”, будем вносить исправления даже через год после написания.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="guarantees__slider--pagination swiper-pagination pagination"></div>
+				</div>
+			</section>
+			<section class="check-price-2 container section-accent">
+				<div class="check-price-2__decor decor-pattern-2" aria-hidden="true"></div>
+				<h2 class="check-price-2__title title">
+					дізнайся вартість своєї роботи
+				</h2>
+				<div class="check-price-2__text">
+					<b>
+						Вкажи тему своєї роботи й ми запропонуємо тобі вигідну ціну
+					</b>
+				</div>
+				<form method="post" class="check-price-2__form form">
+					<div class="check-price-2__form--select select">
+						<select name="type-work" required>
+							<option value="" disabled selected>Виберіть вид роботи</option>
+							<option value="bachelors">Бакалаврська</option>
+							<option value="masters">Магістерська</option>
+							<option value="abstract">Реферат</option>
+							<option value="coursework">Курсова</option>
+						</select>
+					</div>
+					<div class="check-price-2__form--element form-element">
+						<label>
+							<input type="text" id="topic-work-2" name="topic-work" placeholder="Тема роботи" class="input" required>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" name="not-topic" value="true" data-for="#topic-work-2" class="checkbox-input">
+							<span class="checkbox-element"></span>
+							<span class="checkbox-text">Не знаю тему роботи</span>
+						</label>
+					</div>
+					<label>
+						<input type="text" name="your-name" required placeholder="Ваше ім'я" class="input">
+					</label>
+					<label>
+						<input type="tel" name="phone" required class="input tel" data-arrow-path="img/sprites.svg#select-arrow">
+					</label>
+					<div class="check-price-2__form--footer">
+						<button class="check-price-2__form--submit btn" type="submit">
+							Дізнатись вартість
+						</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<footer class="footer container">
+			<a href="index.html" class="footer__logo">
+				<img src="img/logo.svg" width="212" height="66" loading="lazy" alt="Логотип сайта" class="footer__logo--img">
+			</a>
+			<div class="footer__contacts footer__block">
+				<h3 class="footer__block--title">
+					Контакты
+				</h3>
+				<ul class="footer__contacts--list footer__block--list">
+					<li>
+						<a href="tel:+380503742674">
+							050 374 26 74
+						</a>
+					</li>
+					<li>
+						<a href="tel:+380682961559">
+							068 296 15 59
+						</a>
+					</li>
+					<li>
+						<a href="mailto:manager@writer_works.net">
+							manager@writer_works.net
+						</a>
+					</li>
+					<li>
+						<ul class="footer__social">
+							<li>
+								<a href="#" title="Instagram">
+									<svg width="30" height="30" viewBox="0 0 30 30">
+										<use xlink:href="img/sprites.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<svg width="30" height="30" viewBox="0 0 30 30">
+										<use xlink:href="img/sprites.svg#viber"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<svg width="32" height="25" viewBox="0 0 32 25">
+										<use xlink:href="img/sprites.svg#telegram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<nav class="footer__nav">
+				<div class="footer__nav--block footer__block">
+					<h3 class="footer__block--title">
+						Навигация
+					</h3>
+					<ul class="footer__block--list">
+						<li>
+							<a href="#">
+								Хто ми
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Оплата и гарантии
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Отзывы
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								Вакансии
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Контакты
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Блог
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__nav--block footer__block">
+					<h3 class="footer__block--title">
+						Услуги
+					</h3>
+					<ul class="footer__block--list">
+						<li>
+							<a href="#">
+								Перевод
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Аннотация
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Статья ВАК
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Докторская диссертации
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Бакалаврская работа
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Магистерская диссертация
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Курсовая работа
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Отчет по практике
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Тезисы
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Монография
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footer__feedback">
+				<h3 class="footer__feedback--title">
+					Остались вопросы?
+				</h3>
+				<div class="footer__feedback--text">
+					<b>Напишите ваш номер телефона и мы Вам перезвоним в течении 10 минут</b>
+				</div>
+				<form method="post" class="footer__feedback--form form">
+					<label>
+						<input type="text" name="your-name" placeholder="Ваше ім'я" required class="input _light">
+					</label>
+					<label>
+						<input type="tel" name="phone" required class="input _light tel" data-arrow-path="img/sprites.svg#select-arrow">
+					</label>
+					<button type="submit">
+						Отправить
+					</button>
+				</form>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		// =-=-=-=-=-=-=-=-=-=- <image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
+
+		const imageBody = document.querySelectorAll('.image-body, figure');
+		imageBody.forEach(imageBody => {
+			const img = imageBody.querySelector('img'),
+				style = getComputedStyle(imageBody);
+			if (img) {
+				if (img.getAttribute('width') && img.getAttribute('height') && style.position == "relative")
+					imageBody.style.paddingTop = Number(img.getAttribute('height')) / Number(img.getAttribute('width')) * 100 + '%';
+			}
+
+		})
+
+		// =-=-=-=-=-=-=-=-=-=- </image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
+	</script>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

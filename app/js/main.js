@@ -63,19 +63,7 @@ function slideDown (target, duration=300) {
 	}, duration);
 }
 	
-// =-=-=-=-=-=-=-=-=-=- <image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
 
-const imageBody = document.querySelectorAll('.image-body, figure');
-imageBody.forEach(imageBody => {
-	const img = imageBody.querySelector('img'), style = getComputedStyle(imageBody);
-	if(img) {
-		if(img.getAttribute('width') && img.getAttribute('height') && style.position == "relative")
-		imageBody.style.paddingTop = Number(img.getAttribute('height')) / Number(img.getAttribute('width')) * 100 + '%';
-	}
-	
-})
-
-// =-=-=-=-=-=-=-=-=-=- </image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
 
 
 
@@ -259,6 +247,34 @@ body.addEventListener('click', function (event) {
 	// =-=-=-=-=-=-=-=-=-=- </FAQ> -=-=-=-=-=-=-=-=-=-=-
 	
 	
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <flexible-pricing-nav> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	const flexiblePricingTabNavBtn = $(".flexible-pricing__tab-nav--btn")
+	if(flexiblePricingTabNavBtn) {
+
+		event.preventDefault();
+	
+		const parent = flexiblePricingTabNavBtn.parentElement,
+		block = document.querySelector(flexiblePricingTabNavBtn.getAttribute('href'));
+
+		if(!flexiblePricingTabNavBtn.classList.contains('_active')) {
+			if(parent.querySelector('.flexible-pricing__tab-nav--btn._active')) {
+				const activeBtn = parent.querySelector('.flexible-pricing__tab-nav--btn._active'),
+					  activeBlock = document.querySelector(activeBtn.getAttribute('href'));
+
+				activeBlock.classList.remove('_active');
+				activeBtn.classList.remove('_active');
+			}
+			
+			
+			flexiblePricingTabNavBtn.classList.add('_active');
+			block.classList.add('_active');
+		}
+	
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </flexible-pricing-nav> -=-=-=-=-=-=-=-=-=-=-=-=
 	
 
 })

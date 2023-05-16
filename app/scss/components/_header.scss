@@ -9,7 +9,7 @@
 
 	//transition: transform .2s ease;
 
-	padding-top: 15px; padding-bottom: 15px;
+	padding-top: 15px; padding-bottom: 0;
 
 	@include _992 {
 		padding-top: 0; bottom: 0;

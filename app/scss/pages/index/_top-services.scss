@@ -1,0 +1,40 @@
+.top-services {
+
+	// .top-services__title
+
+	&__title {
+		
+	}
+
+	// .top-services__list
+
+	&__list {
+		
+		
+	}
+
+	// .top-services__card
+
+	&__card {
+	}
+
+	// .top-services__footer
+
+	&__footer {
+		margin-top: 30px;
+
+		@include _768 {
+			margin-top: 50px;
+		}
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	// .top-services__card
+
+	&__btn {
+	}
+}
