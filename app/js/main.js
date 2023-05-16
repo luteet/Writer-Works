@@ -600,13 +600,13 @@ tel.forEach(tel => {
 	});
 	
 
-	tel.addEventListener('blur', function () {
+	/* tel.addEventListener('blur', function () {
 		if(!iti.isValidNumber()) {
 			tel.classList.add('error');
 		} else {
 			tel.classList.remove('error');
 		}
-	})
+	}) */
 
 	tel.addEventListener('focus', function () {
 		tel.value = '+' + tel.value.replace(/[^+\d]/g, '').substring(1);
@@ -614,7 +614,9 @@ tel.forEach(tel => {
 
 	tel.addEventListener('input', function () {
 		tel.value = '+' + tel.value.replace(/[^+\d]/g, '').substring(1);
-		if(iti.isValidNumber()) {
+		if(!iti.isValidNumber()) {
+			tel.classList.add('error');
+		} else {
 			tel.classList.remove('error');
 		}
 	})
