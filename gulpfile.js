@@ -13,6 +13,7 @@ const { src, dest, watch, parallel, series } = require('gulp');
 const scss			= require('gulp-sass')(require('sass')),
 	  fs			= require('fs'),
 	  concat		= require('gulp-concat'),
+	  replace		= require('gulp-replace'),
 	  avif			= require('gulp-avif'),
 	  webp			= require('gulp-webp'),
 	  imagemin		= require('gulp-imagemin'),
@@ -135,6 +136,10 @@ function htmlCompilation() {
 	return src(['app/*.html'])
 	.pipe(include())
 	.pipe(beautify.html({ indent_size: 1, indent_char: "	" }))
+	.pipe(replace(/<!-- CRITICAL_CSS -->/, function(s) {
+		var style = fs.readFileSync('dist/css/style-critical.min.css');
+		return '<!-- critical-start -->\n\u0009<style>' + style + '</style>\n\u0009<!-- critical-end -->';
+	}))
 	.pipe(dest('dist'))
 	.pipe(browserSync.stream())
 }
@@ -198,6 +203,15 @@ function stylesLib() {
 	])
 	.pipe(concat('libs.css'))
 	.pipe(dest('dist/css'))
+}
+
+function criticalReplace() {
+	return src('dist/**/*.html')
+	.pipe(replace(/<!-- CRITICAL_CSS -->/, function(s) {
+		var style = fs.readFileSync('dist/css/style-critical.min.css');
+		return '<style>' + style + '</style>';
+	}))
+	.pipe(dest('dist'));
 }
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- </Styles> -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -282,6 +296,7 @@ function watching() {
 }
 
 exports.images = images;
+exports.criticalReplace = criticalReplace;
 exports.styles = styles;
 exports.criticaLStyles = criticaLStyles;
 exports.stylesOriginal = stylesOriginal;
