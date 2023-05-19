@@ -516,8 +516,9 @@ if(document.querySelectorAll('.get-height')[0]) {
 function resize() {
 
 	if(header) html.style.setProperty("--height-header", header.offsetHeight + "px");
+	html.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
 	if(windowSize != window.innerWidth) {
-		html.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+		html.style.setProperty("--svh", window.innerHeight * 0.01 + "px");
 	}
 
 	windowSize = window.innerWidth;

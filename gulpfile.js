@@ -3,6 +3,7 @@
 
 	gulp start -> start gulp with open in new tab browser
 	gulp -> (default) start gulp WITHOUT open in new tab browser
+	gulp criticalReplace -> paste critical css in html head
 
 */
 
@@ -136,10 +137,6 @@ function htmlCompilation() {
 	return src(['app/*.html'])
 	.pipe(include())
 	.pipe(beautify.html({ indent_size: 1, indent_char: "	" }))
-	.pipe(replace(/<!-- CRITICAL_CSS -->/, function(s) {
-		var style = fs.readFileSync('dist/css/style-critical.min.css');
-		return '<!-- critical-start -->\n\u0009<style>' + style + '</style>\n\u0009<!-- critical-end -->';
-	}))
 	.pipe(dest('dist'))
 	.pipe(browserSync.stream())
 }
@@ -168,6 +165,18 @@ function styles() {
 		.pipe(concat('style.min.css'))
 		.pipe(dest('dist/css'))
 		.pipe(browserSync.stream())
+		//.pipe(browserSync.stream())
+}
+
+
+function criticalReplace() {
+	return src('dist/**/*.html')
+	.pipe(replace(/<link rel="stylesheet" href="css\/style-critical.min.css">/, function(s) {
+		var style = fs.readFileSync('dist/css/style-critical.min.css');
+		return '<style>' + style + '</style>';
+	}))
+	.pipe(dest('dist'))
+	//.pipe(browserSync.stream())
 }
 
 function criticaLStyles() {
@@ -182,6 +191,7 @@ function criticaLStyles() {
 		.pipe(concat('style-critical.min.css'))
 		.pipe(dest('dist/css'))
 		.pipe(browserSync.stream())
+		//.pipe(browserSync.stream())
 }
 
 function stylesOriginal() {
@@ -189,6 +199,7 @@ function stylesOriginal() {
 		.pipe(concat('style.css'))
 		.pipe(cssbeautify())
 		.pipe(dest('dist/css'))
+		.pipe(browserSync.stream())
 }
 
 function stylesLib() {
@@ -203,15 +214,6 @@ function stylesLib() {
 	])
 	.pipe(concat('libs.css'))
 	.pipe(dest('dist/css'))
-}
-
-function criticalReplace() {
-	return src('dist/**/*.html')
-	.pipe(replace(/<!-- CRITICAL_CSS -->/, function(s) {
-		var style = fs.readFileSync('dist/css/style-critical.min.css');
-		return '<style>' + style + '</style>';
-	}))
-	.pipe(dest('dist'));
 }
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- </Styles> -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -296,10 +298,10 @@ function watching() {
 }
 
 exports.images = images;
-exports.criticalReplace = criticalReplace;
 exports.styles = styles;
 exports.criticaLStyles = criticaLStyles;
 exports.stylesOriginal = stylesOriginal;
+exports.criticalReplace = criticalReplace;
 exports.watching = watching;
 exports.browsersyncStart = browsersyncStart;
 exports.browsersync = browsersync;

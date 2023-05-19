@@ -245,6 +245,9 @@ section {
 
 .breadcrumbs {
 	margin-top: 50px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 
 	ul {
 		display: flex;
@@ -258,11 +261,23 @@ section {
 	}
 
 	a {
-		display: block;
+		display: none;
 
 		font-weight: 500;
 		font-size: 0.875rem;
 		line-height: 125%;
+
+		@include _550 {
+			display: inline;
+		}
+
+		&:first-child {
+			display: inline;
+		}
+
+		&:last-child {
+			display: inline;
+		}
 
 		color: rgba(0, 0, 0, 0.5);
 
@@ -279,12 +294,20 @@ section {
 	&-separator {
 		display: inline-block;
 		width: 15px; height: 1px;
-		margin: 0 12px;
+		margin: 6px 12px;
 		border-radius: 5px;
 		background: 1px solid rgba(0, 0, 0, 0.5);
+		display: none;
+		@include _550 {
+			display: inline-block;
+		}
+		&:nth-last-child(2) {
+			display: inline-block;
+			background: 1px solid rgba(0, 0, 0, 1);
+		}
 	}
 
-	li:last-child a {
+	a:last-child {
 		color: #383748;
 		pointer-events: none;
 	}

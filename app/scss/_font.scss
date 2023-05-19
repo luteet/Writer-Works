@@ -1,24 +1,3 @@
-
-@font-face {
-	@include font-include('Montserrat', 300, swap, normal, 'Montserrat-Light');
-}
-
-@font-face {
-	@include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
-}
-
-@font-face {
-	@include font-include('Montserrat', 500, swap, normal, 'Montserrat-Medium');
-}
-
-@font-face {
-	@include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
-}
-
-@font-face {
-	@include font-include('Montserrat', 700, swap, normal, 'Montserrat-Bold');
-}
-
 .main-title {
 	font-family: var(--title-font);
 	text-transform: uppercase;

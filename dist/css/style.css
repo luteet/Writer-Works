@@ -11,6 +11,26 @@
     -webkit-text-fill-color: transparent
 }
 
+@font-face {
+    font-weight:300;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Light.woff) format("woff"),url(Montserrat-Light.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight:400;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Regular.woff) format("woff"),url(Montserrat-Regular.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight:500;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Medium.woff) format("woff"),url(Montserrat-Medium.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight:600;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-SemiBold.woff) format("woff"),url(Montserrat-SemiBold.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight:700;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Bold.woff) format("woff"),url(Montserrat-Bold.woff2) format("woff2")
+}
+
 .advantages__list {
     margin-top: 50px;
     display: grid;
@@ -3356,11 +3376,11 @@ li:nth-child(-n+9) .criteria__number::before {
     cursor: pointer
 }
 
-*,.visually-hidden,fieldset {
+*,fieldset {
     padding: 0
 }
 
-.main,body._mob-menu-active,body._popup-active {
+.breadcrumbs,.main,body._mob-menu-active,body._popup-active {
     overflow: hidden
 }
 
@@ -3432,6 +3452,10 @@ input::-ms-clear {
     display: none
 }
 
+.blog-info,.breadcrumbs li,.breadcrumbs ul,.list li,.popup,.popup-wrapper,.wrapper,body {
+    display: flex
+}
+
 address {
     font-style: normal
 }
@@ -3496,9 +3520,12 @@ body {
     font-family: var(--main-font);
     font-weight: 400;
     line-height: 150%;
-    display: flex;
     flex-direction: column;
     padding-right: var(--popup-padding)
+}
+
+.blog-info li,.breadcrumbs a,.btn {
+    line-height: 125%
 }
 
 .iti.iti--container {
@@ -3523,7 +3550,6 @@ section {
 
 .wrapper {
     flex: 1 1 auto;
-    display: flex;
     flex-direction: column
 }
 
@@ -3612,7 +3638,7 @@ section {
     border-radius: 30px
 }
 
-.btn,.select {
+.btn,.checkbox,.select {
     position: relative
 }
 
@@ -3641,27 +3667,30 @@ section {
 }
 
 .breadcrumbs {
-    margin-top: 50px
+    margin-top: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .breadcrumbs ul {
-    display: flex;
     flex-wrap: wrap;
     align-items: center
 }
 
 .breadcrumbs li {
-    display: flex;
     align-items: center
 }
 
 .breadcrumbs a {
-    display: block;
+    display: none;
     font-weight: 500;
     font-size: .875rem;
-    line-height: 125%;
     color: rgba(0,0,0,.5);
     transition: color .1s ease
+}
+
+.breadcrumbs a:first-child,.breadcrumbs a:last-child {
+    display: inline
 }
 
 .breadcrumbs a:hover {
@@ -3673,15 +3702,20 @@ section {
 }
 
 .breadcrumbs-separator {
-    display: inline-block;
     width: 15px;
     height: 1px;
-    margin: 0 12px;
+    margin: 6px 12px;
     border-radius: 5px;
-    background: 1px rgba(0,0,0,.5)
+    background: 1px rgba(0,0,0,.5);
+    display: none
 }
 
-.breadcrumbs li:last-child a {
+.breadcrumbs-separator:nth-last-child(2) {
+    display: inline-block;
+    background: 1px #000
+}
+
+.breadcrumbs a:last-child {
     color: #383748;
     pointer-events: none
 }
@@ -3696,7 +3730,6 @@ section {
     border: 2px solid var(--accent);
     background: var(--accent);
     font-weight: 700;
-    line-height: 125%;
     color: #f9fcfd;
     color: var(--white);
     border-radius: 14px;
@@ -3752,6 +3785,7 @@ section {
     width: 1px;
     height: 1px;
     margin: -1px;
+    padding: 0;
     border: 0;
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
@@ -3760,21 +3794,13 @@ section {
     overflow: hidden
 }
 
-.hero__list li::before,.list li::before {
-    height: 20px;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor
-}
-
 .checkbox-input,.select select {
     -webkit-clip-path: inset(100%);
-    overflow: hidden;
-    top: 50%
+    overflow: hidden
 }
 
 .blog-info {
     margin: 7.5px -7.5px 0;
-    display: flex;
     flex-wrap: wrap
 }
 
@@ -3784,7 +3810,6 @@ section {
     align-items: center;
     font-weight: 500;
     font-size: .75rem;
-    line-height: 125%;
     color: #989898;
     opacity: .6
 }
@@ -3800,26 +3825,6 @@ section {
     margin-right: 5px
 }
 
-@font-face {
-    font-weight:300;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Light.woff) format("woff"),url(Montserrat-Light.woff2) format("woff2")
-}
-
-@font-face {
-    font-weight:400;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Regular.woff) format("woff"),url(Montserrat-Regular.woff2) format("woff2")
-}
-
-@font-face {
-    font-weight:500;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Medium.woff) format("woff"),url(Montserrat-Medium.woff2) format("woff2")
-}
-
-@font-face {
-    font-weight:600;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-SemiBold.woff) format("woff"),url(Montserrat-SemiBold.woff2) format("woff2")
-}
-
-@font-face {
-    font-weight:700;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Bold.woff) format("woff"),url(Montserrat-Bold.woff2) format("woff2")
-}
-
 .main-title {
     line-height: 122.580645%;
     font-size: 1.625rem
@@ -3830,12 +3835,12 @@ section {
     font-size: 1.375rem
 }
 
-.text,.title._min {
-    font-size: 1rem
+.list li,.text-bold {
+    font-weight: 500
 }
 
-.text-bold {
-    font-weight: 500
+.text,.title._min {
+    font-size: 1rem
 }
 
 .text {
@@ -3848,20 +3853,21 @@ section {
 }
 
 .list li {
-    display: flex;
-    align-items: center;
-    font-weight: 500
+    align-items: center
 }
 
 .list li::before {
     content: "";
     display: block;
     width: 20px;
+    height: 20px;
     flex: 0 0 20px;
     margin-right: 15px;
     border: 2px solid transparent;
     border-radius: 50px;
     background: var(--accent-gradient) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
     mask-composite: exclude
 }
 
@@ -3916,11 +3922,6 @@ input::placeholder,textarea::placeholder {
     opacity: 1
 }
 
-.header._hide,.header__nav {
-    opacity: 0;
-    visibility: hidden
-}
-
 input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder {
     opacity: 0
 }
@@ -3941,6 +3942,7 @@ input:focus::placeholder,textarea:focus::placeholder {
     display: block!important;
     position: absolute;
     left: 50%;
+    top: 50%;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -4082,7 +4084,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .checkbox {
-    position: relative;
     display: inline-flex
 }
 
@@ -4093,6 +4094,7 @@ input:focus::placeholder,textarea:focus::placeholder {
 .checkbox-input {
     position: absolute;
     left: 50%;
+    top: 50%;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -4101,10 +4103,6 @@ input:focus::placeholder,textarea:focus::placeholder {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0)
-}
-
-.date-label,.popup-body {
-    position: relative
 }
 
 .checkbox-input:checked+.checkbox-element {
@@ -4135,12 +4133,22 @@ input:focus::placeholder,textarea:focus::placeholder {
     transition: border-color .2s ease,background .2s ease
 }
 
+.popup,.popup-bg {
+    height: 100%;
+    width: 100%;
+    left: 0
+}
+
 .checkbox-text {
     transition: color .2s ease
 }
 
 .date {
     padding-right: 50px
+}
+
+.date-label {
+    position: relative
 }
 
 .date-label svg {
@@ -4153,16 +4161,9 @@ input:focus::placeholder,textarea:focus::placeholder {
     pointer-events: none
 }
 
-.popup,.popup-bg {
-    top: 0;
-    height: 100%;
-    width: 100%
-}
-
 .popup {
     position: fixed;
-    left: 0;
-    display: flex;
+    top: 0;
     padding: 10px;
     z-index: 100;
     opacity: 0;
@@ -4182,8 +4183,12 @@ input:focus::placeholder,textarea:focus::placeholder {
     visibility: visible
 }
 
+.header._hide,.header__nav {
+    opacity: 0;
+    visibility: hidden
+}
+
 .popup-wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100%;
@@ -4193,12 +4198,13 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .popup-bg {
     position: absolute;
-    left: 0;
+    top: 0;
     background: rgba(88,87,97,.69)
 }
 
 .popup-body {
     margin: auto;
+    position: relative;
     background: #fff;
     overflow-y: auto;
     max-height: calc(var(--vh) *100 - 30px);
@@ -4325,6 +4331,7 @@ input:focus::placeholder,textarea:focus::placeholder {
     right: 0;
     top: 100%;
     width: 244px;
+    max-height: calc(var(--vh) *100 - var(--height-header) - 15px);
     background: var(--white);
     box-shadow: 0 2px 10px rgba(215,214,236,.39);
     overflow-y: auto;
@@ -4879,9 +4886,12 @@ input:focus::placeholder,textarea:focus::placeholder {
     -webkit-transform: translate(0,-50%);
     transform: translate(0,-50%);
     width: 20px;
+    height: 20px;
     border: 2px solid transparent;
     border-radius: 50px;
     background: var(--accent-gradient) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
     mask-composite: exclude
 }
 
@@ -4915,6 +4925,14 @@ input:focus::placeholder,textarea:focus::placeholder {
 @media (min-width:550px) {
     .iti.iti--container {
         width: auto
+    }
+
+    .breadcrumbs a {
+        display: inline
+    }
+
+    .breadcrumbs-separator {
+        display: inline-block
     }
 
     .service-card__btn {
