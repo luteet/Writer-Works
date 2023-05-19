@@ -196,8 +196,8 @@ function stylesLib() {
 		'node_modules/aos/dist/aos.css', // Анимация
 		//'node_modules/nouislider/dist/nouislider.css', // Кастомный input[range]
 	])
-	.pipe(concat('_libs.scss'))
-	.pipe(dest('app/scss'))
+	.pipe(concat('libs.css'))
+	.pipe(dest('dist/css'))
 }
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- </Styles> -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
