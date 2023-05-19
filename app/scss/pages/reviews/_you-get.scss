@@ -1,0 +1,35 @@
+.you-get {
+
+	// .you-get__title
+
+	&__title {
+	}
+
+	// .you-get__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 40px;
+
+		li {
+			text-align: center;
+			img {
+				margin-bottom: 20px;
+				width: 50px; height: 50px;
+				@include _768 {
+					margin-bottom: 30px;
+					width: 95px; height: 95px;
+				}
+			}
+
+			p {
+				font-weight: 500;
+				opacity: .8;
+				@include _768 {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

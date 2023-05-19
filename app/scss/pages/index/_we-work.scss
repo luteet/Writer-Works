@@ -1,6 +1,6 @@
 .we-work {
 
-	padding-top: 110px; padding-bottom: 30px;
+	/* padding-top: 110px; padding-bottom: 30px;
 
 	@include _768 {
 		padding-top: 150px; padding-bottom: 70px;
@@ -8,7 +8,20 @@
 
 	@include _992 {
 		padding-top: 130px; padding-bottom: 100px;
+	} */
+	& + .section-gray {
+		margin-top: 0;
 	}
+	@include _768 {
+		& + .section-gray {
+			margin-top: 0;
+		}
+	}
+
+	/* margin-top: 0;
+	@include _768 {
+		margin-top: 0;
+	} */
 	background: var(--light-gray);
 
 	

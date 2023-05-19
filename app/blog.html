@@ -1,0 +1,114 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<div class="breadcrumbs container">
+			<ul>
+				<li>
+					<a href="#">
+						Главная 
+					</a>
+				</li>
+				<li>
+					<span class="breadcrumbs-separator"></span>
+				</li>
+				<li>
+					<a href="#">
+						Блог
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section class="blog container section-start">
+			<h2 class="blog__title title">
+				Блог
+			</h2>
+			<div class="blog__filter margin-top">
+				<a href="#" class="blog__filter--element _current">
+					Студентам
+				</a>
+				<a href="#" class="blog__filter--element">
+					Дипломи
+				</a>
+				<a href="#" class="blog__filter--element">
+					Дипломи
+				</a>
+				<a href="#" class="blog__filter--element">
+					Вченим
+				</a>
+				<a href="#" class="blog__filter--element">
+					Навчання
+				</a>
+				<a href="#" class="blog__filter--element">
+					Поради
+				</a>
+				<a href="#" class="blog__filter--element">
+					Новини
+				</a>
+				<a href="#" class="blog__filter--element">
+					Реферати
+				</a>
+			</div>
+			<div class="blog__grid">
+				@@loop("html/_blog-card.html", [
+					{
+						"class": ' _large',
+						"image": '1',
+					},
+					{
+						"class": ' _min',
+						"image": '2',
+					},
+					{
+						"class": ' _min',
+						"image": '3',
+					},
+					{
+						"class": '',
+						"image": '4',
+					},
+					{
+						"class": '',
+						"image": '5',
+					},
+					{
+						"class": '',
+						"image": '6',
+					},
+					{
+						"class": ' _full',
+						"image": 'large-1',
+					},
+					{
+						"class": ' _min',
+						"image": '3',
+					},
+					{
+						"class": ' _min',
+						"image": '4',
+					},
+					{
+						"class": ' _large',
+						"image": '1',
+					},
+					{
+						"class": '',
+						"image": '4',
+					},
+					{
+						"class": '',
+						"image": '5',
+					},
+					{
+						"class": '',
+						"image": '6',
+					},
+					{
+						"class": ' _full',
+						"image": 'large-2',
+					},
+				])
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

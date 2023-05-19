@@ -1,11 +1,5 @@
 .choose-city {
 
-	padding-top: 60px; padding-bottom: 60px;
-
-	@include _768 {
-		padding-top: 100px; padding-bottom: 100px;
-	}
-
 	// .choose-city__title
 
 	&__title {
@@ -70,5 +64,15 @@
 	// .choose-city__list
 
 	&__list {
+		font-weight: 500;
+
+		li {
+			&:not(:first-child) {
+				margin-top: 15px;
+				@include _768 {
+					margin-top: 20px;
+				}
+			}
+		}
 	}
 }

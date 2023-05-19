@@ -1,0 +1,154 @@
+.more-reviews {
+
+	padding-bottom: 0;
+
+	@include _768 {
+		padding-bottom: 100px;
+	}
+
+	// .more-reviews__bg
+
+	&__bg {
+		position: absolute;
+		left: 0; top: -60px;
+		width: 100%; height: calc(100% - 60px);
+		@include _768 {
+			top: -100px;
+			height: calc(100% - 100px);
+		}
+		z-index: -1;
+		overflow: hidden;
+		pointer-events: none;
+	}
+
+	// .more-reviews__decor
+
+	&__decor {
+		display: none;
+		@include _768 {
+			display: block;
+		}
+		position: absolute;
+		&:nth-child(1) {
+			right: 0; top: 0;
+			width: 175px; height: 235px;
+			border-radius: 50%;
+			transform: translate(35%,-20%);
+			background-size: 15px;
+			@include _992 {
+				transform: translate(25%,-20%);
+				background-size: 25px;
+				width: 425px; height: 375px;
+			}
+		}
+
+		&:nth-child(2) {
+			left: 0; bottom: 0;
+			width: 200px; height: 250px;
+			border-radius: 50%;
+			transform: translate(-30%,20%) rotate(15deg);
+			background-size: 15px;
+			@include _992 {
+				top: 50%; bottom: auto;
+				width: 600px; height: 600px;
+				transform: translate(-50%,-30%);
+				background-size: 25px;
+			}
+		}
+	}
+
+	// .more-reviews__header
+
+	&__header {
+		text-align: center;
+	}
+
+	// .more-reviews__title
+
+	&__title {
+	}
+
+	// .more-reviews__btn
+
+	&__btn {
+		margin-top: 20px;
+		@include _768 {
+			padding: 13px 40px;
+			margin-top: 30px;
+		}
+		svg {
+			fill: var(--accent);
+		}
+	}
+
+	// .more-reviews__form
+
+	&__form {
+
+		padding-top: 60px;
+		@include _768 {
+			padding-top: 100px;
+		}
+		max-width: 660px; margin: 0 auto;
+
+		text-align: center;
+
+		// .more-reviews__form--body
+
+		&--body {
+			padding: 60px 15px;
+			margin: 0 var(--minus-container-padding);
+
+			background: linear-gradient(60.79deg, #EBEAFB 17.93%, #F7F7FE 73.52%);
+			border: 1px solid #DAD8FF;
+			@include _768 {
+				padding: 100px 24px;
+				border-radius: 30px;
+				margin: 0;
+			}
+		}
+
+		// .more-reviews__form--title
+
+		&--title {
+			max-width: 560px;
+			margin: 0 auto;
+		}
+
+		// .more-reviews__form--text
+
+		&--text {
+			max-width: 560px;
+			margin: 0 auto;
+
+			line-height: 125%;
+			font-weight: 500;
+
+			margin-top: 20px;
+			@include _768 {
+				margin-top: 30px;
+				font-weight: 600;
+			}
+		}
+
+		// .more-reviews__form--wrapper
+
+		&--wrapper {
+			padding-top: 50px;
+			max-width: 360px; margin: 0 auto;
+
+			label {
+				display: block;
+				&:not(:first-child) {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	// .more-reviews__submit
+
+	&__submit {
+		margin-top: 20px;
+	}
+}

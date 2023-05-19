@@ -1,6 +1,8 @@
 .flexible-pricing {
 
-	padding-top: 50px; padding-bottom: 50px;
+	&.section-start {
+		padding-top: 40px; padding-bottom: 0;
+	}
 
 	// .flexible-pricing__title
 

@@ -27,7 +27,7 @@ input, textarea {
 	overflow: hidden;
 }
 
-.input {
+.input, .textarea {
 	padding: 15.4px 16px;
 	width: 100%;
 
@@ -60,6 +60,10 @@ input, textarea {
 		color: var(--black);
 		font-weight: 300;
 	}
+}
+
+.textarea {
+	resize: none;
 }
 
 .iti--allow-dropdown input, .iti--allow-dropdown input[type=tel], .iti--allow-dropdown input[type=text], .iti--separate-dial-code input, .iti--separate-dial-code input[type=tel], .iti--separate-dial-code input[type=text] {
@@ -98,10 +102,6 @@ input, textarea {
 .ss-option {
 	transition: color .2s ease;
 }
-
-/* .ss-main .ss-values {
-	flex: none;
-} */
 
 .ss-main .ss-values .ss-single {
 	font-weight: 300;
@@ -168,5 +168,27 @@ input, textarea {
 
 	&-text {
 		transition: color .2s ease;
+	}
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+	background: var(--accent-gradient);
+}
+
+
+.date {
+	padding-right: 50px;
+
+	
+}
+
+.date-label {
+	position: relative;
+	svg {
+		position: absolute;
+		right: 13px; top: 50%;
+		fill: var(--accent);
+		transform: translate(0,-50%);
+		pointer-events: none;
 	}
 }

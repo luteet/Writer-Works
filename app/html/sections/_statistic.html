@@ -1,12 +1,14 @@
-<section class="statistic container section-accent">
-	<div class="statistic__decor-pattern decor-pattern-2"></div>
-	<ul class="statistic__list">
+<section class="statistic container">
+	<div class="statistic__bg section-accent-bg">
+		<div class="statistic__decor-pattern decor-pattern-2"></div>
+	</div>
+	<ul class="statistic__list" data-aos="fade-in" data-aos-delay="100">
 		<li>
 			<h2 class="statistic__title title">
 				КОРОТКО про НАС В ЦИФРАХ
 			</h2>
 		</li>
-		@@loop("_statistic-item.html", [
+		@@loop("../_statistic-item.html", [
 			{
 				"value": '4+',
 				"text": 'роки допомагаємо студентам у навчанні',

@@ -1,0 +1,88 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<div class="breadcrumbs container" data-aos="fade-in">
+			<ul>
+				<li>
+					<a href="#">
+						Главная 
+					</a>
+				</li>
+				<li>
+					<span class="breadcrumbs-separator"></span>
+				</li>
+				<li>
+					<a href="#">
+						Відгуки
+					</a>
+				</li>
+			</ul>
+		</div>
+		@@include("html/sections/_examples-works.html", {
+			"class": ' section-start',
+			"title": 'Відгуки',
+		})
+		<section class="you-get container" data-aos="fade-in">
+			<h2 class="you-get__title title">
+				Что вы получите, заказывая у нас
+			</h2>
+			<ul class="you-get__list margin-top">
+				<li>
+					<img src="img/reviews/get/get-image-1.svg" width="95" height="95" alt="">
+					<p>
+						При необходимости бесплатно разработаем план
+					</p>
+				</li>
+				<li>
+					<img src="img/reviews/get/get-image-2.svg" width="95" height="95" alt="">
+					<p>
+						Напишем “под ключ” или отдельные части работы
+					</p>
+				</li>
+				<li>
+					<img src="img/reviews/get/get-image-3.svg" width="95" height="95" alt="">
+					<p>
+						Проверяем на плагиат, придерживаемся уникальности
+					</p>
+				</li>
+				<li>
+					<img src="img/reviews/get/get-image-4.svg" width="95" height="95" alt="">
+					<p>
+						Даем быструю и удобную обратную связь по всем каналам
+					</p>
+				</li>
+			</ul>
+		</section>
+		@@include("html/sections/_we-work.html")
+		<section class="more-reviews container section-padding" data-aos="fade-in" data-aos-anchor-placement="bottom-center">
+			<div class="more-reviews__bg">
+				<div class="more-reviews__decor decor-pattern"></div>
+				<div class="more-reviews__decor decor-pattern"></div>
+			</div>
+			<div class="more-reviews__header">
+				<h2 class="more-reviews__title title _min">
+					<mark>більше відгуків можеш побачити у нас в інстаграм</mark>
+				</h2>
+				<a href="#" class="more-reviews__btn btn _transparent">
+					Більше відгуків
+					<svg width="30" height="30" viewBox="0 0 30 30">
+						<use xlink:href="img/sprites.svg#instagram"></use>
+					</svg>
+				</a>
+			</div>
+			<form method="post" class="more-reviews__form form">
+				<div class="more-reviews__form--body">
+					<h3 class="more-reviews__form--title title">
+						Дякуємо, що поділилися з нами своєю думкою! 
+					</h3>
+					<div class="more-reviews__form--text">
+						<p>
+							Вона дуже важлива для нас. Ми розглянемо ваше звернення та надамо відповідь найближчим часом.
+						</p>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

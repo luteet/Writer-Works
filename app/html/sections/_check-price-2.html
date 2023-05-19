@@ -1,0 +1,45 @@
+<section class="check-price-2 container">
+	<div class="check-price-2__bg section-accent-bg" aria-hidden="true">
+		<div class="check-price-2__decor decor-pattern-2"></div>
+	</div>
+	<h2 class="check-price-2__title title" data-aos="fade-in">
+		дізнайся вартість своєї роботи 
+	</h2>
+	<div class="check-price-2__text" data-aos="fade-in">
+		<b>
+			Вкажи тему своєї роботи й ми запропонуємо тобі вигідну ціну
+		</b>
+	</div>
+	<form method="post" class="check-price-2__form form" data-aos="fade-in">
+		<div class="check-price-2__form--select select">
+			<select name="type-work" required>
+				<option value="" disabled selected>Виберіть вид роботи</option>
+				<option value="bachelors">Бакалаврська</option>
+				<option value="masters">Магістерська</option>
+				<option value="abstract">Реферат</option>
+				<option value="coursework">Курсова</option>
+			</select>
+		</div>
+		<div class="check-price-2__form--element form-element">
+			<label>
+				<input type="text" name="topic-work" placeholder="Тема роботи" class="input" required>
+			</label>
+			<label class="checkbox">
+				<input type="checkbox" name="not-topic" value="true" class="checkbox-input checkbox-for">
+				<span class="checkbox-element"></span>
+				<span class="checkbox-text">Не знаю тему роботи</span>
+			</label>
+		</div>
+		<label>
+			<input type="text" name="your-name" required placeholder="Ваше ім'я" class="input">
+		</label>
+		<label>
+			<input type="tel" name="phone" required class="input tel" data-arrow-path="img/sprites.svg#select-arrow">
+		</label>
+		<div class="check-price-2__form--footer">
+			<button class="check-price-2__form--submit btn" type="submit">
+				Дізнатись вартість
+			</button>
+		</div>
+	</form>
+</section>

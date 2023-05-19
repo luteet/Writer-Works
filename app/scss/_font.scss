@@ -44,15 +44,68 @@
 	line-height: 121.052632%;
 
 	font-size: 1.375rem; // 22px
+	&._min {
+		font-size: 1rem;
+	}
 
 	@include _768 {
 		font-size: 1.75rem; // 28px
+		&._min {
+			font-size: 1rem;
+		}
 	}
 
 	@include _992 {
 		font-size: 2.375rem; // 38px
+		&._min {
+			font-size: 1.375rem;
+		}
 	}
 
+}
+
+.text-bold {
+	font-weight: 500;
+	@include _768 {
+		font-weight: 600;
+	}
+}
+
+.text {
+	font-size: 1rem;
+	line-height: 125%;
+}
+
+.list {
+
+	font-size: 0.875rem;
+	line-height: 133%;
+
+	li {
+		display: flex;
+		align-items: center;
+
+		font-weight: 500;
+
+		@include _768 {
+			font-weight: 600;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 20px; height: 20px;
+			flex: 0 0 20px; margin-right: 15px;
+			border: 2px solid transparent;
+			border-radius: 50px;
+			background: var(--accent-gradient) border-box;
+			-webkit-mask:
+				linear-gradient(#fff 0 0) padding-box, 
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+		}
+	}
 }
 
 .content {

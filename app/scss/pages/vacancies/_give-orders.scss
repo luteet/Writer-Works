@@ -1,0 +1,28 @@
+.give-orders {
+
+	
+
+	// .give-orders__title
+
+	&__title {
+		
+	}
+
+	&__wrapper {
+		display: grid;
+		gap: 20px;
+		@include _768 {
+			grid-template-columns: 55% auto;
+			gap: 40px;
+		}
+	}
+
+	// .give-orders__list
+
+	&__list {
+		align-self: self-start;
+
+		display: grid;
+		gap: 20px;
+	}
+}

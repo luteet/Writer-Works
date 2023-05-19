@@ -2,13 +2,9 @@
 
 	display: grid;
 
-	padding-bottom: 60px; padding-top: 60px;
-
 	@include _992 {
 		grid-template-columns: 1fr 1fr;
 		gap: 0 40px;
-
-		padding-bottom: 100px; padding-top: 100px;
 	}
 
 	// .faq__title
@@ -86,6 +82,7 @@
 
 		&--answear {
 			display: none;
+			padding-bottom: 30px;
 		}
 	}
 }

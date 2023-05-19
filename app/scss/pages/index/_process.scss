@@ -1,7 +1,10 @@
 .process {
 
-	padding-top: 100px; padding-bottom: 122px;
-	
+	padding-top: 60px; padding-bottom: 60px;
+
+	@include _768 {
+		padding-top: 100px; padding-bottom: 122px;
+	}
 
 	// .process__title
 

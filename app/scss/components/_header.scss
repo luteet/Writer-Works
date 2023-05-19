@@ -9,30 +9,35 @@
 
 	//transition: transform .2s ease;
 
-	padding-top: 15px; padding-bottom: 0;
+	padding-top: 10px; padding-bottom: 10px;
 
 	@include _992 {
-		padding-top: 0; bottom: 0;
+		padding-top: 0; padding-bottom: 0;
 	}
 
-	z-index: 3;
-
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: center;
+	z-index: 4;
 
 	background: var(--white);
-
 	
 	box-shadow: none;
 
 	&._scroll-mode {
 		box-shadow: 0px 4px 10px #EFEFFD;
-		padding-top: 15px; padding-bottom: 15px;
+		padding-top: 10px; padding-bottom: 10px;
 		@include _992 {
 			padding-top: 0; padding-bottom: 0;
 		}
+	}
+
+	&._hide {
+		opacity: 0; visibility: hidden;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
 	}
 
 	// .header__logo
@@ -208,6 +213,10 @@
 
 			@include _992 {
 				width: auto;
+				padding: 12px 6px;
+			}
+
+			@media (min-width: #{$container}px) {
 				padding: 12px;
 			}
 
@@ -292,7 +301,7 @@
 			}
 
 			&[aria-label]:active {
-				color: transparent;
+				//color: transparent;
 				span::before {
 					opacity: 1;
 				}
@@ -545,8 +554,10 @@
 	
 		z-index: 4;
 
-		&:hover span {
-			background: var(--accent);
+		@media (any-hover: hover) {
+			&:hover span {
+				background: var(--accent);
+			}
 		}
 	
 		cursor: pointer;

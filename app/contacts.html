@@ -1,0 +1,63 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<div class="breadcrumbs container">
+			<ul>
+				<li>
+					<a href="#">
+						Главная 
+					</a>
+				</li>
+				<li>
+					<span class="breadcrumbs-separator"></span>
+				</li>
+				<li>
+					<a href="#">
+						Контакты
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section class="contacts container section-start">
+			<div class="contacts__content">
+				<h1 class="contacts__title title">
+					контакти
+				</h1>
+				<ul class="contacts__list margin-top">
+					<li>
+						<a href="+380503742674">
+							<svg width="20" height="20" viewBox="0 0 20 20">
+								<use xlink:href="img/sprites.svg#phone"></use>
+							</svg>
+							050 374 26 74
+						</a>
+					</li>
+					<li>
+						<a href="tel:+380682961559">
+							<svg width="20" height="20" viewBox="0 0 20 20">
+								<use xlink:href="img/sprites.svg#phone"></use>
+							</svg>
+							068 296 15 59
+						</a>
+					</li>
+					<li>
+						<span>
+							Пн-Вс: 10:00-19:00
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="contacts__image">
+				<div class="contacts__image--body image-body">
+					<div class="contacts__decor decor-pattern"></div>
+					<picture>
+						<source srcset="img/contacts/contacts-image.avif" type="image/avif">
+						<source srcset="img/contacts/contacts-image.webp" type="image/webp">
+						<img src="img/contacts/contacts-image.jpg" alt="" width="760" height="395" loading="lazy">
+					</picture>
+				</div>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

@@ -93,10 +93,12 @@ function scriptsLib() {
 		'node_modules/swiper/swiper-bundle.min.js', // Слайдер
 		'node_modules/intl-tel-input/build/js/intlTelInput.min.js', // TEL input
 		//'node_modules/vanilla-lazyload/dist/lazyload.min.js', // Lazyload img | npm i vanilla-lazyload --save-dev | https://www.npmjs.com/package/vanilla-lazyload
-		//'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll() | npm i smoothscroll-polyfill --save-dev
+		'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll() | npm i smoothscroll-polyfill --save-dev
 		//'node_modules/clipboard/dist/clipboard.min.js', // Копирование в буфер обмена | npm i clipboard --save-dev | https://www.npmjs.com/package/clipboard
-		//'node_modules/aos/dist/aos.js', // Анимация | npm i aos --save-dev | https://www.npmjs.com/package/aos
+		'node_modules/aos/dist/aos.js', // Анимация | npm i aos --save-dev | https://www.npmjs.com/package/aos
 		'node_modules/slim-select/dist/slimselect.min.js', // Select | npm i slim-select --save-dev | https://www.npmjs.com/package/slim-select
+		'node_modules/vanillajs-datepicker/dist/js/datepicker.min.js', // Datepicker
+		'node_modules/vanillajs-datepicker/dist/js/locales/uk.js', // Datepicker
 		//'node_modules/sticky-js/dist/sticky.min.js' // Sticky | npm i sticky-js --save-dev | https://www.npmjs.com/package/sticky-js
 		//'node_modules/nouislider/dist/nouislider.min.js', // Кастомный input[range] | npm i nouislider --save-dev | https://www.npmjs.com/package/nouislider
 		//'node_modules/fslightbox/index.js', // Галерея | npm i fslightbox --save-dev | https://www.npmjs.com/package/fslightbox
@@ -190,7 +192,8 @@ function stylesLib() {
 		'node_modules/swiper/swiper-bundle.min.css', // Слайдер
 		'node_modules/slim-select/dist/slimselect.css', // Select
 		'node_modules/intl-tel-input/build/css/intlTelInput.min.css', // TEL input
-		//'node_modules/aos/dist/aos.css', // Анимация
+		'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css', // Datepicker
+		'node_modules/aos/dist/aos.css', // Анимация
 		//'node_modules/nouislider/dist/nouislider.css', // Кастомный input[range]
 	])
 	.pipe(concat('_libs.scss'))

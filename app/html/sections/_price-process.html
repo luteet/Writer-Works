@@ -1,0 +1,30 @@
+<section class="price-process section-gray section-padding container">
+	<h2 class="price-process__title title" data-aos="fade-in" data-aos-delay="100">
+		порядок оплаты
+	</h2>
+	<div class="price-process__text" data-aos="fade-in" data-aos-delay="100">
+		<p>
+			Чтобы купить бакалаврскую, необходимо пройти такие этапы:
+		</p>
+	</div>
+	<ul class="price-process__list process-list" data-aos="fade-in" data-aos-delay="100">
+		@@loop("../_price-process-item.html", [
+			{
+				"title": 'Оставляете заявку',
+				"text": 'Менеджер формирует заказ, получая от вас необходимую информацию',
+			},
+			{
+				"title": 'Оплата и качество',
+				"text": 'Вы вносите предоплату в оговоренном размере',
+			},
+			{
+				"title": 'Написание работы',
+				"text": 'Выполняем часть работы, соответствующую размеру оплаты (25/33/50/100 %)',
+			},
+			{
+				"title": 'Сдача работы',
+				"text": 'Работа сдается вам после внесения последней части оплаты',
+			},
+		])
+	</ul>
+</section>

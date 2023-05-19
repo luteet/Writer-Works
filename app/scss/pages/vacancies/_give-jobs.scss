@@ -1,0 +1,22 @@
+.give-jobs {
+
+	background: var(--light-gray);
+
+	// .give-jobs__title
+
+	&__title {
+	}
+
+	// .give-jobs__list
+
+	&__list {
+		display: grid;
+		@include _550 {
+			grid-template-columns: 1fr 1fr;
+		}
+		gap: 15px 20px;
+		@include _768 {
+			gap: 20px 40px;
+		}
+	}
+}

@@ -32,14 +32,14 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="#" title="Viber">
 									<svg width="30" height="30" viewBox="0 0 30 30">
 										<use xlink:href="img/sprites.svg#viber"></use>
 									</svg>
 								</a>
 							</li>
 							<li>
-								<a href="#" title="">
+								<a href="#" title="Telegram">
 									<svg width="32" height="25" viewBox="0 0 32 25">
 										<use xlink:href="img/sprites.svg#telegram"></use>
 									</svg>
@@ -166,6 +166,114 @@
 				</form>
 			</div>
 		</footer>
+	</div>
+
+	<div class="order-popup popup" id="order-popup">
+		<div class="order-popup__wrapper popup-wrapper">
+			<div class="order-popup__bg popup-bg popup-close"></div>
+			<div class="order-popup__body popup-body">
+				<button type="button" class="order-popup__close-btn popup-close-btn popup-close" title="Закрыть">
+					<svg width="24" height="24" viewBox="0 0 24 24">
+						<use xlink:href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<h2 class="order-popup__title title">
+					Замовити в 1 клік
+				</h2>
+				<form method="post" class="order-popup__form form">
+					<div class="select">
+						<select name="type-work" required>
+							<option value="" disabled selected>Виберіть вид роботи</option>
+							<option value="bachelors">Бакалаврська</option>
+							<option value="masters">Магістерська</option>
+							<option value="abstract">Реферат</option>
+							<option value="coursework">Курсова</option>
+						</select>
+					</div>
+					<label>
+						<textarea name="message" rows="5" placeholder="Текст відгуку" class="textarea"></textarea>
+					</label>
+					<label>
+						<input type="text" name="your-name" placeholder="Ваше ім’я" required class="input">
+					</label>
+					<label>
+						<input type="tel" name="phone" data-arrow-path="img/sprites.svg#select-arrow" required class="input tel">
+					</label>
+					<button class="btn" type="submit">
+						Надіслати
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="order-popup popup" id="diplom-order-popup">
+		<div class="order-popup__wrapper popup-wrapper">
+			<div class="order-popup__bg popup-bg popup-close"></div>
+			<div class="order-popup__body popup-body">
+				<button type="button" class="order-popup__close-btn popup-close-btn popup-close" title="Закрыть">
+					<svg width="24" height="24" viewBox="0 0 24 24">
+						<use xlink:href="img/sprites.svg#close"></use>
+					</svg>
+				</button>
+				<div class="order-popup__header">
+					<h2 class="order-popup__title title">
+						ЗамоВити дипломну роботу
+					</h2>
+					<b class="order-popup__tariff-name min-title">
+						ПАКЕТ “СТАНДАРТ”
+					</b>
+					<h3 class="order-popup__subtitle text-bold">
+						Підзаголовок попапу / вимоги до оформлення можуть відрізнятися залежно від ВНЗ, однак існує єдиний стандарт
+					</h3>
+				</div>
+				<form method="post" class="order-popup__form form">
+					<div class="select">
+						<select name="type-work" required>
+							<option value="" disabled selected>Виберіть вид роботи</option>
+							<option value="bachelors">Бакалаврська</option>
+							<option value="masters">Магістерська</option>
+							<option value="abstract">Реферат</option>
+							<option value="coursework">Курсова</option>
+						</select>
+					</div>
+					<div class="form-element">
+						<label>
+							<input type="text" name="topic-work" placeholder="Тема роботи" class="input" required>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" name="not-topic" value="true" class="checkbox-input checkbox-for">
+							<span class="checkbox-element"></span>
+							<span class="checkbox-text">Не знаю тему роботи</span>
+						</label>
+					</div>
+					<label>
+						<input type="text" name="your-name" placeholder="Коли здавати" required class="input date">
+						<svg width="20" height="21" viewBox="0 0 20 21">
+							<use xlink:href="img/sprites.svg#calendar"></use>
+						</svg>
+					</label>
+					<label>
+						<input type="number" name="letters-length" placeholder="Кількість сторінок" required class="input">
+					</label>
+					<label>
+						<input type="tel" name="uniqueness" placeholder="Унікальність, %" required class="input">
+					</label>
+					<label>
+						<textarea name="message" rows="5" placeholder="Уточнення" class="textarea"></textarea>
+					</label>
+					<label>
+						<input type="text" name="your-name" placeholder="Ваше ім’я" required class="input">
+					</label>
+					<label>
+						<input type="tel" name="phone" data-arrow-path="img/sprites.svg#select-arrow" required class="input tel">
+					</label>
+					<button class="btn" type="submit">
+						Надіслати
+					</button>
+				</form>
+			</div>
+		</div>
 	</div>
 
 	<script>

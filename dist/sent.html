@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style-critical.min.css">
+	<link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'; this.onload=null;">
+	<script>
+		document.querySelector('html').style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+	</script>
+</head>
+
+<body>
+
+	<svg class="gradient-svg" width="0" height="0" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="accent-gradient" x1="11.7163" y1="8.96622" x2="4.0018" y2="8.08877" gradientUnits="userSpaceOnUse"">
+				<stop offset=" 0" stop-color="#000000" />
+			<stop offset="1" stop-color="#000000" />
+			</linearGradient>
+		</defs>
+	</svg>
+
+	<div class="wrapper">
+
+		<main class="main _none-padding-bottom" data-aos="fade-in">
+			<section class="sent container">
+				<h1 class="sent__title title">
+					Заявка отправлена!
+				</h1>
+				<div class="sent__text">
+					<p>
+						Ожидайте связи с нашим менеджером в рабочее время в будние с <mark>10:00 до 19:00</mark> и в выходные <mark>с 12:00 до 17:00.</mark>
+					</p>
+					<br>
+					<p>
+						<b>
+							Получите <mark>скидку 5%</mark> за подписку на
+							<a href="#">наш Instagram <svg width="30" height="30" viewBox="0 0 30 30" style="fill: var(--accent);">
+									<use xlink:href="img/sprites.svg#instagram-2"></use>
+								</svg></a>
+						</b>
+					</p>
+				</div>
+				<div class="sent__footer">
+					<a href="index.html" class="sent__btn btn">
+						Вернуться на главную
+					</a>
+				</div>
+			</section>
+		</main>
+
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
