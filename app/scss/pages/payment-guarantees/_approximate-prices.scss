@@ -61,6 +61,10 @@
 		tbody td {
 			&:nth-child(1) {
 				background: rgba(214, 214, 250, 0.7);
+				a {
+					color: var(--black);
+					text-decoration: underline;
+				}
 
 				padding: 16px;
 

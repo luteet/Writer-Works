@@ -6,9 +6,13 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style-critical.min.css">
-	<link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'; this.onload=null;">
+	<link rel="stylesheet" href="css/style.min.css" media="print" id="lazyload-style">
 	<script>
 		document.querySelector('html').style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+		document.addEventListener('DOMContentLoaded', function () {
+			const lazyLoadStyle = document.querySelector('#lazyload-style');
+			lazyLoadStyle.setAttribute('media', 'all');
+		})
 	</script>
 </head>
 <body>

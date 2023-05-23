@@ -20,7 +20,10 @@
 		}
 
 		b {
-			font-weight: 600;
+			font-weight: 500;
+			@include _768 {
+				font-weight: 600;
+			}
 			line-height: 125%;
 		}
 	}
@@ -159,7 +162,10 @@
 				margin-top: 30px;
 				display: block;
 
-
+				font-weight: 500;
+				@include _768 {
+					font-weight: 600;
+				}
 			}
 		}
 	}

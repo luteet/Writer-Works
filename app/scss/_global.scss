@@ -234,6 +234,13 @@ section {
 	}
 }
 
+.large-margin-top {
+	margin-top: 60px;
+	@include _768 {
+		margin-top: 130px;
+	}
+}
+
 .section-start {
 	padding-top: 40px;
 	margin-top: 0;

@@ -4,15 +4,6 @@
     font-size: 3.125rem
 }
 
-.abous-us>*,.check-price>*,.contacts__image,.help-student__image {
-    align-self: center
-}
-
-.faq__item--question,.process__line {
-    -webkit-user-select: none;
-    -ms-user-select: none
-}
-
 .blog__card--title::after,.examples-works__slide--number::before,.include-price__bonus,.process__number::before,.statistic__list strong {
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent
@@ -101,10 +92,6 @@
     text-align: center
 }
 
-.how-order+.section-gray,.we-work+.section-gray {
-    margin-top: 0
-}
-
 .statistic__list strong {
     display: block;
     text-transform: uppercase;
@@ -119,6 +106,11 @@
 
 .we-work {
     background: var(--light-gray)
+}
+
+.we-work+.section-gray {
+    margin-top: 0;
+    padding-top: 30px
 }
 
 .we-work__row {
@@ -161,6 +153,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: -30px
+}
+
+.check-price>* {
+    align-self: center
 }
 
 .faq__list,.price-process__item,.process__number,.process__text {
@@ -251,6 +247,8 @@
     width: 50px;
     height: calc(100% - 10px);
     opacity: .7;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     pointer-events: none
 }
@@ -282,6 +280,10 @@
     margin-top: 50px;
     overflow: visible;
     padding: 0 30px
+}
+
+.blog__card--image,.blog__card--text,.check-price-2__bg,.get-job__bg,.help-student__bg,.how-order__bg,.more-reviews__bg,.offer__body,.subjects,.tariffs__slide--list {
+    overflow: hidden
 }
 
 .tariffs__slide {
@@ -331,7 +333,6 @@
 
 .tariffs__slide--list {
     height: 200px;
-    overflow: hidden;
     transition: height .3s ease;
     text-align: left
 }
@@ -396,7 +397,7 @@
     background: rgba(0,0,0,0)
 }
 
-.approximate-prices__footer,.approximate-prices__table tbody td:nth-child(2),.check-price-2__text,.check-price-2__title,.criteria__list,.criteria__number::before,.criteria__title,.flexible-pricing__list li,.flexible-pricing__tab-nav--btn,.footer__feedback--form [type=submit],.guarantees__slide,.how-much__note,.how-order,.include-price__list,.more-reviews__form,.more-reviews__header,.not-found__code,.not-found__title,.offer__content,.paid-parts__explain li,.price-process__item--number::before,.price__table tbody tr td,.price__title,.sent,.vacancies-hero__list li::before,.you-get__list li {
+.approximate-prices__footer,.approximate-prices__table tbody td:nth-child(2),.check-price-2__text,.check-price-2__title,.criteria__list,.criteria__number::before,.criteria__title,.flexible-pricing__list li,.flexible-pricing__tab-nav--btn,.footer__feedback--form [type=submit],.get-job__text,.get-job__title,.guarantees__slide,.how-much__note,.how-order,.include-price__list,.more-reviews__form,.more-reviews__header,.not-found__code,.not-found__title,.offer__content,.paid-parts__explain li,.price-process__item--number::before,.price__table tbody tr td,.price__title,.sent,.vacancies-hero__list li::before,.you-get__list li {
     text-align: center
 }
 
@@ -450,8 +451,7 @@
 
 .subjects {
     padding-top: 60px;
-    padding-bottom: 60px;
-    overflow: hidden
+    padding-bottom: 60px
 }
 
 .subjects__decor-pattern {
@@ -465,10 +465,6 @@
     transform: translate(0,20%);
     z-index: -1;
     background-size: 3vw
-}
-
-.flexible-pricing__tab-nav--btn>*,.offer__image--body,.payback {
-    z-index: 2
 }
 
 .subjects__slider {
@@ -563,12 +559,10 @@
     margin-bottom: 20px
 }
 
-.offer__body,.payback__body {
-    margin: 0 var(--minus-container-padding)
-}
-
 .faq__item--question {
     cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     padding: 12px 30px 12px 0;
     font-weight: 600;
@@ -591,11 +585,13 @@
 }
 
 .offer__image--body::after,.offer__image--body::before {
+    width: 170%;
     height: 130%;
+    border-radius: 300px;
     background: radial-gradient(circle,rgba(121,119,232,.5858718487) 0,rgba(255,255,255,0) 55%);
     position: absolute;
-    top: 50%;
-    content: ""
+    content: "";
+    left: 50%
 }
 
 .faq__item--question::before {
@@ -621,7 +617,7 @@
     display: flex;
     flex-direction: column;
     padding: 60px 24px;
-    overflow: hidden
+    margin: 0 var(--minus-container-padding)
 }
 
 .offer__image {
@@ -629,20 +625,20 @@
     margin-top: 30px
 }
 
+.offer__image--body {
+    z-index: 2
+}
+
 .offer__image--body::before {
-    left: 50%;
+    top: 50%;
     -webkit-transform: translate(-50%,-60%);
-    transform: translate(-50%,-60%);
-    width: 170%;
-    border-radius: 300px
+    transform: translate(-50%,-60%)
 }
 
 .offer__image--body::after {
-    left: 50%;
+    top: 50%;
     -webkit-transform: translate(-50%,-30%);
     transform: translate(-50%,-30%);
-    width: 170%;
-    border-radius: 300px;
     opacity: .7;
     z-index: -1
 }
@@ -913,10 +909,6 @@
     border-radius: 30px 30px 0 0
 }
 
-.check-price-2__bg {
-    overflow: hidden
-}
-
 .check-price-2__text {
     margin-top: 20px
 }
@@ -980,7 +972,7 @@
 }
 
 .flexible-pricing__text b {
-    font-weight: 600;
+    font-weight: 500;
     line-height: 125%
 }
 
@@ -1017,6 +1009,10 @@
     transition: opacity .3s ease
 }
 
+.flexible-pricing__tab-nav--btn>* {
+    z-index: 2
+}
+
 .flexible-pricing__tab-nav--btn b {
     font-weight: 600;
     font-size: 1rem;
@@ -1048,11 +1044,6 @@
     color: var(--white)
 }
 
-.paid-parts__explain li h3,.paid-parts__list li span b,.payback__list li strong {
-    color: var(--accent);
-    text-transform: uppercase
-}
-
 .flexible-pricing__tab-wrapper {
     display: grid
 }
@@ -1081,7 +1072,12 @@
 
 .flexible-pricing__list li b {
     margin-top: 30px;
-    display: block
+    display: block;
+    font-weight: 500
+}
+
+.abous-us>* {
+    align-self: center
 }
 
 .abous-us__image {
@@ -1135,6 +1131,11 @@
     text-transform: uppercase
 }
 
+.approximate-prices__table tbody td:nth-child(1) a {
+    color: var(--black);
+    text-decoration: underline
+}
+
 .approximate-prices__table tbody td:nth-child(2) {
     font-size: .75rem;
     font-weight: 600;
@@ -1145,9 +1146,12 @@
     border-radius: 0
 }
 
+.how-order+.section-gray {
+    margin-top: 0
+}
+
 .how-order__bg {
-    border-radius: 0;
-    overflow: hidden
+    border-radius: 0
 }
 
 .how-order__form {
@@ -1156,7 +1160,7 @@
     display: inline-block
 }
 
-.how-order__form label {
+.how-order__form label,.more-reviews__form--wrapper label {
     display: block
 }
 
@@ -1210,7 +1214,9 @@
     margin: 0 10px;
     font-weight: 600;
     font-size: 1.625rem;
-    line-height: 120.588235%
+    line-height: 120.588235%;
+    text-transform: uppercase;
+    color: var(--accent)
 }
 
 .paid-parts__explain {
@@ -1227,7 +1233,9 @@
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 1rem;
-    line-height: 122.727273%
+    line-height: 122.727273%;
+    text-transform: uppercase;
+    color: var(--accent)
 }
 
 .paid-parts__explain li p {
@@ -1247,8 +1255,7 @@
 }
 
 .help-student__bg {
-    border-radius: 0;
-    overflow: hidden
+    border-radius: 0
 }
 
 .help-student__decor {
@@ -1280,6 +1287,7 @@
     flex: 0 1 40%;
     max-width: 80%;
     width: 100%;
+    align-self: center;
     margin-top: 20px
 }
 
@@ -1303,11 +1311,13 @@
 
 .payback {
     padding-top: 0;
+    z-index: 2;
     margin-top: -30px
 }
 
 .payback__body {
     padding: 60px 24px;
+    margin: 0 var(--minus-container-padding);
     background: var(--light-gray);
     border-radius: 30px
 }
@@ -1323,9 +1333,11 @@
 .payback__list li strong {
     display: inline-block;
     font-weight: 400;
+    color: var(--accent);
     font-size: 2.5rem;
     white-space: nowrap;
-    line-height: 122.5%
+    line-height: 122.5%;
+    text-transform: uppercase
 }
 
 .payback__list li b {
@@ -1362,7 +1374,6 @@
     width: 100%;
     height: calc(100% - 60px);
     z-index: -1;
-    overflow: hidden;
     pointer-events: none
 }
 
@@ -1430,10 +1441,6 @@
     margin: 0 auto
 }
 
-.more-reviews__form--wrapper label {
-    display: block
-}
-
 .more-reviews__form--wrapper label:not(:first-child),.more-reviews__submit {
     margin-top: 20px
 }
@@ -1469,6 +1476,7 @@
 }
 
 .contacts__image {
+    align-self: center;
     margin-top: 20px
 }
 
@@ -1641,6 +1649,37 @@ li:nth-child(-n+9) .criteria__number::before {
     color: var(--accent)
 }
 
+.get-job {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.get-job:last-child .get-job__bg {
+    border-radius: 30px 30px 0 0
+}
+
+.get-job__text {
+    margin-top: 20px
+}
+
+.get-job__text b {
+    font-weight: 500
+}
+
+.get-job__form {
+    padding-top: 52px;
+    display: grid;
+    gap: 20px;
+    max-width: 360px;
+    margin: 0 auto
+}
+
+.get-job__form--footer {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center
+}
+
 .blog__filter {
     overflow-x: auto;
     display: flex;
@@ -1700,8 +1739,7 @@ li:nth-child(-n+9) .criteria__number::before {
 }
 
 .blog__card--image {
-    max-height: 465px;
-    overflow: hidden
+    max-height: 465px
 }
 
 .blog__card--image img {
@@ -1744,7 +1782,6 @@ li:nth-child(-n+9) .criteria__number::before {
     margin-top: 7px;
     display: -webkit-box;
     text-overflow: ellipsis;
-    overflow: hidden;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     line-clamp: 2;
@@ -2261,6 +2298,10 @@ li:nth-child(-n+9) .criteria__number::before {
         font-weight: 600
     }
 
+    .we-work+.section-gray {
+        padding-top: 30px
+    }
+
     .we-work__col {
         flex: 0 1 calc(50% - 15px);
         width: calc(50% - 15px)
@@ -2526,6 +2567,13 @@ li:nth-child(-n+9) .criteria__number::before {
         position: static
     }
 
+    .check-price-2__decor,.get-job__decor,.how-order__decor {
+        position: absolute;
+        background-size: 15px;
+        border-radius: 50%;
+        pointer-events: none
+    }
+
     .price-process__item:nth-child(2n-2) .price-process__item--line canvas {
         right: 15px;
         left: auto;
@@ -2534,15 +2582,6 @@ li:nth-child(-n+9) .criteria__number::before {
         height: 100%;
         -webkit-transform: none;
         transform: none
-    }
-
-    .check-price-2__decor,.how-order__decor {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        border-radius: 50%;
-        pointer-events: none;
-        background-size: 15px
     }
 
     .guarantees__slide--title {
@@ -2555,6 +2594,8 @@ li:nth-child(-n+9) .criteria__number::before {
     }
 
     .check-price-2__decor {
+        left: 0;
+        bottom: 0;
         width: 250px;
         height: 250px;
         -webkit-transform: translate(-25%,25%);
@@ -2595,9 +2636,17 @@ li:nth-child(-n+9) .criteria__number::before {
         margin-top: 20px
     }
 
+    .flexible-pricing__text b {
+        font-weight: 600
+    }
+
     .flexible-pricing__tab-nav {
         flex-direction: row;
         margin-top: 55px
+    }
+
+    .flexible-pricing__list li b {
+        font-weight: 600
     }
 
     .abous-us {
@@ -2631,6 +2680,8 @@ li:nth-child(-n+9) .criteria__number::before {
     }
 
     .how-order__decor {
+        left: 0;
+        bottom: 0;
         width: 250px;
         height: 250px;
         -webkit-transform: translate(-25%,10%);
@@ -2797,8 +2848,39 @@ li:nth-child(-n+9) .criteria__number::before {
         padding: 100px 24px
     }
 
+    .footer,.get-job {
+        padding-bottom: 100px
+    }
+
     .criteria__number::before {
         font-size: 4.375rem
+    }
+
+    .get-job {
+        padding-top: 100px
+    }
+
+    .get-job__decor {
+        width: 250px;
+        height: 250px
+    }
+
+    .get-job__decor:nth-child(1) {
+        left: 0;
+        bottom: 0;
+        -webkit-transform: translate(-25%,25%);
+        transform: translate(-25%,25%)
+    }
+
+    .get-job__decor:nth-child(2) {
+        right: 0;
+        top: 0;
+        -webkit-transform: translate(25%,-25%);
+        transform: translate(25%,-25%)
+    }
+
+    .get-job__text b {
+        font-weight: 600
     }
 
     .blog__card {
@@ -2839,7 +2921,6 @@ li:nth-child(-n+9) .criteria__number::before {
 
     .footer {
         padding-top: 100px;
-        padding-bottom: 100px;
         grid-template-columns: 222px auto auto
     }
 
@@ -2987,10 +3068,6 @@ li:nth-child(-n+9) .criteria__number::before {
         grid-template-columns: 1fr 1fr 1fr
     }
 
-    .check-price-2__form,.faq,.vacancies-hero__list {
-        grid-template-columns: 1fr 1fr
-    }
-
     .process__list li:nth-child(2n-2) .process__line {
         position: relative
     }
@@ -3048,6 +3125,7 @@ li:nth-child(-n+9) .criteria__number::before {
     }
 
     .faq {
+        grid-template-columns: 1fr 1fr;
         gap: 0 40px
     }
 
@@ -3062,6 +3140,10 @@ li:nth-child(-n+9) .criteria__number::before {
 
     .about-company__title {
         grid-column: auto
+    }
+
+    .check-price-2__form--footer,.get-job__form--footer {
+        grid-column: 2 span
     }
 
     .about-company__title+.about-company__image {
@@ -3114,12 +3196,9 @@ li:nth-child(-n+9) .criteria__number::before {
     }
 
     .check-price-2__form {
+        grid-template-columns: 1fr 1fr;
         max-width: 745px;
         gap: 27px
-    }
-
-    .check-price-2__form--footer {
-        grid-column: 2 span
     }
 
     .choose-city__slider {
@@ -3246,6 +3325,7 @@ li:nth-child(-n+9) .criteria__number::before {
     }
 
     .vacancies-hero__list {
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
         padding-right: 58px
     }
@@ -3260,6 +3340,12 @@ li:nth-child(-n+9) .criteria__number::before {
 
     .criteria__number::before {
         font-size: 6.25rem
+    }
+
+    .get-job__form {
+        grid-template-columns: 1fr 1fr;
+        max-width: 745px;
+        gap: 27px
     }
 
     .blog__filter {
@@ -3381,6 +3467,12 @@ li:nth-child(-n+9) .criteria__number::before {
         width: 300px;
         height: 350px;
         background-size: 20px
+    }
+
+    .get-job__decor {
+        width: 400px;
+        height: 400px;
+        background-size: 25px
     }
 }
 
@@ -3675,6 +3767,10 @@ section {
 
 .margin-top {
     margin-top: 30px
+}
+
+.large-margin-top {
+    margin-top: 60px
 }
 
 .section-start {
@@ -4999,6 +5095,10 @@ input:focus::placeholder,textarea:focus::placeholder {
 
     .margin-top {
         margin-top: 50px
+    }
+
+    .large-margin-top {
+        margin-top: 130px
     }
 
     .header__add,.header__add>*,.hero,.section-start {

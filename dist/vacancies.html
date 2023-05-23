@@ -7,9 +7,13 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style-critical.min.css">
-	<link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'; this.onload=null;">
+	<link rel="stylesheet" href="css/style.min.css" media="print" id="lazyload-style">
 	<script>
 		document.querySelector('html').style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+		document.addEventListener('DOMContentLoaded', function() {
+			const lazyLoadStyle = document.querySelector('#lazyload-style');
+			lazyLoadStyle.setAttribute('media', 'all');
+		})
 	</script>
 </head>
 
@@ -406,7 +410,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="give-jobs container section-padding _large">
+			<section class="give-jobs container section-padding">
 				<h2 class="give-jobs__title title" data-aos="fade-in">
 					даем работы разного уровня сложности
 				</h2>
@@ -490,7 +494,28 @@
 					</li>
 				</ul>
 			</section>
-			<section class="faq container" data-aos="fade-in" data-aos-delay="100">
+			<section class="get-job container" data-aos="fade-in">
+				<div class="get-job__bg section-accent-bg" aria-hidden="true">
+					<div class="get-job__decor decor-pattern-2"></div>
+					<div class="get-job__decor decor-pattern-2"></div>
+				</div>
+				<h2 class="get-job__title title" data-aos="fade-in">
+					Отримати роботу
+				</h2>
+				<div class="get-job__text" data-aos="fade-in">
+					<b>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus!
+					</b>
+				</div>
+				<form method="post" class="get-job__form form" data-aos="fade-in">
+					<div class="get-job__form--footer">
+						<button class="get-job__form--submit btn" type="submit">
+							Дізнатись
+						</button>
+					</div>
+				</form>
+			</section>
+			<section class="faq container" data-aos="fade-in" data-aos-delay="100" data-aos-offset="-100">
 				<h2 class="faq__title title">
 					Ответы на вопросы
 				</h2>
