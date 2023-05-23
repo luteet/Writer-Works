@@ -3482,12 +3482,17 @@ li:nth-child(-n+9) .criteria__number::before {
     cursor: pointer
 }
 
-*,fieldset {
+*,.visually-hidden,fieldset {
     padding: 0
 }
 
 .breadcrumbs,.main,body._mob-menu-active,body._popup-active {
     overflow: hidden
+}
+
+.section-accent+.section-gray,.section-accent-gray+.section-gray {
+    z-index: auto;
+    margin-top: -30px
 }
 
 .image-body {
@@ -3503,10 +3508,6 @@ li:nth-child(-n+9) .criteria__number::before {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover
-}
-
-.main,section {
-    position: relative
 }
 
 .lazy.loaded {
@@ -3556,10 +3557,6 @@ button,input,textarea {
 
 input::-ms-clear {
     display: none
-}
-
-.blog-info,.breadcrumbs li,.breadcrumbs ul,.list li,.popup,.popup-wrapper,.wrapper,body {
-    display: flex
 }
 
 address {
@@ -3626,6 +3623,7 @@ body {
     font-family: var(--main-font);
     font-weight: 400;
     line-height: 150%;
+    display: flex;
     flex-direction: column;
     padding-right: var(--popup-padding)
 }
@@ -3642,7 +3640,13 @@ body {
     transition: stop-color .2s ease
 }
 
+.checkbox-element,.pagination .swiper-pagination-bullet {
+    height: 12px;
+    transition: border-color .2s ease,background .2s ease
+}
+
 section {
+    position: relative;
     margin-top: 60px
 }
 
@@ -3656,11 +3660,13 @@ section {
 
 .wrapper {
     flex: 1 1 auto;
+    display: flex;
     flex-direction: column
 }
 
 .main {
     flex: 1 0 auto;
+    position: relative;
     padding-bottom: 60px
 }
 
@@ -3681,12 +3687,10 @@ section {
 .pagination .swiper-pagination-bullet {
     position: relative;
     width: 12px;
-    height: 12px;
     margin: 0 7.5px!important;
     border: 1px solid var(--black);
     opacity: 1;
-    background: rgba(0,0,0,0);
-    transition: border-color .2s ease,background .2s ease
+    background: rgba(0,0,0,0)
 }
 
 .pagination .swiper-pagination-bullet::before {
@@ -3715,18 +3719,8 @@ section {
     background: var(--light-gray)
 }
 
-.section-accent+.section-gray {
-    margin-top: -30px;
-    z-index: auto
-}
-
 .section-accent-gray {
     border-radius: 30px
-}
-
-.section-accent-gray+.section-gray {
-    margin-top: -30px;
-    z-index: auto
 }
 
 .section-accent-bg,.section-accent-on-mob {
@@ -3744,7 +3738,7 @@ section {
     border-radius: 30px
 }
 
-.btn,.checkbox,.select {
+.btn,.select {
     position: relative
 }
 
@@ -3783,11 +3777,13 @@ section {
 }
 
 .breadcrumbs ul {
+    display: flex;
     flex-wrap: wrap;
     align-items: center
 }
 
 .breadcrumbs li {
+    display: flex;
     align-items: center
 }
 
@@ -3895,7 +3891,6 @@ section {
     width: 1px;
     height: 1px;
     margin: -1px;
-    padding: 0;
     border: 0;
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
@@ -3904,13 +3899,22 @@ section {
     overflow: hidden
 }
 
+.hero__list li::before,.list li::before {
+    height: 20px;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor
+}
+
 .checkbox-input,.select select {
+    left: 50%;
+    white-space: nowrap;
     -webkit-clip-path: inset(100%);
     overflow: hidden
 }
 
 .blog-info {
     margin: 7.5px -7.5px 0;
+    display: flex;
     flex-wrap: wrap
 }
 
@@ -3945,12 +3949,12 @@ section {
     font-size: 1.375rem
 }
 
-.list li,.text-bold {
-    font-weight: 500
-}
-
 .text,.title._min {
     font-size: 1rem
+}
+
+.text-bold {
+    font-weight: 500
 }
 
 .text {
@@ -3963,21 +3967,20 @@ section {
 }
 
 .list li {
-    align-items: center
+    display: flex;
+    align-items: center;
+    font-weight: 500
 }
 
 .list li::before {
     content: "";
     display: block;
     width: 20px;
-    height: 20px;
     flex: 0 0 20px;
     margin-right: 15px;
     border: 2px solid transparent;
     border-radius: 50px;
     background: var(--accent-gradient) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
     mask-composite: exclude
 }
 
@@ -4051,14 +4054,12 @@ input:focus::placeholder,textarea:focus::placeholder {
 .select select {
     display: block!important;
     position: absolute;
-    left: 50%;
     top: 50%;
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     border: 0;
-    white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0)
 }
@@ -4194,6 +4195,7 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .checkbox {
+    position: relative;
     display: inline-flex
 }
 
@@ -4203,14 +4205,12 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .checkbox-input {
     position: absolute;
-    left: 50%;
     top: 50%;
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     border: 0;
-    white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0)
 }
@@ -4237,16 +4237,8 @@ input:focus::placeholder,textarea:focus::placeholder {
     margin-right: 5px;
     display: block;
     width: 12px;
-    height: 12px;
     border-radius: 50%;
-    border: 2px solid #000;
-    transition: border-color .2s ease,background .2s ease
-}
-
-.popup,.popup-bg {
-    height: 100%;
-    width: 100%;
-    left: 0
+    border: 2px solid #000
 }
 
 .checkbox-text {
@@ -4271,9 +4263,16 @@ input:focus::placeholder,textarea:focus::placeholder {
     pointer-events: none
 }
 
+.popup,.popup-bg {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0
+}
+
 .popup {
     position: fixed;
-    top: 0;
+    display: flex;
     padding: 10px;
     z-index: 100;
     opacity: 0;
@@ -4293,12 +4292,8 @@ input:focus::placeholder,textarea:focus::placeholder {
     visibility: visible
 }
 
-.header._hide,.header__nav {
-    opacity: 0;
-    visibility: hidden
-}
-
 .popup-wrapper {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100%;
@@ -4308,7 +4303,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .popup-bg {
     position: absolute;
-    top: 0;
     background: rgba(88,87,97,.69)
 }
 
@@ -4446,6 +4440,8 @@ input:focus::placeholder,textarea:focus::placeholder {
     box-shadow: 0 2px 10px rgba(215,214,236,.39);
     overflow-y: auto;
     overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
     transition: opacity .3s ease,visibility .3s ease
 }
 
@@ -4996,12 +4992,9 @@ input:focus::placeholder,textarea:focus::placeholder {
     -webkit-transform: translate(0,-50%);
     transform: translate(0,-50%);
     width: 20px;
-    height: 20px;
     border: 2px solid transparent;
     border-radius: 50px;
     background: var(--accent-gradient) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
     mask-composite: exclude
 }
 
