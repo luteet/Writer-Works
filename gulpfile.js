@@ -94,17 +94,11 @@ function scriptsLib() {
 	return src([
 		'node_modules/swiper/swiper-bundle.min.js', // Слайдер
 		'node_modules/intl-tel-input/build/js/intlTelInput.min.js', // TEL input
-		//'node_modules/vanilla-lazyload/dist/lazyload.min.js', // Lazyload img | npm i vanilla-lazyload --save-dev | https://www.npmjs.com/package/vanilla-lazyload
 		'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll() | npm i smoothscroll-polyfill --save-dev
-		//'node_modules/clipboard/dist/clipboard.min.js', // Копирование в буфер обмена | npm i clipboard --save-dev | https://www.npmjs.com/package/clipboard
 		'node_modules/aos/dist/aos.js', // Анимация | npm i aos --save-dev | https://www.npmjs.com/package/aos
 		'node_modules/slim-select/dist/slimselect.min.js', // Select | npm i slim-select --save-dev | https://www.npmjs.com/package/slim-select
 		'node_modules/vanillajs-datepicker/dist/js/datepicker.min.js', // Datepicker
 		'node_modules/vanillajs-datepicker/dist/js/locales/uk.js', // Datepicker
-		//'node_modules/sticky-js/dist/sticky.min.js' // Sticky | npm i sticky-js --save-dev | https://www.npmjs.com/package/sticky-js
-		//'node_modules/nouislider/dist/nouislider.min.js', // Кастомный input[range] | npm i nouislider --save-dev | https://www.npmjs.com/package/nouislider
-		//'node_modules/fslightbox/index.js', // Галерея | npm i fslightbox --save-dev | https://www.npmjs.com/package/fslightbox
-		//'node_modules/chart.js/dist/chart.min.js', // График | npm i chart.js --save-dev | https://www.npmjs.com/package/chart.js
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
@@ -173,7 +167,7 @@ function criticalReplace() {
 	return src('dist/**/*.html')
 	.pipe(replace(/<link rel="stylesheet" href="css\/style-critical.min.css">/, function(s) {
 		var style = fs.readFileSync('dist/css/style-critical.min.css');
-		return '<style>' + style + '</style>';
+		return '\n\u0009<!-- Critical styles -->\n\u0009<style>\n' + style + '\n\u0009</style>\n\u0009<!-- /Critical styles -->\n';
 	}))
 	.pipe(dest('dist'))
 	//.pipe(browserSync.stream())
@@ -210,7 +204,6 @@ function stylesLib() {
 		'node_modules/intl-tel-input/build/css/intlTelInput.min.css', // TEL input
 		'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css', // Datepicker
 		'node_modules/aos/dist/aos.css', // Анимация
-		//'node_modules/nouislider/dist/nouislider.css', // Кастомный input[range]
 	])
 	.pipe(concat('libs.css'))
 	.pipe(dest('dist/css'))

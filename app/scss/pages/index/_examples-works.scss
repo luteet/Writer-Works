@@ -63,7 +63,8 @@
 		// .examples-works__slide--content
 
 		&--content {
-			@include _768 {
+			flex: 0 50%;
+			@media (min-width: 768px) and (min-height: 900px) {
 				flex: 0 40%;
 			}
 		}
@@ -149,7 +150,10 @@
 
 		&--image {
 			position: relative;
-			flex: 0 55%;
+			flex: 0 35%;
+			@media (min-width: 768px) and (min-height: 800px) {
+				flex: 0 55%;
+			}
 			margin-bottom: -10%;
 
 			display: none;
