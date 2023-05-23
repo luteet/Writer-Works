@@ -4,9 +4,17 @@
     font-size: 3.125rem
 }
 
+.abous-us>*,.check-price>*,.contacts__image,.help-student__image {
+    align-self: center
+}
+
+.faq__item--question,.price-process__item--line,.process__line {
+    -webkit-user-select: none;
+    -ms-user-select: none
+}
+
 .blog__card--title::after,.examples-works__slide--number::before,.include-price__bonus,.process__number::before,.statistic__list strong {
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent
+    -webkit-text-fill-color: transparent
 }
 
 @font-face {
@@ -97,7 +105,8 @@
     text-transform: uppercase;
     background: var(--accent-gradient);
     -webkit-background-clip: text;
-    background-clip: text
+    background-clip: text;
+    text-fill-color: transparent
 }
 
 .statistic__list b {
@@ -153,10 +162,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: -30px
-}
-
-.check-price>* {
-    align-self: center
 }
 
 .faq__list,.price-process__item,.process__number,.process__text {
@@ -247,8 +252,6 @@
     width: 50px;
     height: calc(100% - 10px);
     opacity: .7;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     pointer-events: none
 }
@@ -273,17 +276,14 @@
     text-transform: uppercase;
     background: var(--accent-gradient);
     -webkit-background-clip: text;
-    background-clip: text
+    background-clip: text;
+    text-fill-color: transparent
 }
 
 .tariffs__slider {
     margin-top: 50px;
     overflow: visible;
     padding: 0 30px
-}
-
-.blog__card--image,.blog__card--text,.check-price-2__bg,.get-job__bg,.help-student__bg,.how-order__bg,.more-reviews__bg,.offer__body,.subjects,.tariffs__slide--list {
-    overflow: hidden
 }
 
 .tariffs__slide {
@@ -333,6 +333,7 @@
 
 .tariffs__slide--list {
     height: 200px;
+    overflow: hidden;
     transition: height .3s ease;
     text-align: left
 }
@@ -446,12 +447,14 @@
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     background-clip: text;
+    text-fill-color: transparent;
     opacity: .8
 }
 
 .subjects {
     padding-top: 60px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
+    overflow: hidden
 }
 
 .subjects__decor-pattern {
@@ -467,6 +470,10 @@
     background-size: 3vw
 }
 
+.flexible-pricing__tab-nav--btn>*,.offer__image--body,.payback {
+    z-index: 2
+}
+
 .subjects__slider {
     max-width: 960px;
     margin: 30px 0 0
@@ -479,6 +486,10 @@
 .examples-works__slider {
     margin: 30px 0;
     overflow: visible
+}
+
+.blog__card--image,.blog__card--text,.check-price-2__bg,.get-job__bg,.help-student__bg,.how-order__bg,.more-reviews__bg,.offer__body {
+    overflow: hidden
 }
 
 .examples-works__slider--pagination {
@@ -511,7 +522,8 @@
     text-transform: uppercase;
     background: var(--accent-gradient);
     -webkit-background-clip: text;
-    background-clip: text
+    background-clip: text;
+    text-fill-color: transparent
 }
 
 .examples-works__slide--info {
@@ -561,8 +573,6 @@
 
 .faq__item--question {
     cursor: pointer;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     padding: 12px 30px 12px 0;
     font-weight: 600;
@@ -623,10 +633,6 @@
 .offer__image {
     flex: 0 1 55%;
     margin-top: 30px
-}
-
-.offer__image--body {
-    z-index: 2
 }
 
 .offer__image--body::before {
@@ -830,8 +836,6 @@
     width: 50px;
     height: calc(100% - 15px);
     opacity: .7;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     pointer-events: none
 }
@@ -1009,10 +1013,6 @@
     transition: opacity .3s ease
 }
 
-.flexible-pricing__tab-nav--btn>* {
-    z-index: 2
-}
-
 .flexible-pricing__tab-nav--btn b {
     font-weight: 600;
     font-size: 1rem;
@@ -1076,10 +1076,6 @@
     font-weight: 500
 }
 
-.abous-us>* {
-    align-self: center
-}
-
 .abous-us__image {
     margin-top: 30px
 }
@@ -1136,6 +1132,11 @@
     text-decoration: underline
 }
 
+.paid-parts__explain li h3,.paid-parts__list li span b,.payback__list li strong {
+    color: var(--accent);
+    text-transform: uppercase
+}
+
 .approximate-prices__table tbody td:nth-child(2) {
     font-size: .75rem;
     font-weight: 600;
@@ -1160,7 +1161,7 @@
     display: inline-block
 }
 
-.how-order__form label,.more-reviews__form--wrapper label {
+.how-order__form label {
     display: block
 }
 
@@ -1214,9 +1215,7 @@
     margin: 0 10px;
     font-weight: 600;
     font-size: 1.625rem;
-    line-height: 120.588235%;
-    text-transform: uppercase;
-    color: var(--accent)
+    line-height: 120.588235%
 }
 
 .paid-parts__explain {
@@ -1233,9 +1232,7 @@
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 1rem;
-    line-height: 122.727273%;
-    text-transform: uppercase;
-    color: var(--accent)
+    line-height: 122.727273%
 }
 
 .paid-parts__explain li p {
@@ -1287,7 +1284,6 @@
     flex: 0 1 40%;
     max-width: 80%;
     width: 100%;
-    align-self: center;
     margin-top: 20px
 }
 
@@ -1311,7 +1307,6 @@
 
 .payback {
     padding-top: 0;
-    z-index: 2;
     margin-top: -30px
 }
 
@@ -1333,11 +1328,9 @@
 .payback__list li strong {
     display: inline-block;
     font-weight: 400;
-    color: var(--accent);
     font-size: 2.5rem;
     white-space: nowrap;
-    line-height: 122.5%;
-    text-transform: uppercase
+    line-height: 122.5%
 }
 
 .payback__list li b {
@@ -1441,6 +1434,10 @@
     margin: 0 auto
 }
 
+.more-reviews__form--wrapper label {
+    display: block
+}
+
 .more-reviews__form--wrapper label:not(:first-child),.more-reviews__submit {
     margin-top: 20px
 }
@@ -1476,7 +1473,6 @@
 }
 
 .contacts__image {
-    align-self: center;
     margin-top: 20px
 }
 
@@ -1763,6 +1759,7 @@ li:nth-child(-n+9) .criteria__number::before {
     background: var(--accent);
     -webkit-background-clip: text;
     background-clip: text;
+    text-fill-color: transparent;
     opacity: 0;
     -webkit-transform: opacity .2s ease;
     transform: opacity .2s ease
@@ -1917,6 +1914,7 @@ li:nth-child(-n+9) .criteria__number::before {
 }
 
 .not-found,.sent {
+    margin-bottom: 50px;
     min-height: 100%;
     display: flex;
     align-items: center
