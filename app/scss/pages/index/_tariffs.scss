@@ -27,7 +27,7 @@
 		// .tariffs__slider--wrapper
 
 		&--wrapper {
-			
+			overflow: visible;
 		}
 
 		// .tariffs__slider--slide
@@ -44,7 +44,7 @@
 	// .tariffs__slide
 
 	&__slide {
-
+		z-index: 2;
 		border: 2px solid transparent;
 		transition: border-color .3s ease, box-shadow .2s ease;
 
@@ -239,6 +239,7 @@
 		// .tariffs__slide--btn
 
 		&--btn {
+			
 		}
 	}
 }

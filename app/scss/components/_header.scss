@@ -97,6 +97,7 @@
 
 		&--body {
 			position: relative;
+			z-index: 2;
 			padding: 15px 0;
 		}
 
@@ -129,7 +130,7 @@
 		&--list > li {
 			position: relative;
 
-			> a.active {
+			> a.active, > button.active {
 				-webkit-text-fill-color: transparent;
 				span::before {
 					opacity: 1;
@@ -167,10 +168,11 @@
 
 				> li {
 
-					a {
+					a, button {
 						display: flex;
 						align-items: center;
 						padding: 3.5px 15px;
+						background: transparent;
 
 						&.active {
 							-webkit-text-fill-color: transparent;
@@ -203,7 +205,7 @@
 			}
 		}
 
-		&--list > li > a {
+		&--list > li > a, &--list > li > button {
 			width: 100%;
 
 			display: inline-flex;
@@ -222,11 +224,12 @@
 
 		}
 
-		&--list a {
+		&--list a, &--list button {
 			font-size: 0.9375rem;
 			line-height: 120%;
 			font-weight: 500;
 			color: var(--black);
+			background: transparent;
 
 			svg {
 				transition: transform .2s ease;

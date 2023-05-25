@@ -76,59 +76,61 @@
 			<h2 class="choose-city__title title">
 				оберіть своє місто
 			</h2>
-			<div class="choose-city__slider swiper">
-				<div class="choose-city__slider--wrapper swiper-wrapper">
-					<div class="choose-city__slider--slide choose-city__slide swiper-slide">
-						<ul class="choose-city__list">
-							<li>
-								<u>Київ</u>
-							</li>
-							<li>
-								<u>Івано-Франківськ</u>
-							</li>
-							<li>
-								<u>Одеса</u>
-							</li>
-							<li>
-								<u>Ужгород</u>
-							</li>
-							<li>
-								<u>Чернівці</u>
-							</li>
-						</ul>
+			<div class="choose-city__slider splide">
+				<div class="choose-city__slider--wrapper splide__track">
+					<div class="choose-city__slider--list splide__list">
+						<div class="choose-city__slider--slide choose-city__slide splide__slide">
+							<ul class="choose-city__list">
+								<li>
+									<u>Київ</u>
+								</li>
+								<li>
+									<u>Івано-Франківськ</u>
+								</li>
+								<li>
+									<u>Одеса</u>
+								</li>
+								<li>
+									<u>Ужгород</u>
+								</li>
+								<li>
+									<u>Чернівці</u>
+								</li>
+							</ul>
+						</div>
+						@@loop("html/_choose-city-item.html", [
+							{
+								"city_1": 'Вінниця',
+								"city_2": 'Кропивницький',
+								"city_3": 'Полтава',
+								"city_4": 'Харків',
+							},
+							{
+								"city_1": 'Дніпро',
+								"city_2": 'Луганськ',
+								"city_3": 'Рівне',
+								"city_4": 'Херсон',
+							},
+							{
+								"city_1": 'Донецьк',
+								"city_2": 'Луцьк',
+								"city_3": 'Сімферополь',
+								"city_4": 'Хмельницький',
+							},
+							{
+								"city_1": 'Житомир',
+								"city_2": 'Львів',
+								"city_3": 'Суми',
+								"city_4": 'Черкаси',
+							},
+							{
+								"city_1": 'Запоріжжя',
+								"city_2": 'Миколаїв',
+								"city_3": 'Тернопіль',
+								"city_4": 'Чернігів',
+							},
+						])
 					</div>
-					@@loop("html/_choose-city-item.html", [
-						{
-							"city_1": 'Вінниця',
-							"city_2": 'Кропивницький',
-							"city_3": 'Полтава',
-							"city_4": 'Харків',
-						},
-						{
-							"city_1": 'Дніпро',
-							"city_2": 'Луганськ',
-							"city_3": 'Рівне',
-							"city_4": 'Херсон',
-						},
-						{
-							"city_1": 'Донецьк',
-							"city_2": 'Луцьк',
-							"city_3": 'Сімферополь',
-							"city_4": 'Хмельницький',
-						},
-						{
-							"city_1": 'Житомир',
-							"city_2": 'Львів',
-							"city_3": 'Суми',
-							"city_4": 'Черкаси',
-						},
-						{
-							"city_1": 'Запоріжжя',
-							"city_2": 'Миколаїв',
-							"city_3": 'Тернопіль',
-							"city_4": 'Чернігів',
-						},
-					])
 				</div>
 				<div class="choose-city__slider--pagination swiper-pagination pagination"></div>
 			</div>

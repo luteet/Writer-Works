@@ -3,49 +3,51 @@
 	<h2 class="subjects__title title" data-aos="fade-in">
 		ПИШЕМО РОБОТИ З УСІХ ПРЕДМЕТІВ, НАПРИКЛАД:
 	</h2>
-	<div class="subjects__slider swiper" data-aos="fade-in">
-		<div class="subjects__slider--wrapper swiper-wrapper">
-			@@loop("../_subject-item.html", [
-				{
-					"name": 'готельний бізнес',
-				},
-				{
-					"name": 'сільське господарство',
-				},
-				{
-					"name": 'кримінальне право',
-				},
-				{
-					"name": 'бухгалтерський облік',
-				},
-				{
-					"name": 'теорія машин і механізмів',
-				},
-				{
-					"name": 'педагогіка',
-				},
-				{
-					"name": 'інформаційні системи',
-				},
-				{
-					"name": 'іноземна філологія',
-				},
-				{
-					"name": 'українська мова',
-				},
-				{
-					"name": 'економіка підприємства',
-				},
-				{
-					"name": 'цивільне будівництво',
-				},
-				{
-					"name": 'інженерія програмного забезпечення',
-				},
-				{
-					"name": 'фармацевтика',
-				},
-			])
+	<div class="subjects__slider splide">
+		<div class="subjects__slider--wrapper splide__track">
+			<div class="subjects__slider--list splide__list">
+				@@loop("../_subject-item.html", [
+					{
+						"name": 'готельний бізнес',
+					},
+					{
+						"name": 'сільське господарство',
+					},
+					{
+						"name": 'кримінальне право',
+					},
+					{
+						"name": 'бухгалтерський облік',
+					},
+					{
+						"name": 'теорія машин і механізмів',
+					},
+					{
+						"name": 'педагогіка',
+					},
+					{
+						"name": 'інформаційні системи',
+					},
+					{
+						"name": 'іноземна філологія',
+					},
+					{
+						"name": 'українська мова',
+					},
+					{
+						"name": 'економіка підприємства',
+					},
+					{
+						"name": 'цивільне будівництво',
+					},
+					{
+						"name": 'інженерія програмного забезпечення',
+					},
+					{
+						"name": 'фармацевтика',
+					},
+				])
+			</div>
 		</div>
 		<div class="subjects__slider--pagination swiper-pagination pagination"></div>
 	</div>

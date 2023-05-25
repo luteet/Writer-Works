@@ -92,7 +92,9 @@ function images() {
 
 function scriptsLib() {
 	return src([
-		'node_modules/swiper/swiper-bundle.min.js', // Слайдер
+		//'node_modules/swiper/js/swiper.min.js', // Слайдер
+		'node_modules/@splidejs/splide/dist/js/splide.min.js',
+		'node_modules/@splidejs/splide-extension-grid/dist/js/splide-extension-grid.min.js',
 		'node_modules/intl-tel-input/build/js/intlTelInput.min.js', // TEL input
 		'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll() | npm i smoothscroll-polyfill --save-dev
 		'node_modules/aos/dist/aos.js', // Анимация | npm i aos --save-dev | https://www.npmjs.com/package/aos
@@ -199,7 +201,9 @@ function stylesOriginal() {
 function stylesLib() {
 	return src([
 		'node_modules/normalize.css/normalize.css',
-		'node_modules/swiper/swiper-bundle.min.css', // Слайдер
+		//'node_modules/swiper/css/swiper.min.css', // Слайдер
+		'node_modules/@splidejs/splide/dist/css/splide.min.css',
+		'node_modules/@splidejs/splide/dist/css/splide-core.min.css',
 		'node_modules/slim-select/dist/slimselect.css', // Select
 		'node_modules/intl-tel-input/build/css/intlTelInput.min.css', // TEL input
 		'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css', // Datepicker

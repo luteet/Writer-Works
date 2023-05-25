@@ -2,19 +2,21 @@
 	<h2 class="examples-works__title title">
 		@@title
 	</h2>
-	<div class="examples-works__slider swiper">
-		<div class="examples-works__slider--wrapper swiper-wrapper">
-			@@loop("../_example-work.html", [
-				{},
-				{},
-				{},
-				{},
-				{},
-				{},
-				{},
-				{},
-				{},
-			])
+	<div class="examples-works__slider splide">
+		<div class="examples-works__slider--wrapper splide__track">
+			<div class="examples-works__slider--list splide__list">
+				@@loop("../_example-work.html", [
+					{},
+					{},
+					{},
+					{},
+					{},
+					{},
+					{},
+					{},
+					{},
+				])
+			</div>
 		</div>
 		<div class="examples-works__slider--footer">
 			<div class="examples-works__slider--pagination swiper-pagination pagination"></div>

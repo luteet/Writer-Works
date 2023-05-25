@@ -19,14 +19,21 @@
 			margin-top: 20px;
 		}
 
-		&.swiper-grid-column>.swiper-wrapper {
+		/* &.swiper-grid-column>.swiper-wrapper {
 			flex-direction: row;
-		}
+		} */
 
 		// .choose-city__slider--wrapper
 
 		&--wrapper {
 			@include _768 {
+				flex-wrap: wrap;
+			}
+		}
+
+		&--list {
+			@include _768 {
+				display: flex !important;
 				flex-wrap: wrap;
 			}
 		}
@@ -39,7 +46,7 @@
 			@include _768 {
 				margin-top: 30px;
 				width: auto;
-				flex: 0 1 20%;
+				flex: 0 1 calc(25% - 10px);
 			}
 
 			@include _992 {

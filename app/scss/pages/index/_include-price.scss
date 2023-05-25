@@ -11,20 +11,36 @@
 		margin-top: 50px;
 
 		display: grid;
+		@media (min-width: 360px) {
+			grid-template-columns: 1fr 1fr;
+		}
+		gap: 20px 10px;
 		@include _550 {
 			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			gap: 40px;
 		}
-		gap: 40px;
+		
 
 		text-align: center;
 
 		h3 {
 			margin-top: 30px;
-			margin-bottom: 5px;
+			
+			font-size: 0.875rem;
+			line-height: 125%;
+			@include _768 {
+				font-size: 1rem;
+				margin-bottom: 5px;
+			}
 		}
 
 		p {
 			padding-top: 10px;
+			font-size: 0.75rem;
+			line-height: 133%;
+			@include _768 {
+				font-size: 1rem;
+			}
 		}
 	}
 
