@@ -874,9 +874,10 @@ window.addEventListener('load', function () {
 	examplesWorksSlider.forEach(examplesWorksSlider => {
 		const slides = examplesWorksSlider.querySelectorAll('.examples-works__slide');
 		let slider =  new Splide( examplesWorksSlider, {
-			type: 'fade',
+			type: 'loop',
 			perPage: 1,
 			arrows: false,
+			updateOnMove: true,
 		} );
 		slider.mount();
 		slides.forEach((slide, index) => {

@@ -73,6 +73,12 @@
 			justify-content: stretch;
 		} */
 
+		transition: opacity .3s ease, visibility .3s ease;
+		opacity: 0; visibility: hidden;
+		&.is-active {
+			opacity: 1; visibility: visible;
+		}
+
 		// .examples-works__slide--content
 
 		&--content {

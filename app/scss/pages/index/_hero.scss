@@ -83,7 +83,7 @@
 		}
 
 		display: grid;
-		gap: 10px;
+		gap: 5px;
 
 		@include _992 {
 			grid-column: 1;
@@ -96,14 +96,36 @@
 			align-self: center;
 
 			text-transform: uppercase;
-			padding-left: 30px;
+			padding-left: 20px;
+
+			.min-title {
+				font-size: 0.75rem;
+				line-height: 100%;
+				
+				@include _768 {
+					font-size: 0.875rem;
+				}
+				
+				@include _992 {
+					font-size: 1rem;
+				}
+			}
+			
+			@include _768 {
+				padding-left: 30px;
+				
+			}
 			position: relative;
 			&::before {
 				content: '';
 				position: absolute;
 				left: 0; top: 50%;
-				transform: translate(0,-50%);
-				width: 20px; height: 20px;
+				transform: translate(0,-45%);
+				width: 12px; height: 12px;
+				@include _768 {
+					width: 20px; height: 20px;
+					transform: translate(0,-50%);
+				}
 				border-radius: 50%;
 				border: 2px solid transparent;
 				border-radius: 50px;

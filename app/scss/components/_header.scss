@@ -60,7 +60,7 @@
 	&__nav {
 		position: absolute;
 		right: 0; top: 100%;
-		width: 244px; max-height: calc((var(--vh)*100) - var(--height-header) - 15px);
+		width: 284px; max-height: calc((var(--vh)*100) - var(--height-header) - 15px);
 
 		background: var(--white);
 		box-shadow: 0px 2px 10px rgba(215, 214, 236, 0.39);
@@ -225,7 +225,10 @@
 		}
 
 		&--list a, &--list button {
-			font-size: 0.9375rem;
+			font-size: 1.125rem;
+			@include _550 {
+				font-size: 0.9375rem;
+			}
 			line-height: 120%;
 			font-weight: 500;
 			color: var(--black);

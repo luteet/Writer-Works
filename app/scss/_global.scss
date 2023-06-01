@@ -300,22 +300,21 @@ section {
 	}
 
 	a {
-		display: none;
+		font-size: 0;
 
 		font-weight: 500;
-		font-size: 0.875rem;
 		line-height: 125%;
 
 		@include _550 {
-			display: inline;
+			font-size: 0.875rem;
 		}
 
 		&:first-child {
-			display: inline;
+			font-size: 0.875rem;
 		}
 
 		&:last-child {
-			display: inline;
+			font-size: 0.875rem;
 		}
 
 		color: rgba(0, 0, 0, 0.5);
@@ -343,6 +342,23 @@ section {
 		&:nth-last-child(2) {
 			display: inline-block;
 			background: 1px solid rgba(0, 0, 0, 1);
+		}
+		&:nth-child(2) {
+			display: inline-block;
+
+			& + * + * + * + *.breadcrumbs-separator + * {
+				position: relative;
+				&::before {
+					content: '...';
+					position: absolute;
+					left: -40px; top: 0;
+					transform: translate(-100%,0);
+					color: rgba(0, 0, 0, 0.5);
+					@include _550 {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 

@@ -55,6 +55,32 @@
 		}
 	}
 
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		margin-top: 25px;
+
+		a {
+			fill: var(--accent);
+			display: block;
+			padding: 10px;
+			svg {
+				margin-left: 0;
+				transition: fill .2s ease;
+			}
+
+			&:hover svg {
+				fill: var(--accent-hover);
+			}
+			
+			&:active svg {
+				fill: var(--accent-hover-2);
+			}
+		}
+	}
+
 	&__decor {
 		@include _992 {
 			position: absolute;

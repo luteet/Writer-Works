@@ -179,3 +179,20 @@
 		
 	}
 }
+
+.blog-page + .more-reviews {
+	margin-top: 0;
+	@include _768 {
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	.more-reviews__decor:nth-child(1) {
+		top: 100px; height: 200px;
+		@include _992 {
+			top: 200px; height: 400px;
+		}		
+	}
+
+	
+}
