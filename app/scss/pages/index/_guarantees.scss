@@ -15,6 +15,14 @@
 			margin-top: 50px;
 		}
 
+		&.is-overflow .splide__pagination {
+			display: flex;
+		}
+
+		.splide__pagination {
+			display: none;
+		}
+
 		// .guarantees__slider--wrapper
 
 		&--wrapper {

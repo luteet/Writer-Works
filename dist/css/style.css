@@ -8,11 +8,6 @@
     align-self: center
 }
 
-.faq__item--question,.price-process__item--line,.process__line {
-    -webkit-user-select: none;
-    -ms-user-select: none
-}
-
 @font-face {
     font-weight:300;font-family:Montserrat;font-display:swap;font-style:normal;src:local("Montserrat"),url(Montserrat-Light.woff) format("woff"),url(Montserrat-Light.woff2) format("woff2")
 }
@@ -139,11 +134,6 @@
     align-items: center
 }
 
-.check-price__form,.tariffs__slide {
-    text-align: center;
-    flex-direction: column
-}
-
 .we-work__statistic strong {
     letter-spacing: -.01em;
     color: var(--accent)
@@ -176,7 +166,9 @@
 
 .check-price__form {
     padding: 0 0 50px;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center
 }
 
@@ -259,6 +251,8 @@
     width: 50px;
     height: calc(100% - 10px);
     opacity: .7;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     pointer-events: none
 }
@@ -290,8 +284,20 @@
     padding: 0 30px
 }
 
+.tariffs__slider.is-overflow .splide__pagination {
+    display: flex
+}
+
+.tariffs__slider .splide__pagination {
+    display: none
+}
+
 .tariffs__slider--wrapper {
     overflow: visible
+}
+
+.blog__card--image,.blog__card--text,.check-price-2__bg,.get-job__bg,.help-student__bg,.how-order__bg,.more-reviews__bg,.offer__body,.subjects,.tariffs__slide--list {
+    overflow: hidden
 }
 
 .tariffs__slide {
@@ -301,7 +307,9 @@
     background: var(--white);
     border-radius: 12px;
     padding: 35px 17px;
-    display: flex
+    text-align: center;
+    display: flex;
+    flex-direction: column
 }
 
 .tariffs__slide.checked,.tariffs__slide:active,.tariffs__slide:hover {
@@ -340,7 +348,6 @@
 
 .tariffs__slide--list {
     height: 200px;
-    overflow: hidden;
     transition: height .3s ease;
     text-align: left
 }
@@ -460,8 +467,7 @@
 
 .subjects {
     padding-top: 60px;
-    padding-bottom: 60px;
-    overflow: hidden
+    padding-bottom: 60px
 }
 
 .subjects__decor-pattern {
@@ -500,10 +506,6 @@
     overflow: visible
 }
 
-.blog__card--image,.blog__card--text,.check-price-2__bg,.get-job__bg,.help-student__bg,.how-order__bg,.more-reviews__bg,.offer__body {
-    overflow: hidden
-}
-
 .examples-works__slider .splide__pagination {
     justify-content: flex-start
 }
@@ -515,6 +517,7 @@
 .examples-works__slide {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     transition: opacity .3s ease,visibility .3s ease;
     opacity: 0;
     visibility: hidden
@@ -573,7 +576,7 @@
 
 .examples-works__slide--image {
     position: relative;
-    flex: 0 35%;
+    flex: 0 40%;
     margin-bottom: -10%;
     display: none
 }
@@ -599,6 +602,8 @@
 
 .faq__item--question {
     cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     padding: 12px 30px 12px 0;
     font-weight: 600;
@@ -626,9 +631,7 @@
     border-radius: 300px;
     background: radial-gradient(circle,rgba(121,119,232,.5858718487) 0,rgba(255,255,255,0) 55%);
     position: absolute;
-    top: 50%;
-    content: "";
-    left: 50%
+    content: ""
 }
 
 .faq__item--question::before {
@@ -667,11 +670,15 @@
 }
 
 .offer__image--body::before {
+    left: 50%;
+    top: 50%;
     -webkit-transform: translate(-50%,-60%);
     transform: translate(-50%,-60%)
 }
 
 .offer__image--body::after {
+    left: 50%;
+    top: 50%;
     -webkit-transform: translate(-50%,-30%);
     transform: translate(-50%,-30%);
     opacity: .7;
@@ -865,6 +872,8 @@
     width: 50px;
     height: calc(100% - 15px);
     opacity: .7;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     pointer-events: none
 }
@@ -916,6 +925,14 @@
 
 .guarantees__slider {
     margin-top: 30px
+}
+
+.guarantees__slider.is-overflow .splide__pagination {
+    display: flex
+}
+
+.guarantees__slider .splide__pagination {
+    display: none
 }
 
 .guarantees__slide--title {
@@ -2821,7 +2838,7 @@ li:nth-child(-n+9) .criteria__number::before {
     }
 
     .more-reviews {
-        padding-bottom: 100px;
+        padding-bottom: 0;
         padding-top: 0
     }
 
@@ -3022,7 +3039,7 @@ li:nth-child(-n+9) .criteria__number::before {
 
 @media (min-width:768px)and (min-height:800px) {
     .examples-works__slide--image {
-        flex: 0 55%
+        flex: 0 52%
     }
 }
 

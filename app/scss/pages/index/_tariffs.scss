@@ -24,6 +24,14 @@
 			padding: 0;
 		}
 
+		&.is-overflow .splide__pagination {
+			display: flex;
+		}
+
+		.splide__pagination {
+			display: none;
+		}
+
 		// .tariffs__slider--wrapper
 
 		&--wrapper {
@@ -38,6 +46,7 @@
 		// .tariffs__slider--pagination
 
 		&--pagination {
+			
 		}
 	}
 

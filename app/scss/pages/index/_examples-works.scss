@@ -67,6 +67,7 @@
 
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		/* justify-content: center;
 
 		@include _768 {
@@ -175,9 +176,9 @@
 
 		&--image {
 			position: relative;
-			flex: 0 35%;
+			flex: 0 40%;
 			@media (min-width: 768px) and (min-height: 800px) {
-				flex: 0 55%;
+				flex: 0 52%;
 			}
 			margin-bottom: -10%;
 
